@@ -10,8 +10,17 @@ a Markdown report. Can also open the unique above-ground hits in Chrome.
 Primary source is the vanpeople filter API (fast, structured). Vansky is an
 optional secondary source that requires crawling list pages + detail pages.
 """
-import argparse, json, re, sys, time, html, subprocess, urllib.request, urllib.parse
+import argparse, json, os, re, sys, time, html, webbrowser, urllib.request, urllib.parse
 from datetime import datetime, timezone
+
+
+def open_in_browser(target):
+    """Cross-platform: open a URL or local file in the default browser. No-op on failure (e.g. headless)."""
+    url = target if re.match(r"^https?://", target) else "file://" + os.path.abspath(target)
+    try:
+        return webbrowser.open(url)
+    except Exception:
+        return False
 
 # ---------- vanpeople constants (scraped from the live filter UI) ----------
 VP_CITY = {
@@ -346,6 +355,44 @@ def to_markdown_detailed(rows, args):
     return "\n".join(L)
 
 
+def run_search(city="Burnaby", bedrooms=2, max_price=1800, min_price=1, rent_type="整租",
+               house_type="", rent_includes="", facilities="", pets="",
+               posted_since=0, available_from="", available_to="",
+               show_available=False, above_ground=False, source="vanpeople", pages=6):
+    """Core engine: returns the de-duplicated list of listing dicts. Framework-agnostic."""
+    extra = {}
+    for spec, raw in ((VP_HOUSE, house_type), (VP_INCLUDE, rent_includes),
+                      (VP_FACIL, facilities), (VP_PET, pets)):
+        m = map_multi(spec, raw)
+        if m:
+            extra[m[0]] = m[1]
+    rows = []
+    if source in ("vanpeople", "both"):
+        cid = VP_CITY.get(city.lower())
+        if cid is None:
+            raise ValueError(f"未知城市 '{city}'，可选：{', '.join(sorted(VP_CITY))}")
+        rows += search_vanpeople(cid, bedrooms, max_price, min_price, rent_type, pages, extra)
+    if source in ("vansky", "both"):
+        rows += search_vansky(city, bedrooms, max_price, min_price, rent_type,
+                              max(pages, 30) if source == "vansky" else pages)
+
+    if posted_since > 0:
+        cutoff = int(datetime.now(timezone.utc).timestamp()) - posted_since * 86400
+        rows = [r for r in rows if r.get("ts", 0) >= cutoff]
+
+    rows = dedupe(rows)
+    if above_ground:
+        rows = [r for r in rows if r["floor"] in ("above", "unknown")]
+
+    if available_from or available_to or show_available:
+        enrich_vanpeople_dates(rows)
+        if available_from:
+            rows = [r for r in rows if not r.get("available") or r["available"] >= available_from]
+        if available_to:
+            rows = [r for r in rows if not r.get("available") or r["available"] <= available_to]
+    return rows
+
+
 def render_html(md, title):
     """Convert the subset of Markdown this script emits into a styled, clickable HTML page."""
     def inline(s):
@@ -406,46 +453,32 @@ def main():
     ap.add_argument("--pages", type=int, default=6, help="每个来源抓取的列表页数（按时间倒序），默认 6")
     ap.add_argument("--contacts", action="store_true", help="详细清单格式：每套含联系人/电话/邮箱/微信/链接")
     ap.add_argument("--out", help="输出 .md 文件路径（不填则打印到 stdout）")
-    ap.add_argument("--html", action="store_true", help="同时生成排版好的 .html（链接可点）；配合 --out 写同名 .html，并在 Chrome 打开")
+    ap.add_argument("--json", action="store_true", help="输出结构化 JSON（便于其它程序/agent 解析）而非 Markdown")
+    ap.add_argument("--html", action="store_true", help="同时生成排版好的 .html（链接可点）；配合 --out 写同名 .html，并在默认浏览器打开")
     ap.add_argument("--open", action="store_true", help="在 Chrome 中打开所有去重后的地上房源")
     args = ap.parse_args()
 
-    city_key = args.city.lower()
-    extra = {}
-    for spec, raw in ((VP_HOUSE, args.house_type), (VP_INCLUDE, args.rent_includes),
-                      (VP_FACIL, args.facilities), (VP_PET, args.pets)):
-        m = map_multi(spec, raw)
-        if m:
-            extra[m[0]] = m[1]
-    rows = []
-    if args.source in ("vanpeople", "both"):
-        cid = VP_CITY.get(city_key)
-        if cid is None:
-            print(f"[warn] vanpeople 不认识城市 '{args.city}'，可选：{', '.join(sorted(VP_CITY))}", file=sys.stderr)
+    try:
+        rows = run_search(
+            city=args.city, bedrooms=args.bedrooms, max_price=args.max_price, min_price=args.min_price,
+            rent_type=args.rent_type, house_type=args.house_type, rent_includes=args.rent_includes,
+            facilities=args.facilities, pets=args.pets, posted_since=args.posted_since,
+            available_from=args.available_from, available_to=args.available_to,
+            show_available=args.show_available, above_ground=args.above_ground,
+            source=args.source, pages=args.pages)
+    except ValueError as e:
+        print(f"[error] {e}", file=sys.stderr)
+        sys.exit(2)
+
+    if args.json:
+        payload = json.dumps(rows, ensure_ascii=False, indent=2)
+        if args.out:
+            with open(args.out, "w", encoding="utf-8") as f:
+                f.write(payload + "\n")
+            print(f"已写入 {args.out}（共 {len(rows)} 套，去重后）", file=sys.stderr)
         else:
-            rows += search_vanpeople(cid, args.bedrooms, args.max_price, args.min_price,
-                                     args.rent_type, args.pages, extra)
-    if args.source in ("vansky", "both"):
-        rows += search_vansky(args.city, args.bedrooms, args.max_price, args.min_price, args.rent_type,
-                              max(args.pages, 30 if args.source == "vansky" else args.pages))
-
-    # 发布时间过滤（列表数据自带，便宜）
-    if args.posted_since > 0:
-        cutoff = int(datetime.now(timezone.utc).timestamp()) - args.posted_since * 86400
-        rows = [r for r in rows if r.get("ts", 0) >= cutoff]
-
-    rows = dedupe(rows)
-    if args.above_ground:
-        rows = [r for r in rows if r["floor"] in ("above", "unknown")]
-
-    # 入住时间：需抓详情页
-    need_avail = args.available_from or args.available_to or args.show_available
-    if need_avail:
-        enrich_vanpeople_dates(rows)
-        if args.available_from:
-            rows = [r for r in rows if not r.get("available") or r["available"] >= args.available_from]
-        if args.available_to:
-            rows = [r for r in rows if not r.get("available") or r["available"] <= args.available_to]
+            print(payload)
+        return
 
     md = to_markdown_detailed(rows, args) if args.contacts else to_markdown(rows, args)
     if args.out:
@@ -461,13 +494,13 @@ def main():
         with open(html_path, "w", encoding="utf-8") as f:
             f.write(render_html(md, f"{args.city} {args.bedrooms}室租房"))
         print(f"已生成网页 {html_path}")
-        subprocess.run(["open", "-a", "Google Chrome", html_path])
+        open_in_browser(html_path)
 
     if args.open:
         urls = [r["links"][0] for r in rows if r["floor"] in ("above", "unknown")]
         for u in urls:
-            subprocess.run(["open", "-a", "Google Chrome", u])
-        print(f"已在 Chrome 打开 {len(urls)} 个地上房源", file=sys.stderr)
+            open_in_browser(u)
+        print(f"已在浏览器打开 {len(urls)} 个地上房源", file=sys.stderr)
 
 
 if __name__ == "__main__":

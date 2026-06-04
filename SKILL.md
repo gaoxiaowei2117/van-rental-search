@@ -52,8 +52,9 @@ python3 ~/.claude/skills/van-rental-search/scripts/search.py \
 | `--source` | vanpeople | `vanpeople` / `vansky` / `both` |
 | `--pages` | 6 | 每个来源抓取的列表页数（按发帖时间倒序，越大越全越慢） |
 | `--contacts` | off | 详细清单格式：每套含联系人/电话/邮箱/微信/链接 |
-| `--out` | — | 写入 .md 文件；不填则打印 |
-| `--html` | off | 另存排版好的 .html（链接可点）并在 Chrome 打开 |
+| `--out` | — | 写入文件；不填则打印 |
+| `--json` | off | 输出结构化 JSON（供其它程序/agent 解析）而非 Markdown |
+| `--html` | off | 另存排版好的 .html（链接可点）并在默认浏览器打开（跨平台） |
 | `--open` | off | 在 Chrome 打开所有去重后的地上房源 |
 
 ## Real site filter fields (use these, don't invent)
@@ -103,6 +104,28 @@ Two more conditions come from the data rather than a dropdown:
 - Prices are landlord-stated ("…左右"); always present them as approximate.
 - After running, summarize the ✅ above-ground hits for the user and offer to
   `--open` them or save with `--out`. Mention the `×N` repost groups.
+
+## Using from other agents (not just Claude Code)
+
+The engine is framework-agnostic. Three ways to reuse it:
+
+1. **CLI** — `python3 scripts/search.py ... --json` prints a structured array
+   any agent can parse. Cross-platform (`--html`/`--open` use the `webbrowser`
+   module; no-op on headless).
+2. **Python import** — `from search import run_search; rows = run_search(city="Burnaby", bedrooms=2, ...)`
+   returns the de-duped list of listing dicts.
+3. **MCP** — `scripts/mcp_server.py` is a zero-dependency stdio MCP server
+   exposing one tool, `search_rentals`, with the same parameters. Register it
+   with any MCP-capable agent:
+   ```json
+   { "mcpServers": { "van-rental-search":
+       { "command": "python3", "args": ["/abs/path/scripts/mcp_server.py"] } } }
+   ```
+   It implements `initialize` / `tools/list` / `tools/call` over newline-delimited
+   JSON-RPC and returns both `content` (text JSON) and `structuredContent`.
+
+Keep this split — engine in `search.py`, thin adapters (SKILL.md, mcp_server.py)
+on top — when porting to a new framework.
 
 ## Extending
 

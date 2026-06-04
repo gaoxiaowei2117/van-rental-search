@@ -20,8 +20,23 @@ structured results directly — filtering is exact, not best-effort scraping.
 - **Above-ground vs basement** classification (全地上 / 半地下) from listing text.
 - **De-dup by phone** — collapses repost spam to one row with `×N` + all links.
 - **Junk filter** — drops room-share / short-term posts mislabeled as 整租.
-- **Outputs**: Markdown table, or `--contacts` detailed list (联系人 / 电话 /
-  邮箱 / 微信 / 链接); `--out` to a file; `--open` in Chrome.
+- **Outputs**: Markdown table, `--contacts` detailed list (联系人 / 电话 / 邮箱 /
+  微信 / 链接), `--json` structured array, or `--html` styled clickable page;
+  `--out` to a file; `--open`/`--html` open in the default browser (cross-platform).
+
+## Use from any agent (not only Claude Code)
+
+The engine has no framework lock-in:
+
+- **CLI**: `python3 scripts/search.py ... --json`
+- **Python**: `from search import run_search; run_search(city="Burnaby", bedrooms=2, ...)`
+- **MCP**: `scripts/mcp_server.py` — a zero-dependency stdio MCP server exposing a
+  `search_rentals` tool, usable by any MCP-capable agent (Claude, Cursor, open agents…).
+
+  ```json
+  { "mcpServers": { "van-rental-search":
+      { "command": "python3", "args": ["/abs/path/scripts/mcp_server.py"] } } }
+  ```
 
 ## Install
 
