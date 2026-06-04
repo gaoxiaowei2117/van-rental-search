@@ -51,7 +51,9 @@ python3 ~/.claude/skills/van-rental-search/scripts/search.py \
 | `--above-ground` | off | 只保留全地上（**文字判断，非站点筛选项**；排除半地下/地下室） |
 | `--source` | vanpeople | `vanpeople` / `vansky` / `both` |
 | `--pages` | 6 | 每个来源抓取的列表页数（按发帖时间倒序，越大越全越慢） |
+| `--contacts` | off | 详细清单格式：每套含联系人/电话/邮箱/微信/链接 |
 | `--out` | — | 写入 .md 文件；不填则打印 |
+| `--html` | off | 另存排版好的 .html（链接可点）并在 Chrome 打开 |
 | `--open` | off | 在 Chrome 打开所有去重后的地上房源 |
 
 ## Real site filter fields (use these, don't invent)

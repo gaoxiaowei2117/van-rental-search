@@ -346,6 +346,46 @@ def to_markdown_detailed(rows, args):
     return "\n".join(L)
 
 
+def render_html(md, title):
+    """Convert the subset of Markdown this script emits into a styled, clickable HTML page."""
+    def inline(s):
+        s = html.escape(s)
+        s = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", s)
+        s = re.sub(r"\[([^\]]+)\]\((https?://[^)]+)\)", r'<a href="\2" target="_blank">\1</a>', s)
+        s = re.sub(r"(?<![\"=])(https?://[^\s<]+)", r'<a href="\1" target="_blank">\1</a>', s)
+        return s
+    out, in_ul = [], False
+    for line in md.splitlines():
+        if re.match(r"^\s*-\s", line):
+            if not in_ul:
+                out.append("<ul>"); in_ul = True
+            indent = len(line) - len(line.lstrip())
+            out.append(f'<li style="margin-left:{indent*8}px">{inline(line.lstrip()[2:])}</li>')
+            continue
+        if in_ul:
+            out.append("</ul>"); in_ul = False
+        if line.startswith("## "):
+            out.append(f"<h2>{inline(line[3:])}</h2>")
+        elif line.startswith("# "):
+            out.append(f"<h1>{inline(line[2:])}</h1>")
+        elif line.startswith("> "):
+            out.append(f"<blockquote>{inline(line[2:])}</blockquote>")
+        elif line.strip() == "":
+            out.append("")
+        else:
+            out.append(f"<p>{inline(line)}</p>")
+    if in_ul:
+        out.append("</ul>")
+    body = "\n".join(out)
+    return (f'<!doctype html><html lang="zh"><head><meta charset="utf-8"><title>{html.escape(title)}</title>'
+            "<style>body{font-family:-apple-system,'PingFang SC',sans-serif;max-width:860px;margin:30px auto;"
+            "padding:0 20px;line-height:1.6;color:#222}h1{border-bottom:2px solid #444;padding-bottom:8px}"
+            "h2{margin-top:28px;background:#f4f7fa;padding:8px 12px;border-left:4px solid #2c7be5;border-radius:4px}"
+            "blockquote{color:#666;background:#fafafa;border-left:3px solid #ccc;margin:8px 0;padding:6px 12px}"
+            "ul{list-style:none;padding-left:0}li{padding:2px 0}a{color:#2c7be5;word-break:break-all}</style>"
+            f"</head><body>{body}</body></html>")
+
+
 def main():
     ap = argparse.ArgumentParser(description="温哥华华人分类网站租房搜索 (vanpeople + vansky)")
     ap.add_argument("--city", default="Burnaby", help="城市名，如 Burnaby / Richmond / Vancouver")
@@ -366,6 +406,7 @@ def main():
     ap.add_argument("--pages", type=int, default=6, help="每个来源抓取的列表页数（按时间倒序），默认 6")
     ap.add_argument("--contacts", action="store_true", help="详细清单格式：每套含联系人/电话/邮箱/微信/链接")
     ap.add_argument("--out", help="输出 .md 文件路径（不填则打印到 stdout）")
+    ap.add_argument("--html", action="store_true", help="同时生成排版好的 .html（链接可点）；配合 --out 写同名 .html，并在 Chrome 打开")
     ap.add_argument("--open", action="store_true", help="在 Chrome 中打开所有去重后的地上房源")
     args = ap.parse_args()
 
@@ -411,8 +452,16 @@ def main():
         with open(args.out, "w", encoding="utf-8") as f:
             f.write(md + "\n")
         print(f"已写入 {args.out}（共 {len(rows)} 套，去重后）")
-    else:
+    elif not args.html:
         print(md)
+
+    if args.html:
+        base = args.out or f"{args.city}-{args.bedrooms}br-rentals.md"
+        html_path = re.sub(r"\.md$", "", base) + ".html"
+        with open(html_path, "w", encoding="utf-8") as f:
+            f.write(render_html(md, f"{args.city} {args.bedrooms}室租房"))
+        print(f"已生成网页 {html_path}")
+        subprocess.run(["open", "-a", "Google Chrome", html_path])
 
     if args.open:
         urls = [r["links"][0] for r in rows if r["floor"] in ("above", "unknown")]
