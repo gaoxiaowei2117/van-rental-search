@@ -1,74 +1,25 @@
 {
-  "generatedAt": "2026-06-06T22:55:01.305689+00:00",
-  "count": 122,
-  "newCount": 122,
+  "generatedAt": "2026-06-06T23:04:53.396394+00:00",
+  "count": 117,
+  "newCount": 0,
+  "droppedDirty": 5,
   "queries": [
     {
       "label": "Burnaby 2br",
-      "count": 45
+      "count": 43,
+      "droppedDirty": 2
     },
     {
       "label": "Richmond 2br",
-      "count": 77
+      "count": 74,
+      "droppedDirty": 3
     }
   ],
   "errors": null,
   "items": [
     {
-      "id": "tel:6046524954",
-      "new": true,
-      "firstSeen": "2026-06-06T22:55:01.305689+00:00",
-      "title": "出租:平地独立屋Metrotown 区域， 2房1厅1厨，1.5卫生间",
-      "price": 100,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "本拿比",
-      "tel": "604-652-4954",
-      "tel2": "",
-      "name": "房东",
-      "email": "",
-      "wechat": "",
-      "date": "2026-05-09",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3462503.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ]
-    },
-    {
-      "id": "tel:6045885910",
-      "new": true,
-      "firstSeen": "2026-06-06T22:55:01.305689+00:00",
-      "title": "两房一卫 北本那比中学 SFU",
-      "price": 200,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "本拿比",
-      "tel": "604-588-5910",
-      "tel2": "",
-      "name": "me",
-      "email": "",
-      "wechat": "",
-      "date": "2026-05-30",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3069544.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ]
-    },
-    {
       "id": "tel:6474530329",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文McRoberts中学，小2房独立出入，步行上学，适合陪读家庭",
       "price": 1390,
@@ -95,7 +46,7 @@
     },
     {
       "id": "tel:6046498381",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "平地独立出入2室一厅出租（费用全包）",
       "price": 1550,
@@ -121,7 +72,7 @@
     },
     {
       "id": "tel:7788819821",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文近一号路 两房一厅出租",
       "price": 1580,
@@ -149,7 +100,7 @@
     },
     {
       "id": "tel:6047103672",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "本拿比Metrotown 近BCIT,平地 包水,电,煤,, 2 房1厅独出 $1600",
       "price": 1600,
@@ -175,7 +126,7 @@
     },
     {
       "id": "tel:7788553136",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Burnaby 2房1厅出租，公车直达Edmonds天车站。独立出入环境安静",
       "price": 1600,
@@ -201,7 +152,7 @@
     },
     {
       "id": "tel:6047805430",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Burnaby South 2 -3 房 出租",
       "price": 1600,
@@ -227,7 +178,7 @@
     },
     {
       "id": "tel:7788951231",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "No.4路夹Williams 独立兩房一厅",
       "price": 1650,
@@ -253,7 +204,7 @@
     },
     {
       "id": "tel:2368881618",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "本那比现代风格地面2房套房出租",
       "price": 1700,
@@ -279,7 +230,7 @@
     },
     {
       "id": "tel:2368660799",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Edmonds Skytrain附近平地阳光2房1厅出租",
       "price": 1700,
@@ -332,7 +283,7 @@
     },
     {
       "id": "tel:7783867128",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Edmonds天车站附近独立屋平地二房出租",
       "price": 1700,
@@ -358,7 +309,7 @@
     },
     {
       "id": "tel:6047618931",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "东本拿比独立屋平地2房1卫出租",
       "price": 1700,
@@ -391,7 +342,7 @@
     },
     {
       "id": "tel:6045053069",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "House独立出入两房一厅 渔人码头 Steveston Hwy",
       "price": 1700,
@@ -417,7 +368,7 @@
     },
     {
       "id": "tel:2368638330",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文一楼2房全包套房出租｜独立出入｜街边停车",
       "price": 1750,
@@ -443,7 +394,7 @@
     },
     {
       "id": "tel:6047226812",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Burnaby地面2室安静小区近公园",
       "price": 1800,
@@ -469,7 +420,7 @@
     },
     {
       "id": "tel:6047222889",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "本那比近Metrotown 新房地上，2房，1廳／廚，1卫出租",
       "price": 1800,
@@ -496,7 +447,7 @@
     },
     {
       "id": "tel:6047279781",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "北本拿比兩房一廳出租",
       "price": 1800,
@@ -522,7 +473,7 @@
     },
     {
       "id": "tel:7788585959",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "SFU/FIC/Aubrey/新屋半地上2室1厅EV READY",
       "price": 1800,
@@ -567,7 +518,7 @@
     },
     {
       "id": "tel:6044014127",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "本拿比Edmonds 社区近小学独立屋地上二室一厅出租",
       "price": 1800,
@@ -593,7 +544,7 @@
     },
     {
       "id": "tel:6049686033",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Highgate，2房單位，獨立出入，平地，全包",
       "price": 1800,
@@ -619,7 +570,7 @@
     },
     {
       "id": "tel:7783029319",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文Cambie平地两房一卫",
       "price": 1800,
@@ -645,7 +596,7 @@
     },
     {
       "id": "tel:2368882222",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文独立屋2房单元 781平尺水电暖网全包",
       "price": 1880,
@@ -671,7 +622,7 @@
     },
     {
       "id": "tel:7787060607",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "【列治文市中心独立屋 2 房 1 卫出租｜包水＋包网＋包煤气】",
       "price": 1899,
@@ -703,7 +654,7 @@
     },
     {
       "id": "tel:2368692566",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文2房2卫独立出入套房出租",
       "price": 1900,
@@ -733,7 +684,7 @@
     },
     {
       "id": "tel:2362687156",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文独立屋一楼独立出入2房+厨房+卫生间，近中国世界带家具；",
       "price": 1900,
@@ -759,7 +710,7 @@
     },
     {
       "id": "tel:7782318794",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "📍位置超方便！Richmond学区房｜2房1厅1卫 ｜5月15 $1900 全包",
       "price": 1900,
@@ -786,7 +737,7 @@
     },
     {
       "id": "tel:6047627728",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "平地二房出租",
       "price": 1900,
@@ -812,7 +763,7 @@
     },
     {
       "id": "tel:7783219259",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "独立house 一楼两房一卫一厨房出租",
       "price": 1900,
@@ -839,7 +790,7 @@
     },
     {
       "id": "tel:7788857088",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列市新装修独立屋一楼两房ㄧ厅独立出入, 即可入住.",
       "price": 1900,
@@ -865,7 +816,7 @@
     },
     {
       "id": "tel:6047637996",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Richmond 中心二室一厅出租",
       "price": 1950,
@@ -891,7 +842,7 @@
     },
     {
       "id": "tel:7789575699",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "一楼独立出入 2房1卫",
       "price": 2000,
@@ -917,7 +868,7 @@
     },
     {
       "id": "tel:7783882552",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文SouthArm公园旁一楼两房整租｜7月1日可入住",
       "price": 2000,
@@ -943,7 +894,7 @@
     },
     {
       "id": "tel:7783198118",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "出租列治文平地独立屋两房一厅",
       "price": 2000,
@@ -970,7 +921,7 @@
     },
     {
       "id": "tel:7788620266",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文一楼 独立进出单元 二房一厨一卫出租",
       "price": 2000,
@@ -996,7 +947,7 @@
     },
     {
       "id": "tel:7787106606",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文靓屋2房1卫求租",
       "price": 2000,
@@ -1022,7 +973,7 @@
     },
     {
       "id": "tel:7789871699",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文两室一厅地面独立进出出租",
       "price": 2000,
@@ -1048,7 +999,7 @@
     },
     {
       "id": "tel:6047251786",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文平地两房一厅出租",
       "price": 2000,
@@ -1074,7 +1025,7 @@
     },
     {
       "id": "tel:6043076218",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文全新装修独立出入2房2卫",
       "price": 2000,
@@ -1099,86 +1050,8 @@
       ]
     },
     {
-      "id": "tel:6048619186",
-      "new": true,
-      "firstSeen": "2026-06-06T22:55:01.305689+00:00",
-      "title": "两房一书房公寓出租",
-      "price": 299,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "Brighouse",
-      "tel": "604-861-9186",
-      "tel2": "",
-      "name": "房东",
-      "email": "",
-      "wechat": "",
-      "date": "2025-06-28",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3367306.html"
-      ],
-      "matchedQueries": [
-        "Richmond 2br"
-      ]
-    },
-    {
-      "id": "tel:6048085816",
-      "new": true,
-      "firstSeen": "2026-06-06T22:55:01.305689+00:00",
-      "title": "Richmond 光潔明亮二房包水/電/瓦斯/cable $900 兩房$1800",
-      "price": 900,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "列治文",
-      "tel": "604-808-5816",
-      "tel2": "",
-      "name": "cheng",
-      "email": "macapple888@hotmail.com",
-      "wechat": "",
-      "date": "2025-12-11",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3424210.html"
-      ],
-      "matchedQueries": [
-        "Richmond 2br"
-      ]
-    },
-    {
-      "id": "tel:6045054407",
-      "new": true,
-      "firstSeen": "2026-06-06T22:55:01.305689+00:00",
-      "title": "列治文中心方便圈房間",
-      "price": 950,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "列治文",
-      "tel": "604-505-4407",
-      "tel2": "",
-      "name": "Sara",
-      "email": "",
-      "wechat": "",
-      "date": "2026-04-23",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3460255.html"
-      ],
-      "matchedQueries": [
-        "Richmond 2br"
-      ]
-    },
-    {
       "id": "tel:6047192881",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文on Cambie 夾No. 5 豪华两个大套房招租(1450/1550)",
       "price": 1450,
@@ -1204,7 +1077,7 @@
     },
     {
       "id": "tel:7788953218",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文 2房1卫出租$1500",
       "price": 1500,
@@ -1230,7 +1103,7 @@
     },
     {
       "id": "tel:7788685706",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文独立屋两室一厅出租",
       "price": 1500,
@@ -1256,7 +1129,7 @@
     },
     {
       "id": "tel:2368818034",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "烈治文 ，兩房一廳 ，獨立門出入",
       "price": 1550,
@@ -1284,7 +1157,7 @@
     },
     {
       "id": "tel:7786978420",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文独立出入2室后巷屋，租期灵活，宠物友好！！！",
       "price": 1600,
@@ -1310,7 +1183,7 @@
     },
     {
       "id": "tel:6047100082",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文采光明亮两房独立卫厨出租",
       "price": 1600,
@@ -1337,7 +1210,7 @@
     },
     {
       "id": "tel:7788479908",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文 2房1卫 出租",
       "price": 1600,
@@ -1369,7 +1242,7 @@
     },
     {
       "id": "tel:7788228713",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "南本拿比兩房一廁單位，帶傢私，可拎包入住",
       "price": 1700,
@@ -1395,7 +1268,7 @@
     },
     {
       "id": "tel:6048360513",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文2房1厠1客",
       "price": 1700,
@@ -1421,7 +1294,7 @@
     },
     {
       "id": "tel:7782976191",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文最核心区的公寓! 多套公寓出租，首月免费， 1700起",
       "price": 1700,
@@ -1447,7 +1320,7 @@
     },
     {
       "id": "tel:7782233673",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "超低价格5-6月北本拿比出租",
       "price": 1750,
@@ -1473,7 +1346,7 @@
     },
     {
       "id": "tel:7788291128",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "本拿比独立屋两房一厅近SFU大学",
       "price": 1800,
@@ -1499,7 +1372,7 @@
     },
     {
       "id": "tel:6044177827",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Burnaby新屋2房1厅独",
       "price": 1800,
@@ -1525,7 +1398,7 @@
     },
     {
       "id": "tel:7788001997",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Imperial街与 Sussex 街交界公寓出租",
       "price": 1800,
@@ -1551,7 +1424,7 @@
     },
     {
       "id": "tel:6047796369",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Burnaby 兩房一浴＋大客廳廚房",
       "price": 1800,
@@ -1578,7 +1451,7 @@
     },
     {
       "id": "tel:2364126134",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "EDMONDS附近2房一廳",
       "price": 1800,
@@ -1604,7 +1477,7 @@
     },
     {
       "id": "tel:7788360707",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Metrotown2房单位，步行可至天车站",
       "price": 1800,
@@ -1630,7 +1503,7 @@
     },
     {
       "id": "tel:7789980781",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "出租两房一厅",
       "price": 1800,
@@ -1656,7 +1529,7 @@
     },
     {
       "id": "tel:2368808976",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "本拿比新裝2房1廳近Cariboo 中學",
       "price": 1800,
@@ -1682,7 +1555,7 @@
     },
     {
       "id": "tel:2508458889",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "出租.",
       "price": 1800,
@@ -1709,7 +1582,7 @@
     },
     {
       "id": "tel:7788558162",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "二房一厅，Highgate ， 全包",
       "price": 1800,
@@ -1735,7 +1608,7 @@
     },
     {
       "id": "tel:7788883651",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "南本那比近Metrotown两房厅独立出租",
       "price": 1800,
@@ -1761,7 +1634,7 @@
     },
     {
       "id": "tel:7782887855",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "N o.2和gilbert之间，blundell mall附近，后巷屋出租",
       "price": 1800,
@@ -1788,7 +1661,7 @@
     },
     {
       "id": "tel:6047826544",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文中心附近，独立屋新小两房一厅， $1800, 7月1号起租",
       "price": 1800,
@@ -1814,7 +1687,7 @@
     },
     {
       "id": "tel:7788366666",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "好学区McRoberts旁小两房公寓即时起租",
       "price": 1800,
@@ -1840,7 +1713,7 @@
     },
     {
       "id": "tel:7788914123",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Richmond2房独立出入，整租",
       "price": 1800,
@@ -1866,7 +1739,7 @@
     },
     {
       "id": "tel:7789950086",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文 独立出入两室一厅 1800全包 门口有公交到Rmd Center",
       "price": 1800,
@@ -1892,7 +1765,7 @@
     },
     {
       "id": "tel:7787145888",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "出租列治文独立屋两房一卫一厨",
       "price": 1800,
@@ -1920,7 +1793,7 @@
     },
     {
       "id": "tel:7788820595",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "出租独立出入二房一厅一卫",
       "price": 1800,
@@ -1952,7 +1825,7 @@
     },
     {
       "id": "tel:6043680387",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "独立屋楼下套房出租",
       "price": 1800,
@@ -1979,7 +1852,7 @@
     },
     {
       "id": "tel:7783883131",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "两房出租 No.2 Road & Blundell",
       "price": 1800,
@@ -2005,7 +1878,7 @@
     },
     {
       "id": "tel:7785513388",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "現出租Richmond的獨立出租房",
       "price": 1850,
@@ -2031,7 +1904,7 @@
     },
     {
       "id": "tel:7788820836",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文獨立屋樓下兩房一廳",
       "price": 1850,
@@ -2059,7 +1932,7 @@
     },
     {
       "id": "tel:7789986544",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "已经租出去谢谢一－列市中心近图书馆二房一厅出租",
       "price": 1850,
@@ -2085,7 +1958,7 @@
     },
     {
       "id": "tel:7788617889",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文带家具两房一厅招租",
       "price": 1880,
@@ -2111,7 +1984,7 @@
     },
     {
       "id": "tel:6045062085",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "独立屋2楼，两房一厅",
       "price": 1900,
@@ -2137,7 +2010,7 @@
     },
     {
       "id": "tel:6047048853",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "richmond 独立出入 2房1厅一卫",
       "price": 1900,
@@ -2169,7 +2042,7 @@
     },
     {
       "id": "tel:7783219258",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "独立出入两房一卫一厨房出租",
       "price": 1900,
@@ -2199,7 +2072,7 @@
     },
     {
       "id": "tel:6043061568",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Richmond 独立出入 两室一厅招租",
       "price": 1900,
@@ -2225,7 +2098,7 @@
     },
     {
       "id": "tel:6047227563",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列志文2室一厅出租",
       "price": 1900,
@@ -2251,7 +2124,7 @@
     },
     {
       "id": "tel:7787084635",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文Williams house二房二卫出租，随时入住",
       "price": 1900,
@@ -2277,7 +2150,7 @@
     },
     {
       "id": "tel:6044456645",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文东 2卧1卫 整租 带后院",
       "price": 1900,
@@ -2303,7 +2176,7 @@
     },
     {
       "id": "tel:7787881990",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文两房一厅独立出入",
       "price": 1950,
@@ -2329,7 +2202,7 @@
     },
     {
       "id": "tel:7783223759",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "烈士文二房一厅独立出入",
       "price": 1950,
@@ -2356,7 +2229,7 @@
     },
     {
       "id": "tel:7786756666",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文豪宅出租｜St. Albans Rd | 2房2卫 | 独立出入",
       "price": 1980,
@@ -2382,7 +2255,7 @@
     },
     {
       "id": "tel:7788332626",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "两房一厅出租",
       "price": 2000,
@@ -2408,7 +2281,7 @@
     },
     {
       "id": "tel:7783233789",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Richmond Hamilton 社区全新装修两房主层出租！",
       "price": 2000,
@@ -2434,7 +2307,7 @@
     },
     {
       "id": "tel:7788635988",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Richmond horse独立出入出租",
       "price": 2000,
@@ -2460,7 +2333,7 @@
     },
     {
       "id": "tel:7789295817",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Richmond 两室一厅一卫 house独立出入",
       "price": 2000,
@@ -2486,7 +2359,7 @@
     },
     {
       "id": "tel:7788638978",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "richmond warehouse for rent",
       "price": 2000,
@@ -2512,7 +2385,7 @@
     },
     {
       "id": "tel:7786686663",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "出租 2 房 - RICHMOND",
       "price": 2000,
@@ -2538,7 +2411,7 @@
     },
     {
       "id": "tel:7788588985",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Richmond列治文好区二房一厅独立出入可煮",
       "price": 2000,
@@ -2564,7 +2437,7 @@
     },
     {
       "id": "tel:7788618181",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文西区（Steveston North）两房套间（包家俱）",
       "price": 2000,
@@ -2590,7 +2463,7 @@
     },
     {
       "id": "tel:7783230706",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文独立出入2卧1卫",
       "price": 2000,
@@ -2616,7 +2489,7 @@
     },
     {
       "id": "tel:7789906319",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文cambie夾5号路兩房一廳一廚一卫",
       "price": 2000,
@@ -2643,7 +2516,7 @@
     },
     {
       "id": "tel:7789195899",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "二房一厅一卫出租",
       "price": 2000,
@@ -2669,7 +2542,7 @@
     },
     {
       "id": "tel:7788920510",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "两室一卫出租",
       "price": 2000,
@@ -2695,7 +2568,7 @@
     },
     {
       "id": "tel:7788825855",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "独立二房一大厅对外出租",
       "price": 2000,
@@ -2721,7 +2594,7 @@
     },
     {
       "id": "tel:7788961977",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文两室一卫独立出入出租",
       "price": 2000,
@@ -2748,7 +2621,7 @@
     },
     {
       "id": "tel:2368696722",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "rmd 渔人码头附近2房1卫",
       "price": 2000,
@@ -2774,7 +2647,7 @@
     },
     {
       "id": "tel:6045529178",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列冶文两房一厅一厨",
       "price": 2000,
@@ -2800,7 +2673,7 @@
     },
     {
       "id": "tel:7783173828",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "（房东直租）列治文二室一厅一厨一卫别墅旁边出租屋",
       "price": 2000,
@@ -2826,7 +2699,7 @@
     },
     {
       "id": "tel:2362346658",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "靠近Metrotown",
       "price": 1400,
@@ -2861,7 +2734,7 @@
     },
     {
       "id": "tel:6047713078",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "北本拿比獨立屋, 半地下市兩房一廳出租",
       "price": 1500,
@@ -2887,7 +2760,7 @@
     },
     {
       "id": "tel:2369960628",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文渔人码头2房一厅出租",
       "price": 1500,
@@ -2913,7 +2786,7 @@
     },
     {
       "id": "tel:6043690773",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "本拿比2房2卫地下室",
       "price": 1600,
@@ -2939,7 +2812,7 @@
     },
     {
       "id": "tel:7788818222",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "本拿比metrotown南 半地下2房1厅出租",
       "price": 1600,
@@ -2975,7 +2848,7 @@
     },
     {
       "id": "tel:7786286618",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "近Metrotown楼下二室一厅独立出入 独控地暖",
       "price": 1700,
@@ -3005,7 +2878,7 @@
     },
     {
       "id": "tel:7783205553",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "本拿比中心宽敞明亮2房出租",
       "price": 1700,
@@ -3031,7 +2904,7 @@
     },
     {
       "id": "tel:7782399319",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "房子出租",
       "price": 1700,
@@ -3057,7 +2930,7 @@
     },
     {
       "id": "tel:7789842285",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "本拿比metro两房一厅",
       "price": 1700,
@@ -3084,7 +2957,7 @@
     },
     {
       "id": "tel:6043757345",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "列治文steveston二房一厕出租",
       "price": 1750,
@@ -3110,7 +2983,7 @@
     },
     {
       "id": "tel:6046168872",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Moscrop学区房近Metrotown和BCIT两房出租",
       "price": 1780,
@@ -3137,7 +3010,7 @@
     },
     {
       "id": "tel:6044452230",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "北本拿比 burnaby heights 全新2房1卫半地下室出租",
       "price": 1800,
@@ -3181,7 +3054,7 @@
     },
     {
       "id": "tel:6047288617",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Metrotown 附近豪华独立屋半地下室独立2房套房出租",
       "price": 1800,
@@ -3207,7 +3080,7 @@
     },
     {
       "id": "tel:7789198885",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "中本拿比半地下室兩房一衛獨立進出口",
       "price": 1800,
@@ -3233,7 +3106,7 @@
     },
     {
       "id": "tel:7788360004",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "北本拿比 新2房1卫半地下室出租",
       "price": 1800,
@@ -3259,7 +3132,7 @@
     },
     {
       "id": "tel:7782510188",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "Burnaby upper deer lake",
       "price": 1800,
@@ -3285,7 +3158,7 @@
     },
     {
       "id": "tel:7785220817",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "位于本拿比Metrotown中心的宽敞2居1.5卫套房",
       "price": 1800,
@@ -3311,7 +3184,7 @@
     },
     {
       "id": "tel:6048088112",
-      "new": true,
+      "new": false,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
       "title": "独立屋平地2房一卫一厨出租 近 metro，近edmond 2",
       "price": 1800,
