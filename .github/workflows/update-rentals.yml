@@ -1,0 +1,36 @@
+name: Update Rentals
+
+# WHEN this runs. Cron is in UTC.
+#   '23 13 * * *' = 13:23 UTC daily = 05:23 Vancouver (PDT, summer)
+#                                     06:23 Vancouver (PST, winter).
+# Pick an odd minute, not :00 — GitHub's scheduler is busiest on the hour.
+on:
+  schedule:
+    - cron: "23 13 * * *"
+  workflow_dispatch: {} # also lets you run it by hand from the Actions tab
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # REQUIRED so the run can git push back into the repo
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # search.py + bus_generate.py are pure stdlib — nothing to install.
+      - name: Generate rental data
+        run: python3 scripts/bus_generate.py
+
+      # THE "PUSH" HALF OF THE BUS: commit the produced files back to the repo.
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add bus/data.json bus/state.json
+          git diff --cached --quiet || git commit -m "chore: update rentals [skip ci]"
+          git push
