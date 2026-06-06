@@ -10,6 +10,37 @@ The sites' own dropdown filters are AJAX/JS and don't work via plain URLs, so th
 skill calls the real endpoints (vanpeople's `/ajax/pc/list.html`) and parses the
 structured results directly — filtering is exact, not best-effort scraping.
 
+## Daily cloud sync (git-as-a-data-bus)
+
+A GitHub Actions cron runs the engine daily in the cloud and commits the results
+back into the repo, so a local skill can read them without scraping live:
+
+```
+  Actions (cron, UTC)              the repo (public)             local consumer
+  scripts/bus_generate.py                                     scripts/bus_consume.py
+       │  run_search() × queries        │                            │
+       │ ── write bus/data.json ──────► │  (push: producer writes)   │
+       │     + bus/state.json           │ ◄── raw HTTP GET ───────── │  (pull)
+```
+
+- **Producer** (`scripts/bus_generate.py`): runs every query in
+  `config/bus_queries.json`, merges + de-dups by phone across queries, and writes
+  `bus/data.json` (full snapshot — each item flagged `"new": true/false`) plus
+  `bus/state.json` (which phones were seen before, TTL-pruned). Pure stdlib.
+- **Consumer** (`scripts/bus_consume.py`): the repo is **public**, so it just
+  fetches `bus/data.json` over plain HTTP from `raw.githubusercontent.com` — no
+  clone, no auth. `--new-only` shows just the day's new listings; `--out
+  report.md` writes Markdown; `--json` prints the raw payload.
+- **Schedule**: `.github/workflows/update-rentals.yml`, daily at 13:23 UTC
+  (≈ 05:23 Vancouver). Edit the cron there; edit the search criteria in
+  `config/bus_queries.json`.
+
+```bash
+# locally, read the latest cloud-synced results:
+python3 scripts/bus_consume.py --new-only          # just today's new listings
+python3 scripts/bus_consume.py --out ~/rentals.md  # full snapshot to a file
+```
+
 ## Features
 
 - **Real site filters**: city, bedrooms, price range, rent type (整租/分租),

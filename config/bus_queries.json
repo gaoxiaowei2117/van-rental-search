@@ -1,0 +1,30 @@
+{
+  "_note": "Search criteria driven into bus_generate.py. Each entry runs run_search() once; results are merged + de-duped by phone across all queries. Edit freely — add/remove cities or price bands. Fields map 1:1 to run_search() params in scripts/search.py.",
+  "state_ttl_days": 14,
+  "queries": [
+    {
+      "label": "Burnaby 2br",
+      "city": "Burnaby",
+      "bedrooms": 2,
+      "max_price": 1800,
+      "min_price": 1,
+      "rent_type": "整租",
+      "source": "both",
+      "pages": 6,
+      "above_ground": false,
+      "posted_since": 0
+    },
+    {
+      "label": "Richmond 2br",
+      "city": "Richmond",
+      "bedrooms": 2,
+      "max_price": 2000,
+      "min_price": 1,
+      "rent_type": "整租",
+      "source": "both",
+      "pages": 6,
+      "above_ground": false,
+      "posted_since": 0
+    }
+  ]
+}
