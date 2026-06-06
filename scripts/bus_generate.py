@@ -112,8 +112,11 @@ def main():
     queries = config.get("queries", [])
     ttl_days = config.get("state_ttl_days", 14)
 
+    default_floor = config.get("min_plausible_price", 800)
+
     state = load_state()
     errors = []
+    dropped_total = 0
 
     # 1+2. Run each query; collect rows tagged with their query label.
     merged = {}  # id -> {"row": row, "labels": set}
@@ -127,7 +130,16 @@ def main():
             errors.append(f"{label}: {e}")
             query_summary.append({"label": label, "count": 0, "error": str(e)})
             continue
-        query_summary.append({"label": label, "count": len(rows)})
+        # Data-cleaning: drop dirty/implausible prices (placeholder 电议 prices,
+        # per-room prices from 分租 mislabeled as 整租). Never silently truncate —
+        # the dropped count is logged and surfaced in the payload.
+        floor = q.get("min_plausible_price", default_floor)
+        kept = [r for r in rows if (r.get("price") or 0) >= floor]
+        dropped = len(rows) - len(kept)
+        dropped_total += dropped
+        rows = kept
+        query_summary.append({"label": label, "count": len(rows),
+                              "droppedDirty": dropped})
         for r in rows:
             iid = item_id(r)
             if iid in merged:
@@ -160,6 +172,7 @@ def main():
         "generatedAt": ts,
         "count": len(items),
         "newCount": new_count,
+        "droppedDirty": dropped_total,
         "queries": query_summary,
         "errors": errors or None,
         "items": items,
@@ -170,7 +183,8 @@ def main():
         f.write("\n")
     save_state(state, ttl_days)
 
-    print(f"Wrote {len(items)} listing(s) ({new_count} new) to bus/data.json"
+    print(f"Wrote {len(items)} listing(s) ({new_count} new, "
+          f"{dropped_total} dirty dropped) to bus/data.json"
           + (f" — {len(errors)} query error(s)" if errors else ""),
           file=sys.stderr)
 

@@ -45,7 +45,9 @@ def to_markdown(data, new_only):
     L = [f"# Vancouver 租房汇总 · {head}",
          "",
          f"> 生成：{data['generatedAt']} ｜ 共 {data['count']} 套"
-         f"（其中新 {data['newCount']} 套）",
+         f"（其中新 {data['newCount']} 套"
+         + (f"，已过滤脏价格 {data['droppedDirty']} 套" if data.get('droppedDirty') else "")
+         + "）",
          f"> 查询：" + "、".join(
              f"{q['label']}({q['count']})" for q in data.get("queries", [])),
          ""]
