@@ -3,6 +3,8 @@
   "_min_plausible_note": "Listings priced below `min_plausible_price` are dropped as dirty (placeholder/电议 prices like $100, or per-room prices from 分租 mislabeled as 整租). Set per the bedroom count — a real 2br whole-unit rent in metro Vancouver is never under ~$1000. Falls back to the top-level default if omitted.",
   "state_ttl_days": 14,
   "min_plausible_price": 800,
+  "_fresh_days_note": "A listing is flagged new:true if its own post/update date is within `fresh_days` days — NOT by when we first saw it. Lower = stricter 'just listed'.",
+  "fresh_days": 3,
   "queries": [
     {
       "label": "Burnaby 2br",

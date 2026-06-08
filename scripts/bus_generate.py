@@ -46,6 +46,21 @@ def now_iso():
     return datetime.now(timezone.utc).isoformat()
 
 
+def listing_ts(row):
+    """Best-effort post/update unix timestamp for a listing.
+    Prefer the numeric `ts` (vanpeople lastupdate / vansky update); fall back to
+    parsing the `date` string (YYYY-MM-DD). Returns 0 if unknown."""
+    ts = row.get("ts") or 0
+    if ts:
+        return int(ts)
+    d = row.get("date") or ""
+    try:
+        return int(datetime.fromisoformat(d)
+                   .replace(tzinfo=timezone.utc).timestamp())
+    except (ValueError, TypeError):
+        return 0
+
+
 def load_state():
     try:
         with open(STATE_PATH, encoding="utf-8") as f:
@@ -113,6 +128,7 @@ def main():
     ttl_days = config.get("state_ttl_days", 14)
 
     default_floor = config.get("min_plausible_price", 800)
+    fresh_days = config.get("fresh_days", 3)
 
     state = load_state()
     errors = []
@@ -149,17 +165,21 @@ def main():
             else:
                 merged[iid] = {"row": r, "labels": {label}}
 
-    # 3. Mark new vs already-seen against state; refresh seen timestamps.
+    # 3. Flag "new" = posted/updated within the last `fresh_days` days (by the
+    #    listing's own date, not by when we first saw it). state.json still
+    #    records firstSeen (when WE first saw the phone) for reference only.
     ts = now_iso()
+    fresh_cutoff = datetime.now(timezone.utc).timestamp() - fresh_days * 86400
     items = []
     new_count = 0
     for iid, m in merged.items():
         seen_at = state["seen"].get(iid)
-        is_new = seen_at is None
-        if is_new:
-            new_count += 1
+        if seen_at is None:
             state["seen"][iid] = ts
             seen_at = ts
+        is_new = listing_ts(m["row"]) >= fresh_cutoff
+        if is_new:
+            new_count += 1
         items.append(to_item(m["row"], m["labels"], is_new, seen_at))
 
     # newest-flagged first, then above-ground, then by price
@@ -172,6 +192,7 @@ def main():
         "generatedAt": ts,
         "count": len(items),
         "newCount": new_count,
+        "freshDays": fresh_days,
         "droppedDirty": dropped_total,
         "queries": query_summary,
         "errors": errors or None,

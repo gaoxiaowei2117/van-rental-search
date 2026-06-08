@@ -41,7 +41,8 @@ def fetch_data(repo, branch):
 
 def to_markdown(data, new_only):
     items = [it for it in data["items"] if it["new"]] if new_only else data["items"]
-    head = "新房源" if new_only else "全部房源"
+    fd = data.get("freshDays")
+    head = (f"新房源（最近{fd}天）" if fd else "新房源") if new_only else "全部房源"
     L = [f"# Vancouver 租房汇总 · {head}",
          "",
          f"> 生成：{data['generatedAt']} ｜ 共 {data['count']} 套"
