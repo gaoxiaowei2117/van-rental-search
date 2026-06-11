@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-10T16:46:37.279788+00:00",
-  "count": 80,
-  "newCount": 28,
+  "generatedAt": "2026-06-11T17:04:01.711236+00:00",
+  "count": 83,
+  "newCount": 25,
   "freshDays": 3,
   "droppedDirty": 2,
   "queries": [
     {
       "label": "Burnaby 2br",
-      "count": 80,
+      "count": 83,
       "droppedDirty": 2
     }
   ],
@@ -40,33 +40,6 @@
       ]
     },
     {
-      "id": "tel:6047103672",
-      "new": true,
-      "firstSeen": "2026-06-06T22:55:01.305689+00:00",
-      "title": "本拿比Metrotown 近BCIT,平地 包水,电,煤,, 2 房1厅独出 $1600",
-      "price": 1600,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "本拿比",
-      "tel": "604-710-3672",
-      "tel2": "",
-      "name": "lily",
-      "email": "",
-      "wechat": "",
-      "date": "2026-06-08",
-      "available": "2026-03-28",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 2,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3445139.html",
-        "https://www.vansky.com/info/adfree/2804467.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ]
-    },
-    {
       "id": "tel:2368881618",
       "new": true,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
@@ -87,6 +60,59 @@
       "reposts": 1,
       "links": [
         "https://c.vanpeople.com/zufang/item-3466136.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ]
+    },
+    {
+      "id": "tel:6043430800",
+      "new": true,
+      "firstSeen": "2026-06-11T17:04:01.711236+00:00",
+      "title": "南本拿比House平地两房一厅出租",
+      "price": 1700,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "6043430800",
+      "tel2": "",
+      "name": "房东",
+      "email": "",
+      "wechat": "",
+      "date": "2026-06-10",
+      "available": "2026-06-15",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2827169.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ]
+    },
+    {
+      "id": "tel:6047222889",
+      "new": true,
+      "firstSeen": "2026-06-06T22:55:01.305689+00:00",
+      "title": "本那比近Metrotown 新房地上，2房，1廳／廚，1卫出租",
+      "price": 1800,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "本拿比",
+      "tel": "604-722-2889",
+      "tel2": "",
+      "name": "房東",
+      "email": "jennyhou0117@gmail.com",
+      "wechat": "",
+      "date": "2026-06-11",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 2,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3467259.html",
+        "https://c.vanpeople.com/zufang/item-3464585.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -114,59 +140,6 @@
       "links": [
         "https://c.vanpeople.com/zufang/item-3463153.html",
         "https://c.vanpeople.com/zufang/item-3472476.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ]
-    },
-    {
-      "id": "tel:2369797097",
-      "new": true,
-      "firstSeen": "2026-06-08T05:20:51.539184+00:00",
-      "title": "SFU山脚北本那比安静小区二房一厅安静小区",
-      "price": 1800,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "Brentwood",
-      "tel": "236-979-7097",
-      "tel2": "",
-      "name": "Sam",
-      "email": "abc.163@hotmail.com",
-      "wechat": "",
-      "date": "2026-06-08",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3463188.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ]
-    },
-    {
-      "id": "tel:6047222889",
-      "new": true,
-      "firstSeen": "2026-06-06T22:55:01.305689+00:00",
-      "title": "本那比近Metrotown 新房地上，2房，1廳／廚，1卫出租",
-      "price": 1800,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "本拿比",
-      "tel": "604-722-2889",
-      "tel2": "",
-      "name": "房東",
-      "email": "jennyhou0117@gmail.com",
-      "wechat": "",
-      "date": "2026-06-07",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 2,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3467259.html",
-        "https://c.vanpeople.com/zufang/item-3464585.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -212,12 +185,13 @@
       "name": "林女士",
       "email": "",
       "wechat": "",
-      "date": "2026-06-08",
+      "date": "2026-06-10",
       "available": "",
       "lease": "",
       "src": "vanpeople",
-      "reposts": 2,
+      "reposts": 3,
       "links": [
+        "https://c.vanpeople.com/zufang/item-3474011.html",
         "https://c.vanpeople.com/zufang/item-3473356.html",
         "https://c.vanpeople.com/zufang/item-3473127.html"
       ],
@@ -239,13 +213,92 @@
       "name": "房东",
       "email": "",
       "wechat": "",
-      "date": "2026-06-10",
+      "date": "2026-06-11",
       "available": "",
       "lease": "",
       "src": "vanpeople",
       "reposts": 1,
       "links": [
         "https://c.vanpeople.com/zufang/item-3472240.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ]
+    },
+    {
+      "id": "tel:6045378138",
+      "new": true,
+      "firstSeen": "2026-06-06T23:13:22.888886+00:00",
+      "title": "北本那比獨立屋地上一層二房一廳一㕑一衛附洗衣房獨立進出方便。",
+      "price": 1950,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "Brentwood",
+      "tel": "604-537-8138",
+      "tel2": "",
+      "name": "Antoine",
+      "email": "antoine_sung@hotmail.com",
+      "wechat": "",
+      "date": "2026-06-10",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 1,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3472398.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ]
+    },
+    {
+      "id": "tel:2365134849",
+      "new": true,
+      "firstSeen": "2026-06-06T23:13:22.888886+00:00",
+      "title": "北本中心Holdom天车700米左右2楼二房一厅一卫一厨一阳台独立出入",
+      "price": 2000,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "本拿比",
+      "tel": "236-513-4849",
+      "tel2": "",
+      "name": "屋主",
+      "email": "",
+      "wechat": "lyh2102",
+      "date": "2026-06-10",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 2,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3458830.html",
+        "https://c.vanpeople.com/zufang/item-3463756.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ]
+    },
+    {
+      "id": "tel:6049921422",
+      "new": true,
+      "firstSeen": "2026-06-11T17:04:01.711236+00:00",
+      "title": "House平地一层，2房1厅1卫，1储物间/den",
+      "price": 2000,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "本拿比",
+      "tel": "604-992-1422",
+      "tel2": "",
+      "name": "Helen",
+      "email": "",
+      "wechat": "Helen1644",
+      "date": "2026-06-10",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 1,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3470976.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -280,33 +333,6 @@
       ]
     },
     {
-      "id": "tel:2365134849",
-      "new": true,
-      "firstSeen": "2026-06-06T23:13:22.888886+00:00",
-      "title": "北本拿比Holdom天车700米129公交二房一厅一卫一厨一阳台独立出入",
-      "price": 2000,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "本拿比",
-      "tel": "236-513-4849",
-      "tel2": "",
-      "name": "屋主",
-      "email": "",
-      "wechat": "l",
-      "date": "2026-06-08",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 2,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3463756.html",
-        "https://c.vanpeople.com/zufang/item-3458830.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ]
-    },
-    {
       "id": "tel:2368888663",
       "new": true,
       "firstSeen": "2026-06-06T23:13:22.888886+00:00",
@@ -334,26 +360,26 @@
       ]
     },
     {
-      "id": "tel:7786686663",
+      "id": "tel:7788933370",
       "new": true,
-      "firstSeen": "2026-06-06T22:55:01.305689+00:00",
-      "title": "全新 2 房 House Suite",
-      "price": 1700,
+      "firstSeen": "2026-06-11T17:04:01.711236+00:00",
+      "title": "本拿比Metrotown 近大商場天車站",
+      "price": 1800,
       "floor": "unknown",
       "floorLabel": "❓未注明",
       "area": "本拿比",
-      "tel": "778-668-6663",
+      "tel": "778-893-3370",
       "tel2": "",
-      "name": "sandy",
-      "email": "sxwannn@gmail.com",
-      "wechat": "SANDY1188",
-      "date": "2026-06-07",
+      "name": "Me",
+      "email": "",
+      "wechat": "",
+      "date": "2026-06-10",
       "available": "",
       "lease": "",
       "src": "vanpeople",
       "reposts": 1,
       "links": [
-        "https://c.vanpeople.com/zufang/item-3473110.html"
+        "https://c.vanpeople.com/zufang/item-3474014.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -412,58 +438,6 @@
       ]
     },
     {
-      "id": "tel:2369654489",
-      "new": true,
-      "firstSeen": "2026-06-06T23:13:22.888886+00:00",
-      "title": "北本新装修独立出入2室1厅出租",
-      "price": 1850,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "本拿比",
-      "tel": "236-965-4489",
-      "tel2": "",
-      "name": "房东",
-      "email": "",
-      "wechat": "",
-      "date": "2026-06-08",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3469722.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ]
-    },
-    {
-      "id": "tel:6729997568",
-      "new": true,
-      "firstSeen": "2026-06-08T05:20:51.539184+00:00",
-      "title": "新屋2房1厅出租在Burnaby",
-      "price": 1850,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "Metrotown",
-      "tel": "672-999-7568",
-      "tel2": "",
-      "name": "伍太",
-      "email": "",
-      "wechat": "6729997568",
-      "date": "2026-06-07",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3123376.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ]
-    },
-    {
       "id": "tel:7788593363",
       "new": true,
       "firstSeen": "2026-06-10T16:46:37.279788+00:00",
@@ -490,6 +464,32 @@
       ]
     },
     {
+      "id": "tel:6047226846",
+      "new": true,
+      "firstSeen": "2026-06-11T17:04:01.711236+00:00",
+      "title": "本拿比Metrotown Moscrop BCIT 2房1厅1卫 独立出入 拎包入住",
+      "price": 1950,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "Metrotown",
+      "tel": "604-722-6846",
+      "tel2": "",
+      "name": "房东先生",
+      "email": "q9j6ww@yahoo.com",
+      "wechat": "jfwzww",
+      "date": "2026-06-11",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 1,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3474186.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ]
+    },
+    {
       "id": "tel:6044452230",
       "new": true,
       "firstSeen": "2026-06-06T22:55:01.305689+00:00",
@@ -503,12 +503,14 @@
       "name": "Wendy",
       "email": "",
       "wechat": "",
-      "date": "2026-06-10",
+      "date": "2026-06-11",
       "available": "",
       "lease": "",
       "src": "vanpeople",
-      "reposts": 25,
+      "reposts": 26,
       "links": [
+        "https://c.vanpeople.com/zufang/item-3472340.html",
+        "https://c.vanpeople.com/zufang/item-3474025.html",
         "https://c.vanpeople.com/zufang/item-3472096.html",
         "https://c.vanpeople.com/zufang/item-3473886.html",
         "https://c.vanpeople.com/zufang/item-3473662.html",
@@ -517,7 +519,6 @@
         "https://c.vanpeople.com/zufang/item-3473067.html",
         "https://c.vanpeople.com/zufang/item-3472816.html",
         "https://c.vanpeople.com/zufang/item-3470966.html",
-        "https://c.vanpeople.com/zufang/item-3472340.html",
         "https://c.vanpeople.com/zufang/item-3469982.html",
         "https://c.vanpeople.com/zufang/item-3468931.html",
         "https://c.vanpeople.com/zufang/item-3468606.html",
@@ -583,14 +584,13 @@
       "email": "q9j6ww@outlook.com",
       "wechat": "jfwzww",
       "date": "2026-06-10",
-      "available": "2026-04-15",
+      "available": "",
       "lease": "",
       "src": "vanpeople",
-      "reposts": 3,
+      "reposts": 2,
       "links": [
         "https://c.vanpeople.com/zufang/item-3452986.html",
-        "https://c.vanpeople.com/zufang/item-3455347.html",
-        "https://www.vansky.com/info/adfree/2810954.html"
+        "https://c.vanpeople.com/zufang/item-3455347.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -617,33 +617,6 @@
       "reposts": 1,
       "links": [
         "https://c.vanpeople.com/zufang/item-3473471.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ]
-    },
-    {
-      "id": "tel:7789198885",
-      "new": true,
-      "firstSeen": "2026-06-06T22:55:01.305689+00:00",
-      "title": "中本拿比半地下室兩房一衛獨立進出口",
-      "price": 1800,
-      "floor": "basement",
-      "floorLabel": "❌半地下",
-      "area": "本拿比",
-      "tel": "778-919-8885",
-      "tel2": "",
-      "name": "Showone",
-      "email": "Sabrinaswtsai@gmail.com",
-      "wechat": "Showonetsai",
-      "date": "2026-06-08",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 2,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3355401.html",
-        "https://c.vanpeople.com/zufang/item-3147402.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -689,69 +662,16 @@
       "name": "Joe",
       "email": "",
       "wechat": "ToAGoodYearX",
-      "date": "2026-06-09",
+      "date": "2026-06-11",
       "available": "",
       "lease": "",
       "src": "vanpeople",
       "reposts": 4,
       "links": [
+        "https://c.vanpeople.com/zufang/item-3442487.html",
         "https://c.vanpeople.com/zufang/item-3442770.html",
         "https://c.vanpeople.com/zufang/item-3441310.html",
-        "https://c.vanpeople.com/zufang/item-3441467.html",
-        "https://c.vanpeople.com/zufang/item-3442487.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ]
-    },
-    {
-      "id": "tel:2369896996",
-      "new": true,
-      "firstSeen": "2026-06-06T23:13:22.888886+00:00",
-      "title": "北本拿北中学, 天车, SFU, BCIT, 半地下全窗, 2房1厅1卫",
-      "price": 1950,
-      "floor": "basement",
-      "floorLabel": "❌半地下",
-      "area": "Parkcrest",
-      "tel": "236-989-6996",
-      "tel2": "",
-      "name": "房主",
-      "email": "friendsfourok@gmail.com",
-      "wechat": "",
-      "date": "2026-06-08",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3464234.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ]
-    },
-    {
-      "id": "tel:7787982372",
-      "new": true,
-      "firstSeen": "2026-06-06T23:13:22.888886+00:00",
-      "title": "靠近breetwood 半地下两室一卫1999",
-      "price": 1999,
-      "floor": "basement",
-      "floorLabel": "❌半地下",
-      "area": "本拿比",
-      "tel": "778-798-2372",
-      "tel2": "",
-      "name": "Teddy",
-      "email": "",
-      "wechat": "ymw13052718233",
-      "date": "2026-06-08",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 2,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3462913.html",
-        "https://c.vanpeople.com/zufang/item-3458252.html"
+        "https://c.vanpeople.com/zufang/item-3441467.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -804,6 +724,32 @@
       "reposts": 1,
       "links": [
         "https://c.vanpeople.com/zufang/item-3469427.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ]
+    },
+    {
+      "id": "tel:6047103672",
+      "new": false,
+      "firstSeen": "2026-06-06T22:55:01.305689+00:00",
+      "title": "本拿比Metrotown 近BCIT,平地 包水,电,煤,, 2 房1厅独出 $1600",
+      "price": 1600,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "本拿比",
+      "tel": "604-710-3672",
+      "tel2": "",
+      "name": "lily",
+      "email": "",
+      "wechat": "",
+      "date": "2026-06-08",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 1,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3445139.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -935,6 +881,32 @@
       "reposts": 1,
       "links": [
         "https://c.vanpeople.com/zufang/item-3464231.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ]
+    },
+    {
+      "id": "tel:2369797097",
+      "new": false,
+      "firstSeen": "2026-06-08T05:20:51.539184+00:00",
+      "title": "SFU山脚北本那比安静小区二房一厅安静小区",
+      "price": 1800,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "Brentwood",
+      "tel": "236-979-7097",
+      "tel2": "",
+      "name": "Sam",
+      "email": "abc.163@hotmail.com",
+      "wechat": "",
+      "date": "2026-06-08",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 1,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3463188.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -1107,32 +1079,6 @@
       ]
     },
     {
-      "id": "tel:6049686033",
-      "new": false,
-      "firstSeen": "2026-06-06T22:55:01.305689+00:00",
-      "title": "Highgate，2房單位，獨立出入，平地，全包",
-      "price": 1800,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "Highgate",
-      "tel": "604-968-6033",
-      "tel2": "",
-      "name": "房東",
-      "email": "alexthkong@gmail.com",
-      "wechat": "",
-      "date": "2026-04-02",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3454459.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ]
-    },
-    {
       "id": "tel:6047626626",
       "new": false,
       "firstSeen": "2026-06-06T23:13:22.888886+00:00",
@@ -1159,52 +1105,26 @@
       ]
     },
     {
-      "id": "tel:6045378138",
+      "id": "tel:7788853223",
       "new": false,
-      "firstSeen": "2026-06-06T23:13:22.888886+00:00",
-      "title": "北本那比獨立屋地上一層二房一廳一㕑一衛附洗衣房獨立進出方便。",
-      "price": 1950,
+      "firstSeen": "2026-06-07T15:03:49.713441+00:00",
+      "title": "南Burnaby 平地獨立屋2房2衛出租",
+      "price": 1900,
       "floor": "above",
       "floorLabel": "✅地上",
-      "area": "Brentwood",
-      "tel": "604-537-8138",
+      "area": "",
+      "tel": "7788853223",
       "tel2": "",
-      "name": "Antoine",
-      "email": "antoine_sung@hotmail.com",
+      "name": "Katrina",
+      "email": "",
       "wechat": "",
-      "date": "2026-06-05",
-      "available": "",
+      "date": "2026-05-17",
+      "available": "2026-06-01",
       "lease": "",
-      "src": "vanpeople",
+      "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://c.vanpeople.com/zufang/item-3472398.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ]
-    },
-    {
-      "id": "tel:7782139135",
-      "new": false,
-      "firstSeen": "2026-06-06T23:13:22.888886+00:00",
-      "title": "全新半地面2房一廳交通方便 吸烟吸毒任何宠物勿来独立门户",
-      "price": 2000,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "本拿比",
-      "tel": "778-213-9135",
-      "tel2": "",
-      "name": "Zhou",
-      "email": "williamlee3333@hotmail.com",
-      "wechat": "",
-      "date": "2026-06-02",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3359010.html"
+        "https://www.vansky.com/info/adfree/2819284.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -1237,26 +1157,52 @@
       ]
     },
     {
-      "id": "url:https://www.vansky.com/info/adfree/2763198.html",
+      "id": "tel:6042980068",
       "new": false,
-      "firstSeen": "2026-06-08T05:20:51.539184+00:00",
-      "title": "本拿比半独立屋平地两房出租",
+      "firstSeen": "2026-06-11T17:04:01.711236+00:00",
+      "title": "近Edmonds天車站，兩房兩衛套房，全功能廚房出租. 有獨立車位",
       "price": 2000,
       "floor": "above",
       "floorLabel": "✅地上",
       "area": "",
-      "tel": "",
+      "tel": "6042980068",
       "tel2": "",
-      "name": "Kitty",
+      "name": "Kenny",
       "email": "",
       "wechat": "",
-      "date": "2026-06-05",
-      "available": "2026-02-15",
+      "date": "",
+      "available": "2026-06-11",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2763198.html"
+        "https://www.vansky.com/info/adfree/2827146.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ]
+    },
+    {
+      "id": "tel:7786686663",
+      "new": false,
+      "firstSeen": "2026-06-06T22:55:01.305689+00:00",
+      "title": "全新 2 房 House Suite",
+      "price": 1700,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "本拿比",
+      "tel": "778-668-6663",
+      "tel2": "",
+      "name": "sandy",
+      "email": "sxwannn@gmail.com",
+      "wechat": "SANDY1188",
+      "date": "2026-06-07",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 1,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3473110.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -1467,6 +1413,58 @@
       "reposts": 1,
       "links": [
         "https://c.vanpeople.com/zufang/item-3451417.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ]
+    },
+    {
+      "id": "tel:2369654489",
+      "new": false,
+      "firstSeen": "2026-06-06T23:13:22.888886+00:00",
+      "title": "北本新装修独立出入2室1厅出租",
+      "price": 1850,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "本拿比",
+      "tel": "236-965-4489",
+      "tel2": "",
+      "name": "房东",
+      "email": "",
+      "wechat": "",
+      "date": "2026-06-08",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 1,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3469722.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ]
+    },
+    {
+      "id": "tel:6729997568",
+      "new": false,
+      "firstSeen": "2026-06-08T05:20:51.539184+00:00",
+      "title": "新屋2房1厅出租在Burnaby",
+      "price": 1850,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "Metrotown",
+      "tel": "672-999-7568",
+      "tel2": "",
+      "name": "伍太",
+      "email": "",
+      "wechat": "6729997568",
+      "date": "2026-06-07",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 1,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3123376.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -1699,14 +1697,13 @@
       "available": "",
       "lease": "",
       "src": "vanpeople",
-      "reposts": 6,
+      "reposts": 5,
       "links": [
         "https://c.vanpeople.com/zufang/item-3467382.html",
         "https://c.vanpeople.com/zufang/item-3463084.html",
         "https://c.vanpeople.com/zufang/item-3459130.html",
         "https://c.vanpeople.com/zufang/item-3457445.html",
-        "https://c.vanpeople.com/zufang/item-3455827.html",
-        "https://c.vanpeople.com/zufang/item-3454976.html"
+        "https://c.vanpeople.com/zufang/item-3455827.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -1735,32 +1732,6 @@
         "https://c.vanpeople.com/zufang/item-3464032.html",
         "https://c.vanpeople.com/zufang/item-3462808.html",
         "https://c.vanpeople.com/zufang/item-3455414.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ]
-    },
-    {
-      "id": "tel:7788818222",
-      "new": false,
-      "firstSeen": "2026-06-06T22:55:01.305689+00:00",
-      "title": "本拿比metrotown南 半地下2房1厅出租",
-      "price": 1600,
-      "floor": "basement",
-      "floorLabel": "❌半地下",
-      "area": "本拿比",
-      "tel": "778-881-8222",
-      "tel2": "",
-      "name": "chen",
-      "email": "",
-      "wechat": "",
-      "date": "2026-04-02",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3452561.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -1839,6 +1810,58 @@
       "reposts": 1,
       "links": [
         "https://c.vanpeople.com/zufang/item-3455156.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ]
+    },
+    {
+      "id": "tel:7783881353",
+      "new": false,
+      "firstSeen": "2026-06-07T15:03:49.713441+00:00",
+      "title": "本拿比新独立屋两房两卫浴随时入住",
+      "price": 1700,
+      "floor": "basement",
+      "floorLabel": "❌半地下",
+      "area": "",
+      "tel": "7783881353",
+      "tel2": "",
+      "name": "房东",
+      "email": "",
+      "wechat": "",
+      "date": "2026-06-08",
+      "available": "2026-06-10",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2818904.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ]
+    },
+    {
+      "id": "tel:7789198885",
+      "new": false,
+      "firstSeen": "2026-06-06T22:55:01.305689+00:00",
+      "title": "中本拿比半地下室兩房一衛獨立進出口",
+      "price": 1800,
+      "floor": "basement",
+      "floorLabel": "❌半地下",
+      "area": "本拿比",
+      "tel": "778-919-8885",
+      "tel2": "",
+      "name": "Showone",
+      "email": "Sabrinaswtsai@gmail.com",
+      "wechat": "Showonetsai",
+      "date": "2026-06-08",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 1,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3355401.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -2134,6 +2157,32 @@
       ]
     },
     {
+      "id": "tel:2369896996",
+      "new": false,
+      "firstSeen": "2026-06-06T23:13:22.888886+00:00",
+      "title": "北本拿北中学, 天车, SFU, BCIT, 半地下全窗, 2房1厅1卫",
+      "price": 1950,
+      "floor": "basement",
+      "floorLabel": "❌半地下",
+      "area": "Parkcrest",
+      "tel": "236-989-6996",
+      "tel2": "",
+      "name": "房主",
+      "email": "friendsfourok@gmail.com",
+      "wechat": "",
+      "date": "2026-06-08",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 1,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3464234.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ]
+    },
+    {
       "id": "tel:7789518280",
       "new": false,
       "firstSeen": "2026-06-06T23:13:22.888886+00:00",
@@ -2154,6 +2203,33 @@
       "reposts": 1,
       "links": [
         "https://c.vanpeople.com/zufang/item-3469003.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ]
+    },
+    {
+      "id": "tel:7787982372",
+      "new": false,
+      "firstSeen": "2026-06-06T23:13:22.888886+00:00",
+      "title": "靠近breetwood 半地下两室一卫1999",
+      "price": 1999,
+      "floor": "basement",
+      "floorLabel": "❌半地下",
+      "area": "本拿比",
+      "tel": "778-798-2372",
+      "tel2": "",
+      "name": "Teddy",
+      "email": "",
+      "wechat": "ymw13052718233",
+      "date": "2026-06-08",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 2,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3462913.html",
+        "https://c.vanpeople.com/zufang/item-3458252.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
