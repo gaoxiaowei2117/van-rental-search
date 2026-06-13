@@ -20,13 +20,19 @@ back into the repo, so a local skill can read them without scraping live:
   scripts/bus_generate.py                                     scripts/bus_consume.py
        │  run_search() × queries        │                            │
        │ ── write bus/data.json ──────► │  (push: producer writes)   │
-       │     + bus/state.json           │ ◄── raw HTTP GET ───────── │  (pull)
+       │                                │ ◄── raw HTTP GET ───────── │  (pull)
 ```
 
 - **Producer** (`scripts/bus_generate.py`): runs every query in
   `config/bus_queries.json`, merges + de-dups by phone across queries, and writes
-  `bus/data.json` (full snapshot — each item flagged `"new": true/false`) plus
-  `bus/state.json` (which phones were seen before, TTL-pruned). Pure stdlib.
+  `bus/data.json` (full snapshot — each item flagged `"new": true/false` when its
+  own post/update date is within `fresh_days`). Pure stdlib.
+- **Silent-failure guard**: scraping a third-party site means a layout change can
+  make every query return nothing. A `tests/test_contract.py` gate runs first and
+  fails the job if vanpeople's response shape changed; the producer then refuses
+  to overwrite a good snapshot with an empty/collapsed one (`sanity_min_ratio`)
+  and exits non-zero — so a breakage turns the Actions run red (email) instead of
+  rotting the data silently.
 - **Consumer** (`scripts/bus_consume.py`): the repo is **public**, so it just
   fetches `bus/data.json` over plain HTTP from `raw.githubusercontent.com` — no
   clone, no auth. `--new-only` shows just the day's new listings; `--out

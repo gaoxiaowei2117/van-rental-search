@@ -22,15 +22,27 @@ jobs:
         with:
           python-version: "3.12"
 
+      # CONTRACT GATE: confirm the scraped site still exposes the fields the
+      # engine depends on. If this fails, the site changed — stop before
+      # generate so we never publish a broken/empty snapshot.
+      - name: Contract test (live site shape)
+        run: python3 tests/test_contract.py
+
       # search.py + bus_generate.py are pure stdlib — nothing to install.
+      # Exits non-zero (red job → email) if a run is empty/collapses or any
+      # query errored; on a clean run it rewrites bus/data.json in place.
       - name: Generate rental data
         run: python3 scripts/bus_generate.py
 
-      # THE "PUSH" HALF OF THE BUS: commit the produced files back to the repo.
+      # THE "PUSH" HALF OF THE BUS: commit the produced file back to the repo.
+      # always() so that a partial run (healthy data written, but one query
+      # errored and turned the job red) still ships its good data. When generate
+      # aborts without writing, the diff is empty and nothing is committed.
       - name: Commit and push
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add bus/data.json bus/state.json
+          git add bus/data.json
           git diff --cached --quiet || git commit -m "chore: update rentals [skip ci]"
           git push

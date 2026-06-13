@@ -1,14 +1,41 @@
 {
   "_note": "Search criteria driven into bus_generate.py. Each entry runs run_search() once; results are merged + de-duped by phone across all queries. Edit freely — add/remove cities or price bands. Most fields map 1:1 to run_search() params in scripts/search.py; `min_plausible_price` is a bus-only data-cleaning floor (see _min_plausible_note).",
   "_min_plausible_note": "Listings priced below `min_plausible_price` are dropped as dirty (placeholder/电议 prices like $100, or per-room prices from 分租 mislabeled as 整租). Set per the bedroom count — a real 2br whole-unit rent in metro Vancouver is never under ~$1000. Falls back to the top-level default if omitted.",
-  "state_ttl_days": 14,
   "min_plausible_price": 800,
   "_fresh_days_note": "A listing is flagged new:true if its own post/update date is within `fresh_days` days — NOT by when we first saw it. Lower = stricter 'just listed'.",
   "fresh_days": 3,
+  "_sanity_min_ratio_note": "Silent-failure guard: if a run yields fewer than this fraction of the PREVIOUS run's listing count (or zero), bus_generate.py aborts without overwriting bus/data.json and exits non-zero, so a site breakage turns the Actions job red instead of publishing an empty snapshot.",
+  "sanity_min_ratio": 0.3,
   "queries": [
     {
       "label": "Burnaby 2br",
       "city": "Burnaby",
+      "bedrooms": 2,
+      "max_price": 2000,
+      "min_price": 1,
+      "min_plausible_price": 1000,
+      "rent_type": "整租",
+      "source": "both",
+      "pages": 6,
+      "above_ground": false,
+      "posted_since": 0
+    },
+    {
+      "label": "Richmond 2br",
+      "city": "Richmond",
+      "bedrooms": 2,
+      "max_price": 2000,
+      "min_price": 1,
+      "min_plausible_price": 1000,
+      "rent_type": "整租",
+      "source": "both",
+      "pages": 6,
+      "above_ground": false,
+      "posted_since": 0
+    },
+    {
+      "label": "Coquitlam 2br",
+      "city": "Coquitlam",
       "bedrooms": 2,
       "max_price": 2000,
       "min_price": 1,
