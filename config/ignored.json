@@ -1,4 +1,29 @@
 {
   "_note": "Listings the user explicitly marked 'not interested'. bus_generate.py drops any current listing whose id OR normalized phone matches one of these before writing bus/data.json (and the registry). Survives across runs because it is committed. Add entries with: python3 scripts/ignore.py <phone | url | tel:digits | url:...> [--reason '...']. id forms produced by the engine: 'tel:<digits>' (preferred — collapses all reposts from one landlord) or 'url:<listing url>' when no phone.",
-  "ignored": []
+  "ignored": [
+    {
+      "id": "tel:6047826766",
+      "title": "高贵林中心附近一室一厅出租",
+      "reason": "实为一室一厅，非2房",
+      "addedAt": "2026-06-19"
+    },
+    {
+      "id": "tel:7788934939",
+      "title": "两房出租",
+      "reason": "信息极少（标题仅'两房出租'）",
+      "addedAt": "2026-06-19"
+    },
+    {
+      "id": "tel:7788859108",
+      "title": "本拿比两房出租",
+      "reason": "信息极少（标题仅'本拿比两房出租'）",
+      "addedAt": "2026-06-19"
+    },
+    {
+      "id": "tel:7788593363",
+      "title": "Burnaby Brentwood Ground Floor",
+      "reason": "标价与标题价不一致( vs )",
+      "addedAt": "2026-06-19"
+    }
+  ]
 }

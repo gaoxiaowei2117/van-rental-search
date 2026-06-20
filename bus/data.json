@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-20T04:57:26.356033+00:00",
-  "count": 35,
-  "newCount": 23,
+  "generatedAt": "2026-06-20T05:26:59.461680+00:00",
+  "count": 31,
+  "newCount": 21,
   "freshDays": 3,
   "droppedDirty": 0,
-  "droppedIgnored": 0,
+  "droppedIgnored": 4,
   "queries": [
     {
       "label": "Burnaby 2br",
@@ -19,31 +19,6 @@
   ],
   "errors": null,
   "items": [
-    {
-      "id": "tel:6047826766",
-      "new": true,
-      "title": "高贵林中心附近一室一厅出租",
-      "price": 1380,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "高贵林",
-      "tel": "604-782-6766",
-      "tel2": "",
-      "name": "lin",
-      "email": "duanlinzi@126.com",
-      "wechat": "",
-      "date": "2026-06-18",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3474353.html"
-      ],
-      "matchedQueries": [
-        "Coquitlam 2br"
-      ]
-    },
     {
       "id": "tel:6047235168",
       "new": true,
@@ -499,31 +474,6 @@
       ]
     },
     {
-      "id": "tel:7788934939",
-      "new": true,
-      "title": "两房出租",
-      "price": 2000,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "本拿比",
-      "tel": "778-893-4939",
-      "tel2": "",
-      "name": "Wilson",
-      "email": "ccchhhwilson@gmail.com",
-      "wechat": "",
-      "date": "2026-06-20",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3470831.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ]
-    },
-    {
       "id": "tel:6045593359",
       "new": true,
       "title": "三层公寓楼大两房招租",
@@ -699,31 +649,6 @@
       ]
     },
     {
-      "id": "tel:7788859108",
-      "new": false,
-      "title": "本拿比两房出租",
-      "price": 1600,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "Brentwood",
-      "tel": "778-885-9108",
-      "tel2": "",
-      "name": "Katrina",
-      "email": "katrinachen005@gmail.com",
-      "wechat": "",
-      "date": "2026-06-17",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3475779.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ]
-    },
-    {
       "id": "tel:6045185216",
       "new": false,
       "title": "高贵林中心独立出入pinetree的两房出租",
@@ -818,31 +743,6 @@
       "reposts": 1,
       "links": [
         "https://c.vanpeople.com/zufang/item-3441361.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ]
-    },
-    {
-      "id": "tel:7788593363",
-      "new": false,
-      "title": "Burnaby Brentwood Ground Floor 出租 2房1衛包水電網$1,900/月",
-      "price": 1800,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "Brentwood",
-      "tel": "778-859-3363",
-      "tel2": "",
-      "name": "Kelvin",
-      "email": "ytliang.rentals@gmail.com",
-      "wechat": "",
-      "date": "2026-06-17",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3473661.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
