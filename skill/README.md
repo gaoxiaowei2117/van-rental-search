@@ -50,13 +50,19 @@ python3 consume.py                # Markdown digest of ALL current listings
 python3 consume.py --new-only     # only the 🆕 ones (last freshDays)
 python3 consume.py --json         # raw JSON (every field) for filtering/sorting
 python3 consume.py --out feed.md  # write the Markdown report to a file
+python3 consume.py --html f.html --open   # clickable card page, opened in browser
 REPO=owner/name python3 consume.py # read a different published repo
 ```
 
+Every listing carries its detail-page URL. In Markdown the **title is a clickable
+link**; `--html` renders a page of clickable cards for one-tap opening.
+
 ## Reading the output
 
-Columns: `新 | 租金 | 楼层 | 房源 | 电话 | 来源 | 链接`.
+Columns: `新 | 租金 | 楼层 | 房源（点标题看详情） | 电话 | 来源 | 更多`.
 
+- 房源 — the **clickable title** opens the listing's detail page; 更多 lists the
+  landlord's other reposts (`[2] [3]…`).
 - 🆕 — posted/updated within the feed's freshness window.
 - 🔄 with a rent cell like `$2000 → $1850 🔻` — a 待考虑 ("reconsider") listing
   that returned because its price changed (before → after; 🔻 down / 🔺 up).
