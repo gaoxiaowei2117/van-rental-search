@@ -1,7 +1,9 @@
-# van-rental-cloud — openclaw skill (read-only Vancouver rental feed)
+# van-rental-cloud — skill (read-only Vancouver rental feed)
 
-A self-contained skill for **openclaw** that reads a curated, daily-refreshed
-Vancouver rental feed. It does **not** scrape any site and takes no search
+A self-contained, **framework-agnostic** skill that reads a curated,
+daily-refreshed Vancouver rental feed. Any AI agent that loads file-based skills
+(Claude Code, openclaw, Cursor, …) can use it — the only requirement is
+`python3` on PATH. It does **not** scrape any site and takes no search
 parameters — it fetches the latest snapshot that the
 [`van-rental-search`](https://github.com/gaoxiaowei2117/van-rental-search)
 GitHub Actions cron publishes, and presents it.
@@ -20,20 +22,22 @@ the ignore-list all live on the producer side and are irrelevant here).
 
 ## Install
 
-1. Copy this whole folder into openclaw's skills directory:
+1. Copy this whole folder into your agent's skills directory (rename it to
+   something descriptive like `van-rental-cloud` if your agent keys skills by
+   folder name):
 
    ```bash
-   cp -r van-rental-cloud  <openclaw-skills-dir>/
+   cp -r skill  <your-agent-skills-dir>/van-rental-cloud
    ```
 
-   The exact skills directory (and whether openclaw needs a reload/restart to
-   pick up a new skill) follows openclaw's own conventions — check its docs.
+   The exact skills directory (and whether the agent needs a reload/restart to
+   pick up a new skill) follows your agent's own conventions — check its docs.
 
 2. **Frontmatter check.** `SKILL.md` uses Claude-Code-style YAML frontmatter
-   (`name` + `description`). If openclaw expects different field names or a
+   (`name` + `description`). If your agent expects different field names or a
    different header format, adjust those few lines — the body stays the same.
 
-3. Verify it runs (no openclaw needed for this smoke test):
+3. Verify it runs (no agent needed for this smoke test):
 
    ```bash
    python3 consume.py --new-only      # should print a Markdown table of listings
@@ -74,4 +78,4 @@ Changing the criteria or the ignore-list is a **producer-side** change in the
 
 Nothing to update on a schedule — `consume.py` always fetches the latest
 snapshot live. Re-copy this folder only if `consume.py` / `SKILL.md` themselves
-change in the source repo (`dist/openclaw/van-rental-cloud/`).
+change in the source repo (`skill/`).

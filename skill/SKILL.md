@@ -6,9 +6,12 @@ description: Read the owner's curated Vancouver rental feed (Burnaby + Coquitlam
 # Vancouver Rental — Cloud Feed (read-only)
 
 This skill reads a **curated, daily-refreshed** list of Vancouver rental listings
-that another system (a GitHub Actions cron) produces. You do **not** scrape any
-website and you do **not** choose cities or filters here — those live on the
-producer side. You just fetch and present the latest snapshot.
+that a GitHub Actions cron produces. You do **not** scrape any website and you do
+**not** choose cities or filters here — those live on the producer side. You just
+fetch and present the latest snapshot.
+
+Framework-agnostic: any AI agent that loads file-based skills (Claude Code,
+openclaw, Cursor, …) can use it. The only requirement is `python3` on PATH.
 
 What the feed already has baked in (do not re-explain as if configurable here):
 - Cities: **Burnaby + Coquitlam**, 2-bedroom, ≤ $2000, **above-ground**, posted/updated in the **last 7 days**.

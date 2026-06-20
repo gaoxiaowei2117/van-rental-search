@@ -26,7 +26,13 @@ back into the repo, so a local skill can read them without scraping live:
 - **Producer** (`scripts/bus_generate.py`): runs every query in
   `config/bus_queries.json`, merges + de-dups by phone across queries, and writes
   `bus/data.json` (full snapshot — each item flagged `"new": true/false` when its
-  own post/update date is within `fresh_days`). Pure stdlib.
+  own post/update date is within `fresh_days`). Pure stdlib. It also writes a
+  human-readable record table to `bus/registry.md`.
+- **Ignore-list** (`config/ignored.json`, edited via `scripts/ignore.py`): listings
+  you mark "not interested" are dropped before publishing. Two modes — **HARD**
+  (hide forever) and **待考虑/reconsider** (`reconsiderAtPrice`: hidden only while
+  the price is unchanged; any price change re-surfaces it, flagged 🔄 with the
+  before→after price).
 - **Silent-failure guard**: scraping a third-party site means a layout change can
   make every query return nothing. A `tests/test_contract.py` gate runs first and
   fails the job if vanpeople's response shape changed; the producer then refuses
@@ -46,6 +52,29 @@ back into the repo, so a local skill can read them without scraping live:
 python3 scripts/bus_consume.py --new-only          # just today's new listings
 python3 scripts/bus_consume.py --out ~/rentals.md  # full snapshot to a file
 ```
+
+## Read-only cloud skill (`skill/`) — install in any AI agent
+
+[`skill/`](skill/) is a **self-contained, framework-agnostic Agent Skill** that
+reads the curated cloud feed (the cities/filters above **and** your personal
+ignore-list, already applied) — it does **not** scrape or take search params.
+Any agent that loads file-based skills (Claude Code, openclaw, Cursor, …) can use
+it; the only requirement is `python3` on PATH.
+
+It is fully self-contained — just `SKILL.md` + `consume.py` + its own `README.md`;
+nothing else from this repo is needed.
+
+**Install** — copy the `skill/` folder into the agent's skills directory
+(rename it to something descriptive if the agent keys skills by folder name):
+
+```bash
+cp -r skill  <your-agent-skills-dir>/van-rental-cloud
+```
+
+Then the agent runs `python3 consume.py` (or `--new-only` / `--json`) on its own.
+See [`skill/README.md`](skill/README.md) for the frontmatter caveat, output
+legend, and the can/can't boundary. (This read-only skill is the consumer side;
+to change cities or the ignore-list, edit this repo — the producer side.)
 
 ## Features
 
