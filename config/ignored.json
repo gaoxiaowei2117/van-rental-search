@@ -1,0 +1,4 @@
+{
+  "_note": "Listings the user explicitly marked 'not interested'. bus_generate.py drops any current listing whose id OR normalized phone matches one of these before writing bus/data.json (and the registry). Survives across runs because it is committed. Add entries with: python3 scripts/ignore.py <phone | url | tel:digits | url:...> [--reason '...']. id forms produced by the engine: 'tel:<digits>' (preferred — collapses all reposts from one landlord) or 'url:<listing url>' when no phone.",
+  "ignored": []
+}

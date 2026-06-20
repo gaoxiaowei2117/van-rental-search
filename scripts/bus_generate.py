@@ -21,6 +21,7 @@
 # Usage: python3 scripts/bus_generate.py
 # ============================================================================
 
+import argparse
 import json
 import os
 import sys
@@ -33,7 +34,9 @@ from search import run_search, norm_phone  # noqa: E402
 
 ROOT = os.path.dirname(SCRIPT_DIR)
 CONFIG_PATH = os.path.join(ROOT, "config", "bus_queries.json")
+IGNORED_PATH = os.path.join(ROOT, "config", "ignored.json")
 DATA_PATH = os.path.join(ROOT, "bus", "data.json")
+REGISTRY_PATH = os.path.join(ROOT, "bus", "registry.md")
 
 FLOOR_LABEL = {"above": "✅地上", "unknown": "❓未注明", "basement": "❌半地下"}
 
@@ -86,6 +89,33 @@ def item_id(row):
     return ("tel:" + p) if p else ("url:" + (row.get("url") or ""))
 
 
+def load_ignored():
+    """Return the set of ignored ids the user marked 'not interested'.
+
+    Each entry's `id` ('tel:<digits>' or 'url:<url>') is matched against a
+    listing's item_id(); a bare phone or url is normalized to the same form so
+    hand-edited entries still match. Missing/blank file => empty set (no-op)."""
+    try:
+        with open(IGNORED_PATH, encoding="utf-8") as f:
+            data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError, ValueError):
+        return set()
+    ids = set()
+    for e in data.get("ignored", []):
+        raw = (e.get("id") or "").strip() if isinstance(e, dict) else str(e).strip()
+        if not raw:
+            continue
+        if raw.startswith(("tel:", "url:")):
+            ids.add(raw)
+        elif raw.startswith("http"):
+            ids.add("url:" + raw)
+        else:  # bare phone
+            p = norm_phone(raw)
+            if p:
+                ids.add("tel:" + p)
+    return ids
+
+
 def to_item(row, labels, is_new):
     return {
         "id": item_id(row),
@@ -110,7 +140,51 @@ def to_item(row, labels, is_new):
     }
 
 
+def write_registry(items, generated_at, new_count, dropped_ignored, query_summary):
+    """Human-readable RECORD TABLE of the current listings (bus/registry.md).
+
+    This is the '记录表' the user reviews: every current listing with its stable
+    id, so they can point at one and say 'not interested' — we then append that
+    id to config/ignored.json (scripts/ignore.py) and it vanishes next run.
+    The `id` column is exactly what ignore.py expects."""
+    labels = ", ".join(q["label"] for q in query_summary) or "—"
+    L = [
+        "# 房源记录表 (current listings)",
+        "",
+        f"> 更新：{generated_at} ｜ 共 {len(items)} 套（{new_count} 套近 freshDays 内新发）"
+        f" ｜ 已忽略 {dropped_ignored} 套 ｜ 查询：{labels}",
+        ">",
+        "> 不想看某套：把它的 `id` 交给我，或 `python3 scripts/ignore.py <id|电话|链接>`，"
+        "下次刷新即从结果中剔除。",
+        "",
+        "| 🆕 | 租金 | 楼层 | 区域 | 房源 | 发布 | 电话 | 来源 | id | 链接 |",
+        "|---|---|---|---|---|---|---|---|---|---|",
+    ]
+    for it in items:
+        price = f"${it['price']}" if it.get("price") is not None else "—"
+        reposts = f" ×{it['reposts']}" if it.get("reposts", 1) > 1 else ""
+        links = " ".join(f"[{i+1}]({u})" for i, u in enumerate(it.get("links", [])) if u) or "—"
+        title = (it.get("title") or "").replace("|", "/").replace("\n", " ")
+        L.append(
+            f"| {'🆕' if it.get('new') else ''} | {price} | {it.get('floorLabel','')} "
+            f"| {it.get('area','') or '—'} | {title}{reposts} | {it.get('date','') or '—'} "
+            f"| {it.get('tel','') or '—'} | {it.get('src','')} | `{it.get('id','')}` | {links} |"
+        )
+    L.append("")
+    L.append("*价格为房东标注，以洽谈为准。重复发帖已按电话去重（×N=重复次数）。*")
+    os.makedirs(os.path.dirname(REGISTRY_PATH), exist_ok=True)
+    with open(REGISTRY_PATH, "w", encoding="utf-8") as f:
+        f.write("\n".join(L) + "\n")
+
+
 def main():
+    ap = argparse.ArgumentParser(description="Generate bus/data.json from the configured queries.")
+    ap.add_argument("--force", action="store_true",
+                    help="skip the count-collapse sanity guard (use once after you "
+                         "INTENTIONALLY narrow the queries, to reset the baseline). "
+                         "The empty-result guard still applies.")
+    cli = ap.parse_args()
+
     with open(CONFIG_PATH, encoding="utf-8") as f:
         config = json.load(f)
     queries = config.get("queries", [])
@@ -118,6 +192,8 @@ def main():
     price_floor_default = config.get("min_plausible_price", 800)
     fresh_days = config.get("fresh_days", 3)
     sanity_min_ratio = config.get("sanity_min_ratio", DEFAULT_SANITY_MIN_RATIO)
+
+    ignored_ids = load_ignored()
 
     errors = []
     dropped_total = 0
@@ -157,6 +233,14 @@ def main():
             else:
                 merged[iid] = {"row": r, "labels": {label}}
 
+    # 1b. Drop listings the user marked 'not interested' (config/ignored.json).
+    #     Done after the merge so reposts collapsed onto one id are all removed.
+    dropped_ignored = 0
+    if ignored_ids:
+        for iid in [k for k in merged if k in ignored_ids]:
+            del merged[iid]
+            dropped_ignored += 1
+
     # 2. Flag "new" = posted/updated within the last `fresh_days` days, by the
     #    listing's OWN date (not by when we first saw it).
     ts = now_iso()
@@ -180,9 +264,11 @@ def main():
     if not items:
         abort = ("produced 0 listings — every query returned nothing "
                  "(vanpeople/vansky layout or fields likely changed)")
-    elif prev and len(items) < prev * sanity_min_ratio:
+    elif prev and len(items) < prev * sanity_min_ratio and not cli.force:
         abort = (f"listing count collapsed {prev} -> {len(items)} "
-                 f"(< {int(sanity_min_ratio * 100)}% of the previous run)")
+                 f"(< {int(sanity_min_ratio * 100)}% of the previous run). "
+                 f"If you intentionally narrowed the queries, re-run with --force "
+                 f"once to reset the baseline.")
     if abort:
         print(f"ABORT: {abort}. Keeping the previous bus/data.json untouched.",
               file=sys.stderr)
@@ -197,6 +283,7 @@ def main():
         "newCount": new_count,
         "freshDays": fresh_days,
         "droppedDirty": dropped_total,
+        "droppedIgnored": dropped_ignored,
         "queries": query_summary,
         "errors": errors or None,
         "items": items,
@@ -206,8 +293,11 @@ def main():
         json.dump(payload, f, ensure_ascii=False, indent=2)
         f.write("\n")
 
+    write_registry(items, ts, new_count, dropped_ignored, query_summary)
+
     print(f"Wrote {len(items)} listing(s) ({new_count} new, "
-          f"{dropped_total} dirty dropped) to bus/data.json"
+          f"{dropped_total} dirty dropped, {dropped_ignored} ignored) "
+          f"to bus/data.json"
           + (f" — {len(errors)} query error(s)" if errors else ""),
           file=sys.stderr)
 

@@ -6,6 +6,7 @@
   "fresh_days": 3,
   "_sanity_min_ratio_note": "Silent-failure guard: if a run yields fewer than this fraction of the PREVIOUS run's listing count (or zero), bus_generate.py aborts without overwriting bus/data.json and exits non-zero, so a site breakage turns the Actions job red instead of publishing an empty snapshot.",
   "sanity_min_ratio": 0.3,
+  "_ignored_note": "Listings the user said they are NOT interested in live in config/ignored.json; bus_generate.py drops any current listing whose id/phone matches before writing bus/data.json. Add entries with scripts/ignore.py.",
   "queries": [
     {
       "label": "Burnaby 2br",
@@ -17,21 +18,8 @@
       "rent_type": "整租",
       "source": "both",
       "pages": 6,
-      "above_ground": false,
-      "posted_since": 0
-    },
-    {
-      "label": "Richmond 2br",
-      "city": "Richmond",
-      "bedrooms": 2,
-      "max_price": 2000,
-      "min_price": 1,
-      "min_plausible_price": 1000,
-      "rent_type": "整租",
-      "source": "both",
-      "pages": 6,
-      "above_ground": false,
-      "posted_since": 0
+      "above_ground": true,
+      "posted_since": 7
     },
     {
       "label": "Coquitlam 2br",
@@ -43,8 +31,8 @@
       "rent_type": "整租",
       "source": "both",
       "pages": 6,
-      "above_ground": false,
-      "posted_since": 0
+      "above_ground": true,
+      "posted_since": 7
     }
   ]
 }
