@@ -109,12 +109,14 @@ def load_ignored():
     listing's item_id(); a bare phone or url is normalized to the same form so
     hand-edited entries still match. Missing/blank file => {} (no-op).
 
-    Two ignore modes, distinguished by the optional `untilBelowPrice` field:
-      • HARD (no untilBelowPrice): hide forever — the reason can't change
+    Two ignore modes, distinguished by the optional `reconsiderAtPrice` field:
+      • HARD (no reconsiderAtPrice): hide forever — the reason can't change
         (wrong bedroom count, low-info post, bad area).
-      • PRICE (untilBelowPrice: N): hide ONLY while the listing's current price
-        is >= N. If the landlord later drops it below N, it RE-SURFACES (flagged
-        as a price-return) so a 'too expensive' rejection self-heals on a drop."""
+      • RECONSIDER (reconsiderAtPrice: N): a '待考虑' set-aside keyed on the
+        (contact/url, price) pair. Hide ONLY while the listing's current price
+        still equals N; if the landlord changes the price at all (up OR down),
+        the (id, price) condition no longer holds, so it RE-SURFACES — flagged
+        as a price-change — to prompt a fresh look."""
     try:
         with open(IGNORED_PATH, encoding="utf-8") as f:
             data = json.load(f)
@@ -168,11 +170,11 @@ def write_registry(items, generated_at, new_count, dropped_ignored, price_return
         "",
         f"> 更新：{generated_at} ｜ 共 {len(items)} 套（{new_count} 套近 freshDays 内新发）"
         f" ｜ 已忽略 {dropped_ignored} 套"
-        + (f" ｜ 🔻{price_returns} 套降价回归" if price_returns else "")
+        + (f" ｜ 🔄{price_returns} 套价格变动待考虑" if price_returns else "")
         + f" ｜ 查询：{labels}",
         ">",
         "> 不想看某套：把它的 `id` 交给我，或 `python3 scripts/ignore.py <id|电话|链接>`"
-        "（永久拉黑）/ `--until-below <价>`（嫌贵：跌破该价才重新出现）。",
+        "（永久拉黑）/ `--reconsider <当前价>`（待考虑：价格一变就重新出现）。",
         "",
         "| 🆕 | 租金 | 楼层 | 区域 | 房源 | 发布 | 电话 | 来源 | id | 链接 |",
         "|---|---|---|---|---|---|---|---|---|---|",
@@ -183,9 +185,10 @@ def write_registry(items, generated_at, new_count, dropped_ignored, price_return
         links = " ".join(f"[{i+1}]({u})" for i, u in enumerate(it.get("links", [])) if u) or "—"
         title = (it.get("title") or "").replace("|", "/").replace("\n", " ")
         pr = it.get("priceReturn")
-        flag = "🔻" if pr else ("🆕" if it.get("new") else "")
-        if pr:  # was price-ignored, now dropped below the threshold — call it out
-            title = f"**[降价回归·曾拉黑@<${pr['threshold']}]** " + title
+        flag = "🔄" if pr else ("🆕" if it.get("new") else "")
+        if pr:  # was set aside as 待考虑; price changed since — call it out
+            title = (f"**[待考虑·价格变动 ${pr['snapshotPrice']}→${pr['currentPrice']}]** "
+                     + title)
         L.append(
             f"| {flag} | {price} | {it.get('floorLabel','')} "
             f"| {it.get('area','') or '—'} | {title}{reposts} | {it.get('date','') or '—'} "
@@ -256,22 +259,22 @@ def main():
 
     # 1b. Drop listings the user marked 'not interested' (config/ignored.json).
     #     Done after the merge so reposts collapsed onto one id are all removed.
-    #     PRICE-mode entries (untilBelowPrice set) only stay hidden while the
-    #     current price is >= the threshold; a drop below it re-surfaces the
-    #     listing, tagged `_priceReturn` so the registry can flag it.
+    #     RECONSIDER entries (reconsiderAtPrice set) are keyed on (id, price):
+    #     they stay hidden only while the current price equals the snapshot; any
+    #     price change re-surfaces them, tagged `_priceReturn` for the registry.
     dropped_ignored = 0
     price_returns = 0
     for iid in [k for k in merged if k in ignored]:
         entry = ignored[iid]
-        threshold = entry.get("untilBelowPrice")
+        snap = entry.get("reconsiderAtPrice")
         price = merged[iid]["row"].get("price")
-        if threshold is not None and price is not None and price < threshold:
+        if snap is not None and price is not None and price != snap:
             merged[iid]["row"]["_priceReturn"] = {
-                "threshold": threshold,
-                "ignoredAtPrice": entry.get("ignoredAtPrice"),
+                "snapshotPrice": snap,
+                "currentPrice": price,
             }
             price_returns += 1
-            continue  # cheaper than when rejected — let it through
+            continue  # price changed since set-aside — bring it back to reconsider
         del merged[iid]
         dropped_ignored += 1
 

@@ -1,6 +1,6 @@
 {
   "_note": "Listings the user marked 'not interested'. bus_generate.py drops any current listing whose id OR normalized phone matches one of these before writing bus/data.json (and the registry). Survives across runs because it is committed. id forms produced by the engine: 'tel:<digits>' (preferred — collapses all reposts from one landlord) or 'url:<listing url>'. Add via scripts/ignore.py.",
-  "_modes_note": "Two ignore modes per entry. HARD (no 'untilBelowPrice'): hide forever — the reason can't change (wrong bedroom count, low-info post, bad area). PRICE ('untilBelowPrice': N): hide only WHILE the listing's current price is >= N; if the landlord later drops it below N it re-surfaces, flagged 降价回归, so a 'too expensive' rejection self-heals on a price drop. 'ignoredAtPrice' is the price you saw when rejecting (display only). Add price-mode with: python3 scripts/ignore.py <phone> --until-below 1800 --price 2000",
+  "_modes_note": "Two ignore modes per entry. HARD (no 'reconsiderAtPrice'): hide forever — the reason can't change (wrong bedroom count, low-info post, bad area). RECONSIDER ('reconsiderAtPrice': N): a 待考虑 set-aside keyed on (contact/url, price). Hidden ONLY while the listing's current price still equals N; any price change (up OR down) re-surfaces it, flagged 价格变动, to prompt a fresh look. Add with: python3 scripts/ignore.py <phone> --reconsider 2000",
   "ignored": [
     {
       "id": "tel:6047826766",

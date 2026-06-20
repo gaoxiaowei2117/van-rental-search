@@ -9,16 +9,18 @@
 #   url:<listing>  — used when a listing has no phone
 #
 # Two ignore MODES:
-#   HARD  (default)       — hide forever; the reason can't change (wrong bedroom
-#                           count, low-info post, bad area).
-#   PRICE (--until-below N)— hide only while the listing's current price is >= N.
-#                           If the landlord later drops it below N it RE-SURFACES
-#                           (flagged 降价回归). Use for "too expensive right now".
+#   HARD  (default)        — hide forever; the reason can't change (wrong bedroom
+#                            count, low-info post, bad area).
+#   RECONSIDER (--reconsider N)
+#                          — '待考虑': set aside at price N, keyed on (contact/url,
+#                            price). Stays hidden only while the price is still N;
+#                            any price change (up OR down) re-surfaces it, flagged
+#                            价格变动, to prompt a fresh look.
 #
 # Usage:
-#   python3 scripts/ignore.py 604-555-1234 --reason "信息太少"        # HARD
-#   python3 scripts/ignore.py 604-555-1234 --until-below 1800 --price 2000
-#                                # PRICE: saw it at $2000, show again if it drops <$1800
+#   python3 scripts/ignore.py 604-555-1234 --reason "信息太少"   # HARD
+#   python3 scripts/ignore.py 604-555-1234 --reconsider 2000     # 待考虑: now $2000,
+#                                              # show again whenever the price changes
 #   python3 scripts/ignore.py "tel:6045551234"
 #   python3 scripts/ignore.py "https://c.vanpeople.com/zufang/item-123.html"
 #   python3 scripts/ignore.py --list            # show current ignore list
@@ -71,11 +73,9 @@ def main():
     ap.add_argument("token", nargs="?", help="phone / url / tel:digits / url:...")
     ap.add_argument("--reason", default="", help="why you're not interested")
     ap.add_argument("--title", default="", help="optional listing title, for the record")
-    ap.add_argument("--until-below", type=int, metavar="PRICE", dest="until_below",
-                    help="PRICE-mode ignore: re-surface this listing only if its "
-                         "price later drops below PRICE (for 'too expensive now')")
-    ap.add_argument("--price", type=int, metavar="PRICE", dest="seen_price",
-                    help="record the price you saw it at (display only)")
+    ap.add_argument("--reconsider", type=int, metavar="PRICE", dest="reconsider",
+                    help="待考虑 mode: set aside at current price PRICE; re-surface "
+                         "this listing whenever its price changes (up or down)")
     ap.add_argument("--list", action="store_true", help="print the current ignore list")
     ap.add_argument("--remove", metavar="TOKEN", help="un-ignore a listing")
     args = ap.parse_args()
@@ -87,9 +87,9 @@ def main():
         if not data["ignored"]:
             print("(ignore list is empty)")
         for e in data["ignored"]:
-            mode = (f"[降价回归<${e['untilBelowPrice']}]"
-                    if e.get("untilBelowPrice") is not None else "[永久]")
-            print(f"{e.get('id'):<20} {mode:<16} {e.get('title','')}  "
+            mode = (f"[待考虑·变价回归@${e['reconsiderAtPrice']}]"
+                    if e.get("reconsiderAtPrice") is not None else "[永久]")
+            print(f"{e.get('id'):<20} {mode:<22} {e.get('title','')}  "
                   f"— {e.get('reason','')} ({e.get('addedAt','')})")
         return
 
@@ -114,10 +114,8 @@ def main():
                 e["reason"] = args.reason
             if args.title:
                 e["title"] = args.title
-            if args.until_below is not None:
-                e["untilBelowPrice"] = args.until_below
-            if args.seen_price is not None:
-                e["ignoredAtPrice"] = args.seen_price
+            if args.reconsider is not None:
+                e["reconsiderAtPrice"] = args.reconsider
             save(data)
             print(f"Already ignored {iid!r} — updated.")
             return
@@ -128,14 +126,12 @@ def main():
         "reason": args.reason,
         "addedAt": date.today().isoformat(),
     }
-    if args.until_below is not None:
-        entry["untilBelowPrice"] = args.until_below
-    if args.seen_price is not None:
-        entry["ignoredAtPrice"] = args.seen_price
+    if args.reconsider is not None:
+        entry["reconsiderAtPrice"] = args.reconsider
     data["ignored"].append(entry)
     save(data)
-    mode = (f"hidden until price < ${args.until_below}"
-            if args.until_below is not None else "hidden permanently")
+    mode = (f"待考虑: hidden at ${args.reconsider}, re-surfaces on any price change"
+            if args.reconsider is not None else "hidden permanently")
     print(f"Ignored {iid!r} ({mode}). Takes effect next run.")
 
 
