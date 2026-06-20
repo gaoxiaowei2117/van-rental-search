@@ -186,9 +186,11 @@ def write_registry(items, generated_at, new_count, dropped_ignored, price_return
         title = (it.get("title") or "").replace("|", "/").replace("\n", " ")
         pr = it.get("priceReturn")
         flag = "🔄" if pr else ("🆕" if it.get("new") else "")
-        if pr:  # was set aside as 待考虑; price changed since — call it out
-            title = (f"**[待考虑·价格变动 ${pr['snapshotPrice']}→${pr['currentPrice']}]** "
-                     + title)
+        if pr:  # was set aside as 待考虑; price changed since — show BOTH prices
+            old, new = pr.get("snapshotPrice"), pr.get("currentPrice")
+            arrow = "🔻" if (old is not None and new is not None and new < old) else "🔺"
+            price = f"${old} → ${new} {arrow}"  # before → after, in the 租金 column
+            title = "**[待考虑回归]** " + title
         L.append(
             f"| {flag} | {price} | {it.get('floorLabel','')} "
             f"| {it.get('area','') or '—'} | {title}{reposts} | {it.get('date','') or '—'} "
