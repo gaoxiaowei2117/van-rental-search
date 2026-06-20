@@ -1,10 +1,11 @@
 {
-  "generatedAt": "2026-06-20T05:26:59.461680+00:00",
+  "generatedAt": "2026-06-20T05:38:47.407895+00:00",
   "count": 31,
   "newCount": 21,
   "freshDays": 3,
   "droppedDirty": 0,
   "droppedIgnored": 4,
+  "priceReturns": 0,
   "queries": [
     {
       "label": "Burnaby 2br",
@@ -42,7 +43,8 @@
       ],
       "matchedQueries": [
         "Coquitlam 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:6047103672",
@@ -67,7 +69,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:7788553136",
@@ -92,7 +95,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:6043430800",
@@ -117,7 +121,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:7787079330",
@@ -144,7 +149,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:6047279781",
@@ -169,7 +175,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:6044177827",
@@ -195,7 +202,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:6047161227",
@@ -220,7 +228,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:6047157523",
@@ -245,7 +254,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:6045378138",
@@ -270,7 +280,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:7788923667",
@@ -295,7 +306,8 @@
       ],
       "matchedQueries": [
         "Coquitlam 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:6049921422",
@@ -320,7 +332,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:2365134849",
@@ -346,7 +359,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:7789199936",
@@ -371,7 +385,8 @@
       ],
       "matchedQueries": [
         "Coquitlam 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:7788001997",
@@ -396,7 +411,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:6047227987",
@@ -421,7 +437,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:7788692344",
@@ -446,7 +463,8 @@
       ],
       "matchedQueries": [
         "Coquitlam 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:7789867823",
@@ -471,7 +489,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:6045593359",
@@ -496,7 +515,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:7783238213",
@@ -521,7 +541,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:6045378940",
@@ -546,7 +567,8 @@
       ],
       "matchedQueries": [
         "Coquitlam 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:7783891533",
@@ -571,7 +593,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:2368881618",
@@ -596,7 +619,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:2369797097",
@@ -621,7 +645,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:6047299783",
@@ -646,7 +671,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:6045185216",
@@ -671,7 +697,8 @@
       ],
       "matchedQueries": [
         "Coquitlam 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:7788961977",
@@ -696,7 +723,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:7786686663",
@@ -721,7 +749,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:6047796369",
@@ -746,7 +775,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:2364126134",
@@ -772,7 +802,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     },
     {
       "id": "tel:7788291128",
@@ -797,7 +828,8 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ]
+      ],
+      "priceReturn": null
     }
   ]
 }

@@ -89,31 +89,45 @@ def item_id(row):
     return ("tel:" + p) if p else ("url:" + (row.get("url") or ""))
 
 
+def canonical_ignore_id(raw):
+    """Normalize a raw id/phone/url into the engine's 'tel:'/'url:' id, or None."""
+    raw = (raw or "").strip()
+    if not raw:
+        return None
+    if raw.startswith(("tel:", "url:")):
+        return raw
+    if raw.startswith("http"):
+        return "url:" + raw
+    p = norm_phone(raw)  # bare phone
+    return ("tel:" + p) if p else None
+
+
 def load_ignored():
-    """Return the set of ignored ids the user marked 'not interested'.
+    """Return {id -> entry} for listings the user marked 'not interested'.
 
     Each entry's `id` ('tel:<digits>' or 'url:<url>') is matched against a
     listing's item_id(); a bare phone or url is normalized to the same form so
-    hand-edited entries still match. Missing/blank file => empty set (no-op)."""
+    hand-edited entries still match. Missing/blank file => {} (no-op).
+
+    Two ignore modes, distinguished by the optional `untilBelowPrice` field:
+      • HARD (no untilBelowPrice): hide forever — the reason can't change
+        (wrong bedroom count, low-info post, bad area).
+      • PRICE (untilBelowPrice: N): hide ONLY while the listing's current price
+        is >= N. If the landlord later drops it below N, it RE-SURFACES (flagged
+        as a price-return) so a 'too expensive' rejection self-heals on a drop."""
     try:
         with open(IGNORED_PATH, encoding="utf-8") as f:
             data = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError, ValueError):
-        return set()
-    ids = set()
+        return {}
+    out = {}
     for e in data.get("ignored", []):
-        raw = (e.get("id") or "").strip() if isinstance(e, dict) else str(e).strip()
-        if not raw:
-            continue
-        if raw.startswith(("tel:", "url:")):
-            ids.add(raw)
-        elif raw.startswith("http"):
-            ids.add("url:" + raw)
-        else:  # bare phone
-            p = norm_phone(raw)
-            if p:
-                ids.add("tel:" + p)
-    return ids
+        if not isinstance(e, dict):
+            e = {"id": e}
+        iid = canonical_ignore_id(e.get("id"))
+        if iid:
+            out[iid] = e
+    return out
 
 
 def to_item(row, labels, is_new):
@@ -137,10 +151,11 @@ def to_item(row, labels, is_new):
         "reposts": row.get("count", 1),
         "links": row.get("links", [row.get("url")] if row.get("url") else []),
         "matchedQueries": sorted(labels),
+        "priceReturn": row.get("_priceReturn"),
     }
 
 
-def write_registry(items, generated_at, new_count, dropped_ignored, query_summary):
+def write_registry(items, generated_at, new_count, dropped_ignored, price_returns, query_summary):
     """Human-readable RECORD TABLE of the current listings (bus/registry.md).
 
     This is the '记录表' the user reviews: every current listing with its stable
@@ -152,10 +167,12 @@ def write_registry(items, generated_at, new_count, dropped_ignored, query_summar
         "# 房源记录表 (current listings)",
         "",
         f"> 更新：{generated_at} ｜ 共 {len(items)} 套（{new_count} 套近 freshDays 内新发）"
-        f" ｜ 已忽略 {dropped_ignored} 套 ｜ 查询：{labels}",
+        f" ｜ 已忽略 {dropped_ignored} 套"
+        + (f" ｜ 🔻{price_returns} 套降价回归" if price_returns else "")
+        + f" ｜ 查询：{labels}",
         ">",
-        "> 不想看某套：把它的 `id` 交给我，或 `python3 scripts/ignore.py <id|电话|链接>`，"
-        "下次刷新即从结果中剔除。",
+        "> 不想看某套：把它的 `id` 交给我，或 `python3 scripts/ignore.py <id|电话|链接>`"
+        "（永久拉黑）/ `--until-below <价>`（嫌贵：跌破该价才重新出现）。",
         "",
         "| 🆕 | 租金 | 楼层 | 区域 | 房源 | 发布 | 电话 | 来源 | id | 链接 |",
         "|---|---|---|---|---|---|---|---|---|---|",
@@ -165,8 +182,12 @@ def write_registry(items, generated_at, new_count, dropped_ignored, query_summar
         reposts = f" ×{it['reposts']}" if it.get("reposts", 1) > 1 else ""
         links = " ".join(f"[{i+1}]({u})" for i, u in enumerate(it.get("links", [])) if u) or "—"
         title = (it.get("title") or "").replace("|", "/").replace("\n", " ")
+        pr = it.get("priceReturn")
+        flag = "🔻" if pr else ("🆕" if it.get("new") else "")
+        if pr:  # was price-ignored, now dropped below the threshold — call it out
+            title = f"**[降价回归·曾拉黑@<${pr['threshold']}]** " + title
         L.append(
-            f"| {'🆕' if it.get('new') else ''} | {price} | {it.get('floorLabel','')} "
+            f"| {flag} | {price} | {it.get('floorLabel','')} "
             f"| {it.get('area','') or '—'} | {title}{reposts} | {it.get('date','') or '—'} "
             f"| {it.get('tel','') or '—'} | {it.get('src','')} | `{it.get('id','')}` | {links} |"
         )
@@ -193,7 +214,7 @@ def main():
     fresh_days = config.get("fresh_days", 3)
     sanity_min_ratio = config.get("sanity_min_ratio", DEFAULT_SANITY_MIN_RATIO)
 
-    ignored_ids = load_ignored()
+    ignored = load_ignored()
 
     errors = []
     dropped_total = 0
@@ -235,11 +256,24 @@ def main():
 
     # 1b. Drop listings the user marked 'not interested' (config/ignored.json).
     #     Done after the merge so reposts collapsed onto one id are all removed.
+    #     PRICE-mode entries (untilBelowPrice set) only stay hidden while the
+    #     current price is >= the threshold; a drop below it re-surfaces the
+    #     listing, tagged `_priceReturn` so the registry can flag it.
     dropped_ignored = 0
-    if ignored_ids:
-        for iid in [k for k in merged if k in ignored_ids]:
-            del merged[iid]
-            dropped_ignored += 1
+    price_returns = 0
+    for iid in [k for k in merged if k in ignored]:
+        entry = ignored[iid]
+        threshold = entry.get("untilBelowPrice")
+        price = merged[iid]["row"].get("price")
+        if threshold is not None and price is not None and price < threshold:
+            merged[iid]["row"]["_priceReturn"] = {
+                "threshold": threshold,
+                "ignoredAtPrice": entry.get("ignoredAtPrice"),
+            }
+            price_returns += 1
+            continue  # cheaper than when rejected — let it through
+        del merged[iid]
+        dropped_ignored += 1
 
     # 2. Flag "new" = posted/updated within the last `fresh_days` days, by the
     #    listing's OWN date (not by when we first saw it).
@@ -284,6 +318,7 @@ def main():
         "freshDays": fresh_days,
         "droppedDirty": dropped_total,
         "droppedIgnored": dropped_ignored,
+        "priceReturns": price_returns,
         "queries": query_summary,
         "errors": errors or None,
         "items": items,
@@ -293,11 +328,11 @@ def main():
         json.dump(payload, f, ensure_ascii=False, indent=2)
         f.write("\n")
 
-    write_registry(items, ts, new_count, dropped_ignored, query_summary)
+    write_registry(items, ts, new_count, dropped_ignored, price_returns, query_summary)
 
     print(f"Wrote {len(items)} listing(s) ({new_count} new, "
-          f"{dropped_total} dirty dropped, {dropped_ignored} ignored) "
-          f"to bus/data.json"
+          f"{dropped_total} dirty dropped, {dropped_ignored} ignored, "
+          f"{price_returns} price-return) to bus/data.json"
           + (f" — {len(errors)} query error(s)" if errors else ""),
           file=sys.stderr)
 
