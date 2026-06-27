@@ -373,8 +373,12 @@ def run_search(city="Burnaby", bedrooms=2, max_price=1800, min_price=1, rent_typ
             raise ValueError(f"未知城市 '{city}'，可选：{', '.join(sorted(VP_CITY))}")
         rows += search_vanpeople(cid, bedrooms, max_price, min_price, rent_type, pages, extra)
     if source in ("vansky", "both"):
+        # vansky's ZFBG08 list is shallow per page and NOT strictly newest-first
+        # (paid/置顶 ads occupy the early pages), so a brand-new free ad can land
+        # deep in the list. Always crawl ≥30 pages — even under source="both",
+        # where `pages` (tuned for vanpeople) would otherwise be far too few.
         rows += search_vansky(city, bedrooms, max_price, min_price, rent_type,
-                              max(pages, 30) if source == "vansky" else pages)
+                              max(pages, 30))
 
     if posted_since > 0:
         cutoff = int(datetime.now(timezone.utc).timestamp()) - posted_since * 86400
