@@ -1,6 +1,6 @@
 # 房源记录表 (current listings)
 
-> 更新：2026-06-27T05:10:22.018952+00:00 ｜ 共 42 套（26 套近 freshDays 内新发） ｜ 已忽略 2 套 ｜ 查询：Burnaby 2br, Coquitlam 2br
+> 更新：2026-06-27T05:18:28.214422+00:00 ｜ 共 42 套（26 套近 freshDays 内新发） ｜ 已忽略 2 套 ｜ 查询：Burnaby 2br, Coquitlam 2br
 >
 > 不想看某套：把它的 `id` 交给我，或 `python3 scripts/ignore.py <id|电话|链接>`（永久拉黑）/ `--reconsider <当前价>`（待考虑：价格一变就重新出现）。
 
