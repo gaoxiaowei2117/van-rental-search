@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T15:47:55.610283+00:00",
-  "count": 43,
-  "newCount": 22,
+  "generatedAt": "2026-07-01T16:01:34.104469+00:00",
+  "count": 41,
+  "newCount": 29,
   "freshDays": 3,
   "droppedDirty": 2,
   "droppedIgnored": 1,
@@ -9,12 +9,12 @@
   "queries": [
     {
       "label": "Burnaby 2br",
-      "count": 30,
+      "count": 27,
       "droppedDirty": 2
     },
     {
       "label": "Coquitlam 2br",
-      "count": 14,
+      "count": 15,
       "droppedDirty": 0
     }
   ],
@@ -33,7 +33,7 @@
       "name": "Nick",
       "email": "kuantai95@gmail.com",
       "wechat": "Nickhc588",
-      "date": "2026-06-28",
+      "date": "2026-06-30",
       "available": "",
       "lease": "",
       "src": "vanpeople",
@@ -43,6 +43,32 @@
       ],
       "matchedQueries": [
         "Coquitlam 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:6047103672",
+      "new": true,
+      "title": "本拿比Metrotown 近BCIT,平地 包水,电,煤,, 2 房1厅独出 $1600",
+      "price": 1600,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "本拿比",
+      "tel": "604-710-3672",
+      "tel2": "",
+      "name": "lily",
+      "email": "",
+      "wechat": "",
+      "date": "2026-07-01",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 1,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3445139.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
       ],
       "priceReturn": null
     },
@@ -67,6 +93,32 @@
       "links": [
         "https://c.vanpeople.com/zufang/item-3465535.html",
         "https://www.vansky.com/info/adfree/2820520.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:6047299783",
+      "new": true,
+      "title": "本拿比二房一厅出租",
+      "price": 1600,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "6047299783",
+      "tel2": "",
+      "name": "房东",
+      "email": "",
+      "wechat": "",
+      "date": "2026-07-01",
+      "available": "2026-06-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2627143.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -100,32 +152,6 @@
       "priceReturn": null
     },
     {
-      "id": "tel:6725158118",
-      "new": true,
-      "title": "COMO Lake湖旁house靠近burquitlam两房两厅一厨一卫出租",
-      "price": 1650,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "6725158118",
-      "tel2": "",
-      "name": "屋主",
-      "email": "e19930929@gmail.com",
-      "wechat": "",
-      "date": "2026-06-29",
-      "available": "2026-09-10",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2359575.html"
-      ],
-      "matchedQueries": [
-        "Coquitlam 2br"
-      ],
-      "priceReturn": null
-    },
-    {
       "id": "tel:2368881618",
       "new": true,
       "title": "本那比现代风格地面2房套房出租",
@@ -148,6 +174,32 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:6725158118",
+      "new": true,
+      "title": "COMO Lake湖旁house靠近burquitlam两房两厅一厨一卫出租",
+      "price": 1700,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "6725158118",
+      "tel2": "",
+      "name": "屋主",
+      "email": "e19930929@gmail.com",
+      "wechat": "",
+      "date": "2026-06-30",
+      "available": "2026-07-15",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2359575.html"
+      ],
+      "matchedQueries": [
+        "Coquitlam 2br"
       ],
       "priceReturn": null
     },
@@ -335,6 +387,32 @@
       "priceReturn": null
     },
     {
+      "id": "tel:6045185216",
+      "new": true,
+      "title": "高贵林中心独立出入pinetree的两房出租",
+      "price": 1680,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "高贵林",
+      "tel": "604-518-5216",
+      "tel2": "",
+      "name": "Lily",
+      "email": "",
+      "wechat": "Yuzhili868",
+      "date": "2026-07-01",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 1,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3159190.html"
+      ],
+      "matchedQueries": [
+        "Coquitlam 2br"
+      ],
+      "priceReturn": null
+    },
+    {
       "id": "tel:7788600077",
       "new": true,
       "title": "本拿比独立出入2房出租",
@@ -347,13 +425,39 @@
       "name": "房东",
       "email": "",
       "wechat": "",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "available": "2026-04-27",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2830758.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7788001997",
+      "new": true,
+      "title": "Imperial街与 Sussex 街交界公寓出租",
+      "price": 1800,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "本拿比",
+      "tel": "778-800-1997",
+      "tel2": "",
+      "name": "Noble",
+      "email": "rental@noblehomes.ca",
+      "wechat": "",
+      "date": "2026-06-30",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 1,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3443897.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -413,32 +517,6 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7789996496",
-      "new": true,
-      "title": "Burnaby 二房出租",
-      "price": 1800,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "7789996496",
-      "tel2": "",
-      "name": "房东",
-      "email": "",
-      "wechat": "",
-      "date": "2026-06-28",
-      "available": "2026-07-18",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2828882.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
       "id": "tel:6047820602",
       "new": true,
       "title": "高贵林整层,独立出入2房，学区房，全朝南光亮, 交通购物方便",
@@ -448,17 +526,17 @@
       "area": "高贵林",
       "tel": "604-782-0602",
       "tel2": "",
-      "name": "ovo",
+      "name": "vivi",
       "email": "",
       "wechat": "",
-      "date": "2026-06-29",
+      "date": "2026-07-01",
       "available": "",
       "lease": "",
       "src": "vanpeople",
       "reposts": 2,
       "links": [
-        "https://c.vanpeople.com/zufang/item-3477267.html",
-        "https://c.vanpeople.com/zufang/item-3477808.html"
+        "https://c.vanpeople.com/zufang/item-3477808.html",
+        "https://c.vanpeople.com/zufang/item-3477267.html"
       ],
       "matchedQueries": [
         "Coquitlam 2br"
@@ -492,6 +570,33 @@
       "priceReturn": null
     },
     {
+      "id": "tel:6049966518",
+      "new": true,
+      "title": "高贵林/满地宝顶级学区Heritage Mountain 阳光两房一卫",
+      "price": 1880,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "高贵林",
+      "tel": "604-996-6518",
+      "tel2": "",
+      "name": "Weiwei",
+      "email": "luo_ww@hotmail.com",
+      "wechat": "",
+      "date": "2026-06-30",
+      "available": "2026-07-01",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 2,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3444300.html",
+        "https://www.vansky.com/info/adfree/2803833.html"
+      ],
+      "matchedQueries": [
+        "Coquitlam 2br"
+      ],
+      "priceReturn": null
+    },
+    {
       "id": "tel:7788291128",
       "new": true,
       "title": "本拿比独立屋两房一厅近Costco和SFU大学",
@@ -518,25 +623,77 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7783238213",
+      "id": "tel:7783202903",
       "new": true,
-      "title": "东本拿比温馨两卧套房出租，即可入住",
-      "price": 2000,
+      "title": "Lougheed Mall 附近 2020年新房两房一卫独立套间 出租",
+      "price": 1900,
       "floor": "unknown",
       "floorLabel": "❓未注明",
-      "area": "Eastburn",
-      "tel": "778-323-8213",
+      "area": "",
+      "tel": "7783202903",
       "tel2": "",
-      "name": "Shirley Yang",
-      "email": "syhome555@gmail.com",
+      "name": "Helen Liu",
+      "email": "qiuju2903@gmail.com",
       "wechat": "",
-      "date": "2026-06-27",
+      "date": "2026-06-30",
+      "available": "2026-07-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2826872.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7789878877",
+      "new": true,
+      "title": "靠近高贵林中心与天车（SkyTrain）的2卧2卫单元",
+      "price": 1900,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "高贵林",
+      "tel": "778-987-8877",
+      "tel2": "",
+      "name": "bc",
+      "email": "exclusivepropertiesvancouver@gmail.com",
+      "wechat": "",
+      "date": "2026-07-01",
       "available": "",
       "lease": "",
       "src": "vanpeople",
       "reposts": 1,
       "links": [
-        "https://c.vanpeople.com/zufang/item-3474286.html"
+        "https://c.vanpeople.com/zufang/item-3477768.html"
+      ],
+      "matchedQueries": [
+        "Coquitlam 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7789082166",
+      "new": true,
+      "title": "Metrotown 温馨独立出入两房一厅",
+      "price": 2000,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "本拿比",
+      "tel": "778-908-2166",
+      "tel2": "",
+      "name": "Sue",
+      "email": "alexqi1527@gmail.com",
+      "wechat": "",
+      "date": "2026-07-01",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 1,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3479353.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -556,7 +713,7 @@
       "name": "Bob",
       "email": "boppdc@gmail.com",
       "wechat": "Cmabob",
-      "date": "2026-06-29",
+      "date": "2026-07-01",
       "available": "",
       "lease": "",
       "src": "vanpeople",
@@ -596,28 +753,28 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7783891533",
-      "new": false,
-      "title": "Burnaby North 北本拿比平地两室一卫出租",
-      "price": 1350,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "本拿比",
-      "tel": "778-389-1533",
+      "id": "url:https://www.vansky.com/info/adfree/2812608.html",
+      "new": true,
+      "title": "两室一厅出租",
+      "price": 2000,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "",
       "tel2": "",
-      "name": "Lex",
-      "email": "admn.klj@gmail.com",
+      "name": "bob",
+      "email": "",
       "wechat": "",
-      "date": "2026-06-24",
-      "available": "",
+      "date": "2026-07-01",
+      "available": "2026-08-01",
       "lease": "",
-      "src": "vanpeople",
+      "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://c.vanpeople.com/zufang/item-3473353.html"
+        "https://www.vansky.com/info/adfree/2812608.html"
       ],
       "matchedQueries": [
-        "Burnaby 2br"
+        "Coquitlam 2br"
       ],
       "priceReturn": null
     },
@@ -648,84 +805,6 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7788826999",
-      "new": false,
-      "title": "本拿比 Willingdon Heights 平地两房一卫，独立出入",
-      "price": 1600,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "本拿比",
-      "tel": "778-882-6999",
-      "tel2": "",
-      "name": "Jessica",
-      "email": "askforjessica@gmail.com",
-      "wechat": "sugarj999",
-      "date": "2026-06-24",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3477637.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7783236004",
-      "new": false,
-      "title": "大两室一厅",
-      "price": 1700,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "7783236004",
-      "tel2": "",
-      "name": "房东",
-      "email": "greatmove2000@gmail.com",
-      "wechat": "",
-      "date": "2026-06-24",
-      "available": "2016-06-01",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2820764.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7787079330",
-      "new": false,
-      "title": "本拿比平地兩房一厅",
-      "price": 1780,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "本拿比",
-      "tel": "778-707-9330",
-      "tel2": "",
-      "name": "林女士",
-      "email": "",
-      "wechat": "",
-      "date": "2026-06-23",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3477393.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
       "id": "tel:7783858332",
       "new": false,
       "title": "北本两房一厅",
@@ -748,111 +827,6 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:6047161227",
-      "new": false,
-      "title": "本拿比metrotown 平地 2房一卫，五分钟步行到Royal Oak天车站",
-      "price": 1800,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "6047161227",
-      "tel2": "",
-      "name": "Lin",
-      "email": "hxn666@hotmail.com",
-      "wechat": "",
-      "date": "2026-06-24",
-      "available": "2026-06-01",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2818506.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:6047157523",
-      "new": false,
-      "title": "北Burnaby 二房一厅出租, 近SFU",
-      "price": 1850,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "Burnaby Heights",
-      "tel": "604-715-7523",
-      "tel2": "",
-      "name": "张老师",
-      "email": "henryzou88@gmail.com",
-      "wechat": "Henryzou6047157523",
-      "date": "2026-06-27",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3472230.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7783088555",
-      "new": false,
-      "title": "本拿比东平地独立出入两房一厅一厨一卫 $1900.",
-      "price": 1900,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "7783088555",
-      "tel2": "",
-      "name": "Ana",
-      "email": "",
-      "wechat": "",
-      "date": "2026-06-24",
-      "available": "2026-07-01",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2828908.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7789878877",
-      "new": false,
-      "title": "靠近高贵林中心与天车（SkyTrain）的2卧2卫单元",
-      "price": 1900,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "高贵林",
-      "tel": "778-987-8877",
-      "tel2": "",
-      "name": "bc",
-      "email": "exclusivepropertiesvancouver@gmail.com",
-      "wechat": "",
-      "date": "2026-06-24",
-      "available": "2026-06-24",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 2,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3477768.html",
-        "https://www.vansky.com/info/adfree/2822417.html"
-      ],
-      "matchedQueries": [
-        "Coquitlam 2br"
       ],
       "priceReturn": null
     },
@@ -987,55 +961,28 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7788001997",
+      "id": "tel:7789996496",
       "new": false,
-      "title": "Imperial街与 Sussex 街交界公寓出租",
+      "title": "Burnaby 二房出租",
       "price": 1800,
       "floor": "unknown",
       "floorLabel": "❓未注明",
-      "area": "本拿比",
-      "tel": "778-800-1997",
+      "area": "",
+      "tel": "7789996496",
       "tel2": "",
-      "name": "Noble",
-      "email": "rental@noblehomes.ca",
+      "name": "房东",
+      "email": "",
       "wechat": "",
-      "date": "2026-06-26",
-      "available": "",
+      "date": "2026-06-28",
+      "available": "2026-07-18",
       "lease": "",
-      "src": "vanpeople",
+      "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://c.vanpeople.com/zufang/item-3443897.html"
+        "https://www.vansky.com/info/adfree/2828882.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:6049966518",
-      "new": false,
-      "title": "高贵林/满地宝顶级学区Heritage Mountain 阳光两房一卫",
-      "price": 1880,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "高贵林",
-      "tel": "604-996-6518",
-      "tel2": "",
-      "name": "Weiwei",
-      "email": "luo_ww@hotmail.com",
-      "wechat": "",
-      "date": "2026-06-25",
-      "available": "2026-07-01",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 2,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3444300.html",
-        "https://www.vansky.com/info/adfree/2803833.html"
-      ],
-      "matchedQueries": [
-        "Coquitlam 2br"
       ],
       "priceReturn": null
     },
@@ -1119,28 +1066,28 @@
       "priceReturn": null
     },
     {
-      "id": "url:https://www.vansky.com/info/adfree/2812608.html",
+      "id": "tel:7783238213",
       "new": false,
-      "title": "两室一厅出租",
+      "title": "东本拿比温馨两卧套房出租，即可入住",
       "price": 2000,
       "floor": "unknown",
       "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "",
+      "area": "Eastburn",
+      "tel": "778-323-8213",
       "tel2": "",
-      "name": "bob",
-      "email": "",
+      "name": "Shirley Yang",
+      "email": "syhome555@gmail.com",
       "wechat": "",
-      "date": "2026-06-24",
-      "available": "2026-07-01",
+      "date": "2026-06-27",
+      "available": "",
       "lease": "",
-      "src": "vansky",
+      "src": "vanpeople",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2812608.html"
+        "https://c.vanpeople.com/zufang/item-3474286.html"
       ],
       "matchedQueries": [
-        "Coquitlam 2br"
+        "Burnaby 2br"
       ],
       "priceReturn": null
     }
