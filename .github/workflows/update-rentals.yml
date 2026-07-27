@@ -23,14 +23,17 @@ jobs:
           python-version: "3.12"
 
       # CONTRACT GATE: confirm the scraped site still exposes the fields the
-      # engine depends on. If this fails, the site changed — stop before
-      # generate so we never publish a broken/empty snapshot.
+      # engine depends on. A failure is visible but non-blocking: generate has
+      # source-level isolation and can still publish a clearly marked partial
+      # snapshot from healthy sources.
       - name: Contract test (live site shape)
+        continue-on-error: true # warn about vanpeople; do not block healthy sources
         run: python3 tests/test_contract.py
 
       # search.py + bus_generate.py are pure stdlib — nothing to install.
-      # Exits non-zero (red job → email) if a run is empty/collapses or any
-      # query errored; on a clean run it rewrites bus/data.json in place.
+      # Exits non-zero (red job → email) if every source fails, a healthy source
+      # collapses, or a whole query fails. Isolated source outages publish a
+      # partial snapshot with a warning and exit successfully.
       - name: Generate rental data
         run: python3 scripts/bus_generate.py
 

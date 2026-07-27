@@ -19,7 +19,7 @@ import urllib.parse
 
 SCRIPT_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "scripts")
 sys.path.insert(0, SCRIPT_DIR)
-from search import fetch, VP_API, VP_CITY, VP_ROOMS  # noqa: E402
+from search import fetch, SourceUnavailable, VP_API, VP_CITY, VP_ROOMS  # noqa: E402
 
 # Keys search_vanpeople() indexes directly (it["id"], it["url"]) or filters on
 # (showtags). If any of these is renamed, every result is silently dropped.
@@ -38,7 +38,10 @@ def main():
         "sortid": "42", "s_city": VP_CITY["burnaby"], "tagid": "0",
         "is_see_private_car": "0", "page": "1",
     }
-    raw = fetch(VP_API, urllib.parse.urlencode(body).encode())
+    try:
+        raw = fetch(VP_API, urllib.parse.urlencode(body).encode(), required=True)
+    except SourceUnavailable as e:
+        fail(str(e))
     if not raw:
         fail(f"empty response from {VP_API} (network down or endpoint moved)")
 

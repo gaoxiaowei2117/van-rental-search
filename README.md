@@ -35,10 +35,11 @@ back into the repo, so a local skill can read them without scraping live:
   before→after price).
 - **Silent-failure guard**: scraping a third-party site means a layout change can
   make every query return nothing. A `tests/test_contract.py` gate runs first and
-  fails the job if vanpeople's response shape changed; the producer then refuses
-  to overwrite a good snapshot with an empty/collapsed one (`sanity_min_ratio`)
-  and exits non-zero — so a breakage turns the Actions run red (email) instead of
-  rotting the data silently.
+  warns if vanpeople's response shape changed. Sources run independently, so one
+  outage publishes a fresh snapshot from the healthy source with `partial: true`
+  and a detailed `sourceStatus`; consumers surface that warning. The producer
+  still refuses to overwrite a good snapshot when every source fails or a healthy
+  source collapses unexpectedly (`sanity_min_ratio`).
 - **Consumer** (`scripts/bus_consume.py`): the repo is **public**, so it just
   fetches `bus/data.json` over plain HTTP from `raw.githubusercontent.com` — no
   clone, no auth. `--new-only` shows just the day's new listings; `--out

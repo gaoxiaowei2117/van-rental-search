@@ -52,6 +52,12 @@ def to_markdown(data, new_only):
          f"> 查询：" + "、".join(
              f"{q['label']}({q['count']})" for q in data.get("queries", [])),
          ""]
+    if data.get("partial"):
+        unavailable = "、".join(
+            name for name, state in data.get("sourceStatus", {}).items()
+            if state.get("status") != "ok") or "未知数据源"
+        L.append(f"> ⚠️ 当前为部分数据：{unavailable} 暂不可用；其余数据源已正常刷新。")
+        L.append("")
     if data.get("errors"):
         L.append(f"> ⚠️ 查询错误：{data['errors']}")
         L.append("")

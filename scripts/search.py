@@ -10,7 +10,7 @@ a Markdown report. Can also open the unique above-ground hits in Chrome.
 Primary source is the vanpeople filter API (fast, structured). Vansky is an
 optional secondary source that requires crawling list pages + detail pages.
 """
-import argparse, json, os, re, sys, time, html, webbrowser, urllib.request, urllib.parse
+import argparse, json, os, re, sys, time, html, webbrowser, urllib.error, urllib.request, urllib.parse
 from datetime import datetime, timezone
 
 
@@ -71,6 +71,11 @@ VANSKY_ITEM = "https://www.vansky.com/info/adfree/{}.html"
 
 UA = {"User-Agent": "Mozilla/5.0"}
 
+
+class SourceUnavailable(RuntimeError):
+    """A listing source could not be read reliably."""
+
+
 # room-share / short-term / non-home posts that mislabel themselves as 整租
 SHARE_RE = re.compile(r"分租|合租|找室友|室友|单间|單間|单房|單房|主卧|主臥|次卧|次臥|其中一间|其中一間|一间房|一間房|间房间|間房間|招租女|招租男|短租|短期|车位|車位|停车位|停車位|仓库|倉庫")
 BASEMENT_RE = re.compile(r"半地下|地下室|地庫|地库|地下|basement", re.I)
@@ -91,13 +96,34 @@ def norm_phone(tel):
     return d[-10:] if len(d) >= 10 else d
 
 
-def fetch(url, data=None, tries=5):
-    for _ in range(tries):
+def fetch(url, data=None, tries=5, required=False):
+    """Fetch text, optionally raising a diagnostic error after retries.
+
+    Optional detail pages retain the historical empty-string behavior. Source
+    entry points pass ``required=True`` so a 403/timeout cannot masquerade as a
+    valid empty result.
+    """
+    last_error = None
+    for attempt in range(tries):
         try:
             req = urllib.request.Request(url, data=data, headers=UA)
             return urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "ignore")
-        except Exception:
+        except urllib.error.HTTPError as e:
+            mitigated = e.headers.get("cf-mitigated")
+            detail = f"HTTP {e.code}"
+            if mitigated:
+                detail += f" (Cloudflare {mitigated})"
+            last_error = detail
+            # Retrying a browser challenge with the same non-browser request
+            # only delays fallback to the other source.
+            if 400 <= e.code < 500 and e.code != 429:
+                break
+        except Exception as e:  # noqa: BLE001 - converted to a source diagnostic
+            last_error = f"{type(e).__name__}: {e}"
+        if attempt + 1 < tries:
             time.sleep(2)
+    if required:
+        raise SourceUnavailable(f"{url}: {last_error or 'empty response'}")
     return ""
 
 
@@ -115,13 +141,13 @@ def search_vanpeople(city_id, bedrooms, max_price, min_price, rent_type, pages, 
             body["vals[39]"] = VP_RENTTYPE[rent_type]
         for pid, joined in (extra_vals or {}).items():
             body[f"vals[{pid}]"] = joined
-        raw = fetch(VP_API, urllib.parse.urlencode(body).encode(),)
+        raw = fetch(VP_API, urllib.parse.urlencode(body).encode(), required=True)
         if not raw:
             continue
         try:
             items = json.loads(raw)["data"]["list"]
-        except Exception:
-            break
+        except (json.JSONDecodeError, KeyError, TypeError) as e:
+            raise SourceUnavailable(f"{VP_API}: invalid response contract: {e}") from e
         if not items:
             break
         for it in items:
@@ -191,9 +217,12 @@ def search_vansky(city_name, bedrooms, max_price, min_price, rent_type, pages):
               3: ["3睡房", "三房", "三室", "3室"], 4: ["4睡房", "四房"], 5: ["5睡房", "五房"]}.get(bedrooms, [])
     cand = {}
     for pg in range(1, pages + 1):
-        t = fetch(VANSKY_LIST.format(pg))
+        t = fetch(VANSKY_LIST.format(pg), required=(pg == 1))
         if not t:
             continue
+        if pg == 1 and 'class="adsTitleFont"' not in t:
+            raise SourceUnavailable(
+                f"{VANSKY_LIST.format(pg)}: listing-page contract marker missing")
         for seg in re.split(r'class="adsTitleFont" href="', t)[1:]:
             lm = re.match(r"(adfree/\d+\.html)", seg)
             if not lm:
@@ -358,7 +387,8 @@ def to_markdown_detailed(rows, args):
 def run_search(city="Burnaby", bedrooms=2, max_price=1800, min_price=1, rent_type="整租",
                house_type="", rent_includes="", facilities="", pets="",
                posted_since=0, available_from="", available_to="",
-               show_available=False, above_ground=False, source="vanpeople", pages=6):
+               show_available=False, above_ground=False, source="vanpeople", pages=6,
+               source_status=None):
     """Core engine: returns the de-duplicated list of listing dicts. Framework-agnostic."""
     extra = {}
     for spec, raw in ((VP_HOUSE, house_type), (VP_INCLUDE, rent_includes),
@@ -367,18 +397,41 @@ def run_search(city="Burnaby", bedrooms=2, max_price=1800, min_price=1, rent_typ
         if m:
             extra[m[0]] = m[1]
     rows = []
+    requested = (["vanpeople", "vansky"] if source == "both" else [source])
+    statuses = source_status if source_status is not None else {}
     if source in ("vanpeople", "both"):
         cid = VP_CITY.get(city.lower())
         if cid is None:
             raise ValueError(f"未知城市 '{city}'，可选：{', '.join(sorted(VP_CITY))}")
-        rows += search_vanpeople(cid, bedrooms, max_price, min_price, rent_type, pages, extra)
+        try:
+            found = search_vanpeople(cid, bedrooms, max_price, min_price, rent_type, pages, extra)
+            rows += found
+            statuses["vanpeople"] = {"status": "ok", "count": len(found)}
+        except SourceUnavailable as e:
+            statuses["vanpeople"] = {"status": "unavailable", "count": 0,
+                                     "error": str(e)}
+            if source == "vanpeople":
+                raise
     if source in ("vansky", "both"):
         # vansky's ZFBG08 list is shallow per page and NOT strictly newest-first
         # (paid/置顶 ads occupy the early pages), so a brand-new free ad can land
         # deep in the list. Always crawl ≥30 pages — even under source="both",
         # where `pages` (tuned for vanpeople) would otherwise be far too few.
-        rows += search_vansky(city, bedrooms, max_price, min_price, rent_type,
-                              max(pages, 30))
+        try:
+            found = search_vansky(city, bedrooms, max_price, min_price, rent_type,
+                                  max(pages, 30))
+            rows += found
+            statuses["vansky"] = {"status": "ok", "count": len(found)}
+        except SourceUnavailable as e:
+            statuses["vansky"] = {"status": "unavailable", "count": 0,
+                                  "error": str(e)}
+            if source == "vansky":
+                raise
+
+    if requested and all(statuses.get(name, {}).get("status") != "ok"
+                         for name in requested):
+        detail = " | ".join(statuses[name].get("error", name) for name in requested)
+        raise SourceUnavailable(f"all requested sources unavailable: {detail}")
 
     if posted_since > 0:
         cutoff = int(datetime.now(timezone.utc).timestamp()) - posted_since * 86400

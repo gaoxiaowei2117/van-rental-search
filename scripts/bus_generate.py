@@ -10,10 +10,9 @@
 #      workflow git-pushes it back.
 #
 # SILENT-FAILURE GUARD: scraping a third-party site means a layout/field change
-# can make every query return nothing. Rather than overwrite a good snapshot
-# with an empty one, we ABORT (leave bus/data.json untouched) and exit non-zero
-# when the result is empty or collapses far below the previous run — so the
-# Actions job goes red and you get an email instead of silently rotting data.
+# can make every query return nothing. Sources fail independently: healthy data
+# is published with partial/sourceStatus metadata, while an all-source outage or
+# a collapse within the remaining healthy sources keeps the old snapshot.
 #
 # The consumer (bus_consume.py, or any local skill) reads bus/data.json.
 # Pure stdlib + the existing search.py engine — no third-party deps.
@@ -73,14 +72,47 @@ def listing_ts(row):
         return 0
 
 
-def previous_count():
-    """Listing count from the existing bus/data.json, or None if unavailable.
-    Used by the sanity guard to detect a collapse vs the last good snapshot."""
+def previous_count(sources=None):
+    """Previous listing count, optionally restricted to healthy sources.
+
+    During a degraded run this prevents an unavailable source from making the
+    healthy source look like a catastrophic total-count collapse.
+    """
     try:
         with open(DATA_PATH, encoding="utf-8") as f:
-            return json.load(f).get("count")
+            data = json.load(f)
+        if sources is None:
+            return data.get("count")
+        return sum(1 for item in data.get("items", []) if item.get("src") in sources)
     except (FileNotFoundError, json.JSONDecodeError, ValueError):
         return None
+
+
+def summarize_sources(query_summary):
+    """Aggregate per-query source health into a snapshot-level status map."""
+    summary = {}
+    for query in query_summary:
+        for source, state in query.get("sourceStatus", {}).items():
+            target = summary.setdefault(source, {
+                "status": "ok", "successfulRuns": 0, "failedRuns": 0,
+                "count": 0, "errors": [],
+            })
+            target["count"] += state.get("count", 0)
+            if state.get("status") == "ok":
+                target["successfulRuns"] += 1
+            else:
+                target["failedRuns"] += 1
+                error = state.get("error")
+                if error and error not in target["errors"]:
+                    target["errors"].append(error)
+    for state in summary.values():
+        if state["failedRuns"] and state["successfulRuns"]:
+            state["status"] = "partial"
+        elif state["failedRuns"]:
+            state["status"] = "unavailable"
+        if not state["errors"]:
+            state["errors"] = None
+    return summary
 
 
 def item_id(row):
@@ -157,7 +189,8 @@ def to_item(row, labels, is_new):
     }
 
 
-def write_registry(items, generated_at, new_count, dropped_ignored, price_returns, query_summary):
+def write_registry(items, generated_at, new_count, dropped_ignored, price_returns,
+                   query_summary, source_status, partial):
     """Human-readable RECORD TABLE of the current listings (bus/registry.md).
 
     This is the '记录表' the user reviews: every current listing with its stable
@@ -172,7 +205,9 @@ def write_registry(items, generated_at, new_count, dropped_ignored, price_return
         f" ｜ 已忽略 {dropped_ignored} 套"
         + (f" ｜ 🔄{price_returns} 套价格变动待考虑" if price_returns else "")
         + f" ｜ 查询：{labels}",
-        ">",
+        ("> ⚠️ 部分数据：" + "；".join(
+            f"{name} {state['status']}" for name, state in source_status.items()
+            if state["status"] != "ok") if partial else "> 数据源：全部正常"),
         "> 不想看某套：把它的 `id` 交给我，或 `python3 scripts/ignore.py <id|电话|链接>`"
         "（永久拉黑）/ `--reconsider <当前价>`（待考虑：价格一变就重新出现）。",
         "",
@@ -222,6 +257,7 @@ def main():
     ignored = load_ignored()
 
     errors = []
+    hard_errors = []
     dropped_total = 0
 
     # 1. Run each query; collect rows tagged with their query label.
@@ -230,12 +266,19 @@ def main():
     for q in queries:
         label = q.get("label") or f"{q.get('city')} {q.get('bedrooms')}br"
         params = {k: q.get(k, d) for k, d in QUERY_DEFAULTS.items()}
+        per_source = {}
         try:
-            rows = run_search(**params)
+            rows = run_search(**params, source_status=per_source)
         except Exception as e:  # noqa: BLE001 — one bad query shouldn't kill the run
-            errors.append(f"{label}: {e}")
-            query_summary.append({"label": label, "count": 0, "error": str(e)})
+            message = f"{label}: {e}"
+            errors.append(message)
+            hard_errors.append(message)
+            query_summary.append({"label": label, "count": 0, "error": str(e),
+                                  "sourceStatus": per_source})
             continue
+        for source, state in per_source.items():
+            if state.get("status") != "ok":
+                errors.append(f"{label}/{source}: {state.get('error', 'unavailable')}")
         # Data-cleaning: drop dirty/implausible prices (placeholder 电议 prices,
         # per-room prices from 分租 mislabeled as 整租). Never silently truncate —
         # the dropped count is logged and surfaced in the payload.
@@ -245,7 +288,7 @@ def main():
         dropped_total += dropped
         rows = kept
         query_summary.append({"label": label, "count": len(rows),
-                              "droppedDirty": dropped})
+                              "droppedDirty": dropped, "sourceStatus": per_source})
         for r in rows:
             iid = item_id(r)
             if iid in merged:
@@ -297,8 +340,15 @@ def main():
     items.sort(key=lambda it: (not it["new"], order.get(it["floor"], 1),
                                it["price"] if it["price"] is not None else 1e9))
 
+    source_status = summarize_sources(query_summary)
+    partial = any(state["status"] != "ok" for state in source_status.values())
+    healthy_sources = {name for name, state in source_status.items()
+                       if state["status"] != "unavailable"}
+
     # 3. SANITY GUARD — refuse to overwrite a good snapshot with a broken one.
-    prev = previous_count()
+    # In degraded mode compare only with the same healthy sources in the old
+    # snapshot; otherwise losing vanpeople would falsely look like vansky broke.
+    prev = previous_count(healthy_sources if partial else None)
     abort = None
     if not items:
         abort = ("produced 0 listings — every query returned nothing "
@@ -324,6 +374,8 @@ def main():
         "droppedDirty": dropped_total,
         "droppedIgnored": dropped_ignored,
         "priceReturns": price_returns,
+        "partial": partial,
+        "sourceStatus": source_status,
         "queries": query_summary,
         "errors": errors or None,
         "items": items,
@@ -333,17 +385,22 @@ def main():
         json.dump(payload, f, ensure_ascii=False, indent=2)
         f.write("\n")
 
-    write_registry(items, ts, new_count, dropped_ignored, price_returns, query_summary)
+    write_registry(items, ts, new_count, dropped_ignored, price_returns,
+                   query_summary, source_status, partial)
 
     print(f"Wrote {len(items)} listing(s) ({new_count} new, "
           f"{dropped_total} dirty dropped, {dropped_ignored} ignored, "
           f"{price_returns} price-return) to bus/data.json"
-          + (f" — {len(errors)} query error(s)" if errors else ""),
+          + (f" — {len(errors)} source/query warning(s)" if errors else ""),
           file=sys.stderr)
 
-    # Per-query errors are non-fatal to the snapshot (the healthy data is still
-    # published above) but should still turn the run red so they're noticed.
-    if errors:
+    if partial:
+        print("::warning::Published a partial snapshot; see sourceStatus in bus/data.json",
+              file=sys.stderr)
+
+    # A fully failed query still turns the run red. An isolated source outage is
+    # published as a warning so the daily feed remains fresh and the job green.
+    if hard_errors:
         sys.exit(1)
 
 

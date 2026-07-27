@@ -72,6 +72,12 @@ def to_markdown(data, new_only):
          "> 查询：" + "、".join(
              f"{q['label']}({q['count']})" for q in data.get("queries", [])),
          ""]
+    if data.get("partial"):
+        unavailable = "、".join(
+            name for name, state in data.get("sourceStatus", {}).items()
+            if state.get("status") != "ok") or "未知数据源"
+        L.append(f"> ⚠️ 当前为部分数据：{unavailable} 暂不可用；其余数据源已正常刷新。")
+        L.append("")
     if data.get("errors"):
         L.append(f"> ⚠️ 查询错误：{data['errors']}")
         L.append("")
@@ -121,6 +127,11 @@ def to_html(data, new_only):
             f'<div class="sub">{_html.escape(it.get("area","") or "")} ｜ '
             f'{_html.escape(it.get("tel","") or "—")} ｜ {_html.escape(it.get("src",""))} ｜ '
             f'{_html.escape(it.get("date","") or "")}{extra}</div></div>')
+    unavailable = "、".join(
+        name for name, state in data.get("sourceStatus", {}).items()
+        if state.get("status") != "ok")
+    warning = (f"<p class='warning'>⚠️ 当前为部分数据：{_html.escape(unavailable)} "
+               "暂不可用；其余数据源已正常刷新。</p>" if data.get("partial") else "")
     return (
         "<!doctype html><html lang='zh'><head><meta charset='utf-8'>"
         "<meta name='viewport' content='width=device-width,initial-scale=1'>"
@@ -134,10 +145,11 @@ def to_html(data, new_only):
         ".tag{margin-left:auto;color:#b25000}"
         ".title{font-size:16px;margin:6px 0 4px}.title a{color:#0066cc;text-decoration:none}"
         ".title a:hover{text-decoration:underline}.sub{font-size:13px;color:#888}"
-        ".sub a{color:#0066cc;margin-left:4px}</style></head><body>"
+        ".sub a{color:#0066cc;margin-left:4px}.warning{background:#fff4ce;"
+        "border-radius:8px;padding:10px 12px;color:#754f00}</style></head><body>"
         f"<h1>Vancouver 租房汇总 · {head}（{len(items)} 套）</h1>"
         f"<p style='color:#888;font-size:13px'>生成：{_html.escape(data.get('generatedAt',''))}"
-        f" ｜ 点房源标题打开详情页</p>" + "".join(cards) + "</body></html>")
+        f" ｜ 点房源标题打开详情页</p>" + warning + "".join(cards) + "</body></html>")
 
 
 def main():

@@ -58,6 +58,9 @@ Each row: `新 | 租金 | 楼层 | 房源（点标题看详情） | 电话 | 来
   its price changed (before → after, 🔻 down / 🔺 up). Call this out to the user.
 - `楼层`: ✅地上 (above-ground) / ❓未注明 (floor not stated). The feed excludes basements.
 - Prices are landlord-stated ("…左右") — always present them as approximate.
+- If the output says `⚠️ 当前为部分数据`, repeat that warning to the user. The
+  healthy source is current, but listings from the named unavailable source are
+  missing; never describe a partial snapshot as a complete market view.
 
 ## Notes
 
