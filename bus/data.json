@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-28T15:40:18.421795+00:00",
-  "count": 8,
+  "generatedAt": "2026-07-29T15:25:19.708502+00:00",
+  "count": 9,
   "newCount": 4,
   "freshDays": 3,
   "droppedDirty": 0,
@@ -21,14 +21,14 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 44,
+      "count": 41,
       "errors": null
     }
   },
   "queries": [
     {
       "label": "Burnaby 2br",
-      "count": 7,
+      "count": 8,
       "droppedDirty": 0,
       "sourceStatus": {
         "vanpeople": {
@@ -38,7 +38,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 32
+          "count": 28
         }
       }
     },
@@ -54,7 +54,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 12
+          "count": 13
         }
       }
     }
@@ -91,32 +91,6 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7783236004",
-      "new": true,
-      "title": "大两室一厅",
-      "price": 1700,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "7783236004",
-      "tel2": "",
-      "name": "房东",
-      "email": "greatmove2000@gmail.com",
-      "wechat": "",
-      "date": "2026-07-26",
-      "available": "2016-06-01",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2820764.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
       "id": "tel:7788798826",
       "new": true,
       "title": "北本拿比平地独立出入二房一厅一卫二居室出租",
@@ -129,7 +103,7 @@
       "name": "房东",
       "email": "",
       "wechat": "",
-      "date": "2026-07-27",
+      "date": "2026-07-28",
       "available": "2026-08-01",
       "lease": "",
       "src": "vansky",
@@ -155,13 +129,39 @@
       "name": "我",
       "email": "",
       "wechat": "",
-      "date": "2026-07-27",
+      "date": "2026-07-28",
       "available": "2026-08-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2834127.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:6042881291",
+      "new": true,
+      "title": "**歡迎學生SFU 溫馨雙房(獨立出入）**",
+      "price": 1900,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "6042881291",
+      "tel2": "",
+      "name": "A房東",
+      "email": "amy_lai4@hotmail.com",
+      "wechat": "",
+      "date": "2026-07-28",
+      "available": "2026-08-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2616273.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -191,6 +191,32 @@
       ],
       "matchedQueries": [
         "Coquitlam 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7783236004",
+      "new": false,
+      "title": "大两室一厅",
+      "price": 1700,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "7783236004",
+      "tel2": "",
+      "name": "房东",
+      "email": "greatmove2000@gmail.com",
+      "wechat": "",
+      "date": "2026-07-26",
+      "available": "2016-06-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2820764.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
       ],
       "priceReturn": null
     },
