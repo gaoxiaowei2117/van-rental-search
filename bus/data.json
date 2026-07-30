@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T15:25:19.708502+00:00",
+  "generatedAt": "2026-07-30T15:28:41.967672+00:00",
   "count": 9,
   "newCount": 4,
   "freshDays": 3,
@@ -21,7 +21,7 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 41,
+      "count": 39,
       "errors": null
     }
   },
@@ -38,7 +38,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 28
+          "count": 25
         }
       }
     },
@@ -54,7 +54,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 13
+          "count": 14
         }
       }
     }
@@ -77,8 +77,8 @@
       "name": "房东",
       "email": "",
       "wechat": "",
-      "date": "2026-07-27",
-      "available": "2026-07-29",
+      "date": "2026-07-29",
+      "available": "2026-07-31",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
@@ -103,7 +103,7 @@
       "name": "房东",
       "email": "",
       "wechat": "",
-      "date": "2026-07-28",
+      "date": "2026-07-29",
       "available": "2026-08-01",
       "lease": "",
       "src": "vansky",
@@ -129,7 +129,7 @@
       "name": "我",
       "email": "",
       "wechat": "",
-      "date": "2026-07-28",
+      "date": "2026-07-29",
       "available": "2026-08-01",
       "lease": "",
       "src": "vansky",
