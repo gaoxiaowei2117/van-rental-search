@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-31T15:34:30.935472+00:00",
-  "count": 8,
-  "newCount": 5,
+  "generatedAt": "2026-08-01T14:43:52.633307+00:00",
+  "count": 9,
+  "newCount": 7,
   "freshDays": 3,
   "droppedDirty": 0,
   "droppedIgnored": 0,
@@ -21,7 +21,7 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 40,
+      "count": 43,
       "errors": null
     }
   },
@@ -38,13 +38,13 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 26
+          "count": 28
         }
       }
     },
     {
       "label": "Coquitlam 2br",
-      "count": 1,
+      "count": 2,
       "droppedDirty": 0,
       "sourceStatus": {
         "vanpeople": {
@@ -54,7 +54,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 14
+          "count": 15
         }
       }
     }
@@ -77,8 +77,8 @@
       "name": "房东",
       "email": "",
       "wechat": "",
-      "date": "2026-07-29",
-      "available": "2026-07-31",
+      "date": "2026-07-31",
+      "available": "2026-08-02",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
@@ -110,6 +110,32 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2834178.html"
+      ],
+      "matchedQueries": [
+        "Coquitlam 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:6725158118",
+      "new": true,
+      "title": "近Burquitlam.COMO LAK湖邊 HOUSE,兩房兩廳一衛出租",
+      "price": 1700,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "6725158118",
+      "tel2": "",
+      "name": "屋主",
+      "email": "nini850501@yahoo.com.tw",
+      "wechat": "",
+      "date": "2026-07-31",
+      "available": "2026-08-05",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2835437.html"
       ],
       "matchedQueries": [
         "Coquitlam 2br"
@@ -195,6 +221,32 @@
       "priceReturn": null
     },
     {
+      "id": "tel:7788819288",
+      "new": true,
+      "title": "二房一厂",
+      "price": 1500,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "7788819288",
+      "tel2": "",
+      "name": "Emily",
+      "email": "mommyfong71@hotmail.com",
+      "wechat": "",
+      "date": "2026-07-31",
+      "available": "2026-07-31",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2837346.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
       "id": "tel:7783236004",
       "new": false,
       "title": "大两室一厅",
@@ -240,32 +292,6 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2616273.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7789996496",
-      "new": false,
-      "title": "Burnaby 二房出租",
-      "price": 1650,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "7789996496",
-      "tel2": "",
-      "name": "房东",
-      "email": "",
-      "wechat": "",
-      "date": "2026-07-25",
-      "available": "2026-08-01",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2828882.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
