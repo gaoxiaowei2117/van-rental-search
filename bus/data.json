@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-03T15:59:40.100683+00:00",
-  "count": 12,
-  "newCount": 8,
+  "generatedAt": "2026-08-04T15:41:47.864691+00:00",
+  "count": 11,
+  "newCount": 5,
   "freshDays": 3,
   "droppedDirty": 0,
   "droppedIgnored": 0,
@@ -21,14 +21,14 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 43,
+      "count": 41,
       "errors": null
     }
   },
   "queries": [
     {
       "label": "Burnaby 2br",
-      "count": 9,
+      "count": 8,
       "droppedDirty": 0,
       "sourceStatus": {
         "vanpeople": {
@@ -38,7 +38,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 27
+          "count": 26
         }
       }
     },
@@ -54,7 +54,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 16
+          "count": 15
         }
       }
     }
@@ -117,32 +117,6 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7783258333",
-      "new": true,
-      "title": "北本拿比 近SFU地上一层宽敞两室一厅出租(即可入住)",
-      "price": 1750,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "7783258333",
-      "tel2": "",
-      "name": "潘小姐",
-      "email": "yxjcanada@gmail.com",
-      "wechat": "",
-      "date": "2026-08-01",
-      "available": "2026-08-02",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2832819.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
       "id": "tel:7788798826",
       "new": true,
       "title": "北本拿比平地独立出入二房一厅一卫二居室出租",
@@ -162,32 +136,6 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2832147.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:6047822075",
-      "new": true,
-      "title": "本拿比1000尺两房一卫",
-      "price": 1800,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "6047822075",
-      "tel2": "",
-      "name": "Bruce Ma",
-      "email": "blucema@hotmail.com",
-      "wechat": "",
-      "date": "2026-08-01",
-      "available": "2026-08-15",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2837656.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -217,32 +165,6 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7787839433",
-      "new": true,
-      "title": "高贵林两房出租",
-      "price": 1550,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "7787839433",
-      "tel2": "",
-      "name": "Susan",
-      "email": "hongyusong1971@hotmail.com",
-      "wechat": "",
-      "date": "2026-08-01",
-      "available": "2026-08-01",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2752901.html"
-      ],
-      "matchedQueries": [
-        "Coquitlam 2br"
       ],
       "priceReturn": null
     },
@@ -299,6 +221,58 @@
       "priceReturn": null
     },
     {
+      "id": "tel:7783258333",
+      "new": false,
+      "title": "北本拿比 近SFU地上一层宽敞两室一厅出租(即可入住)",
+      "price": 1750,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "7783258333",
+      "tel2": "",
+      "name": "潘小姐",
+      "email": "yxjcanada@gmail.com",
+      "wechat": "",
+      "date": "2026-08-01",
+      "available": "2026-08-02",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2832819.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:6047822075",
+      "new": false,
+      "title": "本拿比1000尺两房一卫",
+      "price": 1800,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "6047822075",
+      "tel2": "",
+      "name": "Bruce Ma",
+      "email": "blucema@hotmail.com",
+      "wechat": "",
+      "date": "2026-08-01",
+      "available": "2026-08-15",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2837656.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
       "id": "tel:7783877930",
       "new": false,
       "title": "近SFU山下两室一厅出租",
@@ -318,32 +292,6 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2834127.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:6042881291",
-      "new": false,
-      "title": "**歡迎學生SFU 溫馨雙房(獨立出入）**",
-      "price": 1900,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "6042881291",
-      "tel2": "",
-      "name": "A房東",
-      "email": "amy_lai4@hotmail.com",
-      "wechat": "",
-      "date": "2026-07-28",
-      "available": "2026-08-01",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2616273.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -373,6 +321,32 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7787839433",
+      "new": false,
+      "title": "高贵林两房出租",
+      "price": 1550,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "7787839433",
+      "tel2": "",
+      "name": "Susan",
+      "email": "hongyusong1971@hotmail.com",
+      "wechat": "",
+      "date": "2026-08-01",
+      "available": "2026-08-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2752901.html"
+      ],
+      "matchedQueries": [
+        "Coquitlam 2br"
       ],
       "priceReturn": null
     }
