@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-04T15:41:47.864691+00:00",
-  "count": 11,
-  "newCount": 5,
+  "generatedAt": "2026-08-05T15:34:10.619864+00:00",
+  "count": 12,
+  "newCount": 4,
   "freshDays": 3,
   "droppedDirty": 0,
   "droppedIgnored": 0,
@@ -21,7 +21,7 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 41,
+      "count": 42,
       "errors": null
     }
   },
@@ -38,13 +38,13 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 26
+          "count": 27
         }
       }
     },
     {
       "label": "Coquitlam 2br",
-      "count": 3,
+      "count": 4,
       "droppedDirty": 0,
       "sourceStatus": {
         "vanpeople": {
@@ -64,32 +64,6 @@
     "Coquitlam 2br/vanpeople: https://c.vanpeople.com/ajax/pc/list.html: HTTP 403 (Cloudflare challenge)"
   ],
   "items": [
-    {
-      "id": "tel:7788553136",
-      "new": true,
-      "title": "Burnaby二房一厅出租，公车直达Edmonds天车站。环境安静，独立出入。",
-      "price": 1600,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "7788553136",
-      "tel2": "",
-      "name": "房东",
-      "email": "",
-      "wechat": "",
-      "date": "2026-08-02",
-      "available": "2026-08-04",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2820520.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
     {
       "id": "tel:6725158118",
       "new": true,
@@ -117,25 +91,25 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7788798826",
+      "id": "tel:7783877930",
       "new": true,
-      "title": "北本拿比平地独立出入二房一厅一卫二居室出租",
+      "title": "近SFU山下两室一厅出租",
       "price": 1800,
       "floor": "above",
       "floorLabel": "✅地上",
       "area": "",
-      "tel": "7788798826",
+      "tel": "7783877930",
       "tel2": "",
-      "name": "房东",
+      "name": "我",
       "email": "",
       "wechat": "",
-      "date": "2026-08-02",
+      "date": "2026-08-04",
       "available": "2026-09-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2832147.html"
+        "https://www.vansky.com/info/adfree/2834127.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -143,51 +117,78 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7786832645",
+      "id": "tel:7788819288",
       "new": true,
-      "title": "北Buranby, 安静内街，全地上独立屋，两房一厅， 雅房出租",
-      "price": 1850,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "7786832645",
-      "tel2": "",
-      "name": "Lily",
-      "email": "",
-      "wechat": "",
-      "date": "2026-08-02",
-      "available": "2026-08-01",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2836219.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7788635217",
-      "new": true,
-      "title": "北本拿比两室一厅独立出入",
-      "price": 1700,
+      "title": "二房一厂",
+      "price": 1500,
       "floor": "unknown",
       "floorLabel": "❓未注明",
       "area": "",
-      "tel": "7788635217",
+      "tel": "7788819288",
       "tel2": "",
-      "name": "kevin",
-      "email": "leipan7788@gmail.com",
+      "name": "Emily",
+      "email": "mommyfong71@hotmail.com",
       "wechat": "",
-      "date": "2026-08-02",
-      "available": "2026-08-02",
+      "date": "2026-08-04",
+      "available": "2026-08-04",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 2,
+      "links": [
+        "https://www.vansky.com/info/adfree/2839404.html",
+        "https://www.vansky.com/info/adfree/2837346.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "url:https://www.vansky.com/info/adfree/2812608.html",
+      "new": true,
+      "title": "两室一厅出租",
+      "price": 2000,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "",
+      "tel2": "",
+      "name": "bob",
+      "email": "boppdc@gmail.com",
+      "wechat": "",
+      "date": "2026-08-04",
+      "available": "2026-09-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2839119.html"
+        "https://www.vansky.com/info/adfree/2812608.html"
+      ],
+      "matchedQueries": [
+        "Coquitlam 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7788553136",
+      "new": false,
+      "title": "Burnaby二房一厅出租，公车直达Edmonds天车站。环境安静，独立出入。",
+      "price": 1600,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "7788553136",
+      "tel2": "",
+      "name": "房东",
+      "email": "",
+      "wechat": "",
+      "date": "2026-08-02",
+      "available": "2026-08-04",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2820520.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -247,6 +248,32 @@
       "priceReturn": null
     },
     {
+      "id": "tel:7788798826",
+      "new": false,
+      "title": "北本拿比平地独立出入二房一厅一卫二居室出租",
+      "price": 1800,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "7788798826",
+      "tel2": "",
+      "name": "房东",
+      "email": "",
+      "wechat": "",
+      "date": "2026-08-02",
+      "available": "2026-09-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2832147.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
       "id": "tel:6047822075",
       "new": false,
       "title": "本拿比1000尺两房一卫",
@@ -273,51 +300,25 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7783877930",
+      "id": "tel:7786832645",
       "new": false,
-      "title": "近SFU山下两室一厅出租",
-      "price": 1800,
+      "title": "北Buranby, 安静内街，全地上独立屋，两房一厅， 雅房出租",
+      "price": 1850,
       "floor": "above",
       "floorLabel": "✅地上",
       "area": "",
-      "tel": "7783877930",
+      "tel": "7786832645",
       "tel2": "",
-      "name": "我",
+      "name": "Lily",
       "email": "",
       "wechat": "",
-      "date": "2026-07-30",
+      "date": "2026-08-02",
       "available": "2026-08-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2834127.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7788819288",
-      "new": false,
-      "title": "二房一厂",
-      "price": 1500,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "7788819288",
-      "tel2": "",
-      "name": "Emily",
-      "email": "mommyfong71@hotmail.com",
-      "wechat": "",
-      "date": "2026-07-31",
-      "available": "2026-07-31",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2837346.html"
+        "https://www.vansky.com/info/adfree/2836219.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -347,6 +348,32 @@
       ],
       "matchedQueries": [
         "Coquitlam 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7788635217",
+      "new": false,
+      "title": "北本拿比两室一厅独立出入",
+      "price": 1700,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "7788635217",
+      "tel2": "",
+      "name": "kevin",
+      "email": "leipan7788@gmail.com",
+      "wechat": "",
+      "date": "2026-08-02",
+      "available": "2026-08-02",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2839119.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
       ],
       "priceReturn": null
     }
