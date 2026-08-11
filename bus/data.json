@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-10T14:35:35.194297+00:00",
-  "count": 10,
-  "newCount": 5,
+  "generatedAt": "2026-08-11T14:35:00.941016+00:00",
+  "count": 9,
+  "newCount": 4,
   "freshDays": 3,
   "droppedDirty": 0,
   "droppedIgnored": 0,
@@ -21,7 +21,7 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 37,
+      "count": 36,
       "errors": null
     }
   },
@@ -38,13 +38,13 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 23
+          "count": 21
         }
       }
     },
     {
       "label": "Coquitlam 2br",
-      "count": 2,
+      "count": 1,
       "droppedDirty": 0,
       "sourceStatus": {
         "vanpeople": {
@@ -54,7 +54,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 14
+          "count": 15
         }
       }
     }
@@ -91,32 +91,6 @@
       "priceReturn": null
     },
     {
-      "id": "tel:6047549588",
-      "new": true,
-      "title": "近Edmonds天车站平地2房1厅",
-      "price": 1800,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "6047549588",
-      "tel2": "",
-      "name": "屋主",
-      "email": "",
-      "wechat": "",
-      "date": "2026-08-08",
-      "available": "2026-07-04",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2824698.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
       "id": "tel:7783877930",
       "new": true,
       "title": "近SFU山下两室一厅出租",
@@ -129,7 +103,7 @@
       "name": "我",
       "email": "",
       "wechat": "",
-      "date": "2026-08-08",
+      "date": "2026-08-10",
       "available": "2026-09-01",
       "lease": "",
       "src": "vansky",
@@ -155,7 +129,7 @@
       "name": "房东",
       "email": "",
       "wechat": "",
-      "date": "2026-08-08",
+      "date": "2026-08-10",
       "available": "2026-09-01",
       "lease": "",
       "src": "vansky",
@@ -169,25 +143,25 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7789198820",
+      "id": "tel:7788819288",
       "new": true,
-      "title": "北本拿比 2室两厅一卫出租",
+      "title": "二房一厂",
       "price": 1500,
       "floor": "unknown",
       "floorLabel": "❓未注明",
       "area": "",
-      "tel": "7789198820",
+      "tel": "7788819288",
       "tel2": "",
-      "name": "Rain",
-      "email": "rainsheng12@gmail.com",
+      "name": "Emily",
+      "email": "mommyfong71@hotmail.com",
       "wechat": "",
-      "date": "2026-08-08",
-      "available": "",
+      "date": "2026-08-10",
+      "available": "2026-08-10",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2840279.html"
+        "https://www.vansky.com/info/adfree/2840641.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -221,6 +195,32 @@
       "priceReturn": null
     },
     {
+      "id": "tel:6047549588",
+      "new": false,
+      "title": "近Edmonds天车站平地2房1厅",
+      "price": 1800,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "6047549588",
+      "tel2": "",
+      "name": "屋主",
+      "email": "",
+      "wechat": "",
+      "date": "2026-08-08",
+      "available": "2026-07-04",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2824698.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
       "id": "tel:7783858332",
       "new": false,
       "title": "北本两房一厅",
@@ -247,25 +247,25 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7788819288",
+      "id": "tel:7789198820",
       "new": false,
-      "title": "二房一厂",
+      "title": "北本拿比 2室两厅一卫出租",
       "price": 1500,
       "floor": "unknown",
       "floorLabel": "❓未注明",
       "area": "",
-      "tel": "7788819288",
+      "tel": "7789198820",
       "tel2": "",
-      "name": "Emily",
-      "email": "mommyfong71@hotmail.com",
+      "name": "Rain",
+      "email": "rainsheng12@gmail.com",
       "wechat": "",
-      "date": "2026-08-04",
-      "available": "2026-08-04",
+      "date": "2026-08-08",
+      "available": "",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2839404.html"
+        "https://www.vansky.com/info/adfree/2840279.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -295,32 +295,6 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "url:https://www.vansky.com/info/adfree/2812608.html",
-      "new": false,
-      "title": "两室一厅出租",
-      "price": 2000,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "",
-      "tel2": "",
-      "name": "bob",
-      "email": "boppdc@gmail.com",
-      "wechat": "",
-      "date": "2026-08-04",
-      "available": "2026-09-01",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2812608.html"
-      ],
-      "matchedQueries": [
-        "Coquitlam 2br"
       ],
       "priceReturn": null
     }
