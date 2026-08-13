@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-12T14:35:42.920924+00:00",
-  "count": 9,
+  "generatedAt": "2026-08-13T14:36:47.697715+00:00",
+  "count": 10,
   "newCount": 5,
   "freshDays": 3,
   "droppedDirty": 1,
@@ -21,7 +21,7 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 38,
+      "count": 40,
       "errors": null
     }
   },
@@ -38,13 +38,13 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 20
+          "count": 23
         }
       }
     },
     {
       "label": "Coquitlam 2br",
-      "count": 2,
+      "count": 3,
       "droppedDirty": 1,
       "sourceStatus": {
         "vanpeople": {
@@ -54,7 +54,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 18
+          "count": 17
         }
       }
     }
@@ -103,7 +103,7 @@
       "name": "房东",
       "email": "",
       "wechat": "",
-      "date": "2026-08-11",
+      "date": "2026-08-12",
       "available": "2026-09-01",
       "lease": "",
       "src": "vansky",
@@ -129,7 +129,7 @@
       "name": "我",
       "email": "",
       "wechat": "",
-      "date": "2026-08-10",
+      "date": "2026-08-12",
       "available": "2026-09-01",
       "lease": "",
       "src": "vansky",
@@ -143,28 +143,28 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7788819288",
+      "id": "tel:7789878877",
       "new": true,
-      "title": "二房一厂",
-      "price": 1500,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
+      "title": "靠近高贵林中心与天车（SkyTrain）的2卧2卫单元 Cats OK",
+      "price": 1900,
+      "floor": "above",
+      "floorLabel": "✅地上",
       "area": "",
-      "tel": "7788819288",
+      "tel": "7789878877",
       "tel2": "",
-      "name": "Emily",
-      "email": "mommyfong71@hotmail.com",
+      "name": "Bonnie",
+      "email": "exclusivepropertiesvancouver@gmail.com",
       "wechat": "",
-      "date": "2026-08-10",
-      "available": "2026-08-10",
+      "date": "2026-08-12",
+      "available": "2026-06-24",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2840641.html"
+        "https://www.vansky.com/info/adfree/2822417.html"
       ],
       "matchedQueries": [
-        "Burnaby 2br"
+        "Coquitlam 2br"
       ],
       "priceReturn": null
     },
@@ -266,6 +266,32 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2821322.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7788819288",
+      "new": false,
+      "title": "二房一厂",
+      "price": 1500,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "7788819288",
+      "tel2": "",
+      "name": "Emily",
+      "email": "mommyfong71@hotmail.com",
+      "wechat": "",
+      "date": "2026-08-10",
+      "available": "2026-08-10",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2840641.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
