@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-14T14:30:14.078420+00:00",
-  "count": 9,
-  "newCount": 4,
+  "generatedAt": "2026-08-15T13:49:07.661786+00:00",
+  "count": 8,
+  "newCount": 2,
   "freshDays": 3,
   "droppedDirty": 1,
   "droppedIgnored": 0,
@@ -21,14 +21,14 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 39,
+      "count": 41,
       "errors": null
     }
   },
   "queries": [
     {
       "label": "Burnaby 2br",
-      "count": 6,
+      "count": 5,
       "droppedDirty": 0,
       "sourceStatus": {
         "vanpeople": {
@@ -38,7 +38,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 23
+          "count": 25
         }
       }
     },
@@ -91,80 +91,28 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7788798826",
+      "id": "tel:7783233320",
       "new": true,
-      "title": "北本拿比平地独立出入二房一厅一卫二居室出租",
-      "price": 1800,
+      "title": "本拿比近sfu两房出租",
+      "price": 2000,
       "floor": "above",
       "floorLabel": "✅地上",
       "area": "",
-      "tel": "7788798826",
+      "tel": "7783233320",
       "tel2": "",
-      "name": "房东",
-      "email": "",
+      "name": "本人",
+      "email": "2760912923@qq.com",
       "wechat": "",
-      "date": "2026-08-12",
-      "available": "2026-09-01",
+      "date": "2026-08-14",
+      "available": "2026-08-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2832147.html"
+        "https://www.vansky.com/info/adfree/2839079.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7783877930",
-      "new": true,
-      "title": "近SFU山下两室一厅出租",
-      "price": 1800,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "7783877930",
-      "tel2": "",
-      "name": "我",
-      "email": "",
-      "wechat": "",
-      "date": "2026-08-12",
-      "available": "2026-09-01",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2834127.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7789878877",
-      "new": true,
-      "title": "靠近高贵林中心与天车（SkyTrain）的2卧2卫单元 Cats OK",
-      "price": 1900,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "7789878877",
-      "tel2": "",
-      "name": "Bonnie",
-      "email": "exclusivepropertiesvancouver@gmail.com",
-      "wechat": "",
-      "date": "2026-08-12",
-      "available": "2026-06-24",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2822417.html"
-      ],
-      "matchedQueries": [
-        "Coquitlam 2br"
       ],
       "priceReturn": null
     },
@@ -195,28 +143,80 @@
       "priceReturn": null
     },
     {
-      "id": "tel:6047549588",
+      "id": "tel:7788798826",
       "new": false,
-      "title": "近Edmonds天车站平地2房1厅",
+      "title": "北本拿比平地独立出入二房一厅一卫二居室出租",
       "price": 1800,
       "floor": "above",
       "floorLabel": "✅地上",
       "area": "",
-      "tel": "6047549588",
+      "tel": "7788798826",
       "tel2": "",
-      "name": "屋主",
+      "name": "房东",
       "email": "",
       "wechat": "",
-      "date": "2026-08-08",
-      "available": "2026-07-04",
+      "date": "2026-08-12",
+      "available": "2026-09-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2824698.html"
+        "https://www.vansky.com/info/adfree/2832147.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7783877930",
+      "new": false,
+      "title": "近SFU山下两室一厅出租",
+      "price": 1800,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "7783877930",
+      "tel2": "",
+      "name": "我",
+      "email": "",
+      "wechat": "",
+      "date": "2026-08-12",
+      "available": "2026-09-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2834127.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7789878877",
+      "new": false,
+      "title": "靠近高贵林中心与天车（SkyTrain）的2卧2卫单元 Cats OK",
+      "price": 1900,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "7789878877",
+      "tel2": "",
+      "name": "Bonnie",
+      "email": "exclusivepropertiesvancouver@gmail.com",
+      "wechat": "",
+      "date": "2026-08-12",
+      "available": "2026-06-24",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2822417.html"
+      ],
+      "matchedQueries": [
+        "Coquitlam 2br"
       ],
       "priceReturn": null
     },
@@ -240,32 +240,6 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2840641.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7789198820",
-      "new": false,
-      "title": "北本拿比 2室两厅一卫出租",
-      "price": 1500,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "7789198820",
-      "tel2": "",
-      "name": "Rain",
-      "email": "rainsheng12@gmail.com",
-      "wechat": "",
-      "date": "2026-08-08",
-      "available": "",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2840279.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
