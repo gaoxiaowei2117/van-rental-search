@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-15T13:49:07.661786+00:00",
-  "count": 8,
-  "newCount": 2,
+  "generatedAt": "2026-08-16T13:50:10.672236+00:00",
+  "count": 10,
+  "newCount": 3,
   "freshDays": 3,
   "droppedDirty": 1,
   "droppedIgnored": 0,
@@ -21,14 +21,14 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 41,
+      "count": 38,
       "errors": null
     }
   },
   "queries": [
     {
       "label": "Burnaby 2br",
-      "count": 5,
+      "count": 7,
       "droppedDirty": 0,
       "sourceStatus": {
         "vanpeople": {
@@ -38,7 +38,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 25
+          "count": 23
         }
       }
     },
@@ -54,7 +54,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 16
+          "count": 15
         }
       }
     }
@@ -65,25 +65,51 @@
   ],
   "items": [
     {
-      "id": "tel:7783858332",
+      "id": "tel:7783236004",
       "new": true,
-      "title": "北本两房一厅",
-      "price": 1800,
+      "title": "大两室一厅",
+      "price": 1700,
       "floor": "above",
       "floorLabel": "✅地上",
       "area": "",
-      "tel": "7783858332",
+      "tel": "7783236004",
       "tel2": "",
-      "name": "陈生",
-      "email": "vic.civ666@gmail.com",
+      "name": "房东",
+      "email": "greatmove2000@gmail.com",
       "wechat": "",
-      "date": "2026-08-13",
-      "available": "2016-08-01",
+      "date": "2026-08-15",
+      "available": "2016-06-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2821322.html"
+        "https://www.vansky.com/info/adfree/2820764.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7786832645",
+      "new": true,
+      "title": "北Buranby, 安静内街，全地上独立屋，两房一厅，靓房出租",
+      "price": 1850,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "7786832645",
+      "tel2": "",
+      "name": "Lily",
+      "email": "",
+      "wechat": "",
+      "date": "2026-08-15",
+      "available": "2026-08-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2836219.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -139,6 +165,32 @@
       ],
       "matchedQueries": [
         "Coquitlam 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7783858332",
+      "new": false,
+      "title": "北本两房一厅",
+      "price": 1800,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "7783858332",
+      "tel2": "",
+      "name": "陈生",
+      "email": "vic.civ666@gmail.com",
+      "wechat": "",
+      "date": "2026-08-13",
+      "available": "2016-08-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2821322.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
       ],
       "priceReturn": null
     },
