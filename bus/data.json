@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-16T13:50:10.672236+00:00",
-  "count": 10,
-  "newCount": 3,
+  "generatedAt": "2026-08-17T13:58:21.344135+00:00",
+  "count": 12,
+  "newCount": 5,
   "freshDays": 3,
   "droppedDirty": 1,
   "droppedIgnored": 0,
@@ -21,14 +21,14 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 38,
+      "count": 36,
       "errors": null
     }
   },
   "queries": [
     {
       "label": "Burnaby 2br",
-      "count": 7,
+      "count": 8,
       "droppedDirty": 0,
       "sourceStatus": {
         "vanpeople": {
@@ -38,13 +38,13 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 23
+          "count": 24
         }
       }
     },
     {
       "label": "Coquitlam 2br",
-      "count": 3,
+      "count": 4,
       "droppedDirty": 1,
       "sourceStatus": {
         "vanpeople": {
@@ -54,7 +54,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 15
+          "count": 12
         }
       }
     }
@@ -117,28 +117,80 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7783233320",
+      "id": "tel:7788493488",
       "new": true,
-      "title": "本拿比近sfu两房出租",
+      "title": "温哥华本拿比 BRB@Metrotown 公寓出租租房两室一厅两房$2000/m",
       "price": 2000,
       "floor": "above",
       "floorLabel": "✅地上",
       "area": "",
-      "tel": "7783233320",
+      "tel": "7788493488",
       "tel2": "",
-      "name": "本人",
-      "email": "2760912923@qq.com",
+      "name": "William",
+      "email": "CanadaAutoCenter@gmail.com",
       "wechat": "",
-      "date": "2026-08-14",
-      "available": "2026-08-01",
+      "date": "2026-08-16",
+      "available": "2026-09-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2839079.html"
+        "https://www.vansky.com/info/adfree/2703491.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:2364126134",
+      "new": true,
+      "title": "EDMONDS附近2房一廳(East)",
+      "price": 1750,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "2364126134",
+      "tel2": "",
+      "name": "劉小姐",
+      "email": "et1103@hotmail.com",
+      "wechat": "",
+      "date": "2026-08-16",
+      "available": "2026-07-15",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2161041.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:6045185216",
+      "new": true,
+      "title": "近高贵林中心的二房一厨一卫一厅",
+      "price": 1780,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "6045185216",
+      "tel2": "",
+      "name": "lily",
+      "email": "",
+      "wechat": "",
+      "date": "2026-08-17",
+      "available": "2027-09-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2813460.html"
+      ],
+      "matchedQueries": [
+        "Coquitlam 2br"
       ],
       "priceReturn": null
     },
@@ -273,25 +325,25 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7788819288",
+      "id": "tel:7783233320",
       "new": false,
-      "title": "二房一厂",
-      "price": 1500,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
+      "title": "本拿比近sfu两房出租",
+      "price": 2000,
+      "floor": "above",
+      "floorLabel": "✅地上",
       "area": "",
-      "tel": "7788819288",
+      "tel": "7783233320",
       "tel2": "",
-      "name": "Emily",
-      "email": "mommyfong71@hotmail.com",
+      "name": "本人",
+      "email": "2760912923@qq.com",
       "wechat": "",
-      "date": "2026-08-10",
-      "available": "2026-08-10",
+      "date": "2026-08-14",
+      "available": "2026-08-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2840641.html"
+        "https://www.vansky.com/info/adfree/2839079.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
