@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-21T14:04:09.072856+00:00",
-  "count": 10,
-  "newCount": 4,
+  "generatedAt": "2026-08-22T13:49:37.628252+00:00",
+  "count": 13,
+  "newCount": 7,
   "freshDays": 3,
   "droppedDirty": 0,
   "droppedIgnored": 0,
@@ -21,14 +21,14 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 40,
+      "count": 41,
       "errors": null
     }
   },
   "queries": [
     {
       "label": "Burnaby 2br",
-      "count": 7,
+      "count": 9,
       "droppedDirty": 0,
       "sourceStatus": {
         "vanpeople": {
@@ -44,7 +44,7 @@
     },
     {
       "label": "Coquitlam 2br",
-      "count": 3,
+      "count": 4,
       "droppedDirty": 0,
       "sourceStatus": {
         "vanpeople": {
@@ -54,7 +54,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 14
+          "count": 15
         }
       }
     }
@@ -65,28 +65,80 @@
   ],
   "items": [
     {
-      "id": "tel:6045185590",
+      "id": "tel:7788798826",
       "new": true,
-      "title": "近高贵林中心独立出入2室",
-      "price": 1950,
+      "title": "北本拿比平地独立出入二房一厅一卫二居室出租",
+      "price": 1800,
       "floor": "above",
       "floorLabel": "✅地上",
       "area": "",
-      "tel": "6045185590",
+      "tel": "7788798826",
       "tel2": "",
-      "name": "Jing",
-      "email": "uleafemma@gmail.com",
+      "name": "房东",
+      "email": "",
       "wechat": "",
-      "date": "2026-08-19",
-      "available": "2026-09-02",
+      "date": "2026-08-21",
+      "available": "2026-09-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2842277.html"
+        "https://www.vansky.com/info/adfree/2832147.html"
       ],
       "matchedQueries": [
-        "Coquitlam 2br"
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7783858332",
+      "new": true,
+      "title": "北本两房一厅",
+      "price": 1800,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "7783858332",
+      "tel2": "",
+      "name": "陈生",
+      "email": "vic.civ666@gmail.com",
+      "wechat": "",
+      "date": "2026-08-21",
+      "available": "2016-08-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2821322.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:6042881291",
+      "new": true,
+      "title": "**歡迎學生SFU 溫馨雙房(獨立出入）**",
+      "price": 1900,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "6042881291",
+      "tel2": "",
+      "name": "A房東",
+      "email": "amy_lai4@hotmail.com",
+      "wechat": "",
+      "date": "2026-08-21",
+      "available": "2026-08-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2616273.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
       ],
       "priceReturn": null
     },
@@ -169,28 +221,28 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7783236004",
-      "new": false,
-      "title": "大两室一厅",
-      "price": 1700,
-      "floor": "above",
-      "floorLabel": "✅地上",
+      "id": "tel:6049966518",
+      "new": true,
+      "title": "高贵林/满地宝顶级学区Heritage Mountain 阳光两房一卫",
+      "price": 1800,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
       "area": "",
-      "tel": "7783236004",
+      "tel": "6049966518",
       "tel2": "",
-      "name": "房东",
-      "email": "greatmove2000@gmail.com",
+      "name": "Weiwei",
+      "email": "luo_ww@hotmail.com",
       "wechat": "",
-      "date": "2026-08-15",
-      "available": "2016-06-01",
+      "date": "2026-08-21",
+      "available": "2026-09-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2820764.html"
+        "https://www.vansky.com/info/adfree/2803833.html"
       ],
       "matchedQueries": [
-        "Burnaby 2br"
+        "Coquitlam 2br"
       ],
       "priceReturn": null
     },
@@ -214,6 +266,32 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2835437.html"
+      ],
+      "matchedQueries": [
+        "Coquitlam 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:6045185590",
+      "new": false,
+      "title": "近高贵林中心独立出入2室",
+      "price": 1950,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "6045185590",
+      "tel2": "",
+      "name": "Jing",
+      "email": "uleafemma@gmail.com",
+      "wechat": "",
+      "date": "2026-08-19",
+      "available": "2026-09-02",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2842277.html"
       ],
       "matchedQueries": [
         "Coquitlam 2br"
