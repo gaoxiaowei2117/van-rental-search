@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-22T13:49:37.628252+00:00",
+  "generatedAt": "2026-08-23T13:51:23.164666+00:00",
   "count": 13,
-  "newCount": 7,
+  "newCount": 5,
   "freshDays": 3,
   "droppedDirty": 0,
   "droppedIgnored": 0,
@@ -21,7 +21,7 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 41,
+      "count": 44,
       "errors": null
     }
   },
@@ -38,7 +38,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 26
+          "count": 28
         }
       }
     },
@@ -54,7 +54,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 15
+          "count": 16
         }
       }
     }
@@ -77,13 +77,39 @@
       "name": "房东",
       "email": "",
       "wechat": "",
-      "date": "2026-08-21",
+      "date": "2026-08-22",
       "available": "2026-09-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2832147.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7783877930",
+      "new": true,
+      "title": "近SFU山下两室一厅出租",
+      "price": 1800,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "7783877930",
+      "tel2": "",
+      "name": "我",
+      "email": "",
+      "wechat": "",
+      "date": "2026-08-22",
+      "available": "2026-09-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2834127.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -136,84 +162,6 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2616273.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7788493489",
-      "new": true,
-      "title": "温哥华本拿比 BRB@Metrotown 公寓出租租房两室一厅两房$2000/m",
-      "price": 2000,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "7788493489",
-      "tel2": "",
-      "name": "William",
-      "email": "BRB@Metrotown",
-      "wechat": "",
-      "date": "2026-08-20",
-      "available": "2026-09-01",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2703491.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7788698733",
-      "new": true,
-      "title": "本拿比新装两室一厅独立出入",
-      "price": 1600,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "7788698733",
-      "tel2": "",
-      "name": "kevin",
-      "email": "leipan7788@gmail.com",
-      "wechat": "yuyangp518",
-      "date": "2026-08-20",
-      "available": "2026-08-20",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2842528.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7788635217",
-      "new": true,
-      "title": "北bby大空间两室一厅独立出入（宠物友好）",
-      "price": 1600,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "7788635217",
-      "tel2": "",
-      "name": "Kevin",
-      "email": "leipan7788@gmail.com",
-      "wechat": "yuyangp518",
-      "date": "2026-08-20",
-      "available": "2026-08-20",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2842526.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -299,6 +247,32 @@
       "priceReturn": null
     },
     {
+      "id": "tel:7788493489",
+      "new": false,
+      "title": "温哥华本拿比 BRB@Metrotown 公寓出租租房两室一厅两房$2000/m",
+      "price": 2000,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "7788493489",
+      "tel2": "",
+      "name": "William",
+      "email": "BRB@Metrotown",
+      "wechat": "",
+      "date": "2026-08-20",
+      "available": "2026-09-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2703491.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
       "id": "tel:7788819288",
       "new": false,
       "title": "二房一厂",
@@ -325,6 +299,58 @@
       "priceReturn": null
     },
     {
+      "id": "tel:7788698733",
+      "new": false,
+      "title": "本拿比新装两室一厅独立出入",
+      "price": 1600,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "7788698733",
+      "tel2": "",
+      "name": "kevin",
+      "email": "leipan7788@gmail.com",
+      "wechat": "yuyangp518",
+      "date": "2026-08-20",
+      "available": "2026-08-20",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2842528.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7788635217",
+      "new": false,
+      "title": "北bby大空间两室一厅独立出入（宠物友好）",
+      "price": 1600,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "7788635217",
+      "tel2": "",
+      "name": "Kevin",
+      "email": "leipan7788@gmail.com",
+      "wechat": "yuyangp518",
+      "date": "2026-08-20",
+      "available": "2026-08-20",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2842526.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
       "id": "tel:6044177827",
       "new": false,
       "title": "本拿比2房",
@@ -344,32 +370,6 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2825888.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:2364126134",
-      "new": false,
-      "title": "EDMONDS附近2房一廳(East)",
-      "price": 1750,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "2364126134",
-      "tel2": "",
-      "name": "劉小姐",
-      "email": "et1103@hotmail.com",
-      "wechat": "",
-      "date": "2026-08-16",
-      "available": "2026-07-15",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2161041.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
