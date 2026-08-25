@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-24T14:08:41.524051+00:00",
-  "count": 10,
-  "newCount": 2,
+  "generatedAt": "2026-08-25T14:10:54.258187+00:00",
+  "count": 11,
+  "newCount": 4,
   "freshDays": 3,
   "droppedDirty": 0,
   "droppedIgnored": 0,
@@ -28,7 +28,7 @@
   "queries": [
     {
       "label": "Burnaby 2br",
-      "count": 7,
+      "count": 8,
       "droppedDirty": 0,
       "sourceStatus": {
         "vanpeople": {
@@ -38,7 +38,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 27
+          "count": 29
         }
       }
     },
@@ -54,7 +54,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 17
+          "count": 15
         }
       }
     }
@@ -91,6 +91,32 @@
       "priceReturn": null
     },
     {
+      "id": "tel:7788819288",
+      "new": true,
+      "title": "二房一厂",
+      "price": 1500,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "7788819288",
+      "tel2": "",
+      "name": "Emily",
+      "email": "mommyfong71@hotmail.com",
+      "wechat": "",
+      "date": "2026-08-24",
+      "available": "2026-09-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2843340.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
       "id": "tel:7787754618",
       "new": true,
       "title": "高贵林Burke Mountain 温馨两房一厅出租林",
@@ -113,6 +139,32 @@
       ],
       "matchedQueries": [
         "Coquitlam 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:6045002933",
+      "new": true,
+      "title": "本拿比独立明亮宽敞大两室出租 近sperling天车站",
+      "price": 1850,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "6045002933",
+      "tel2": "",
+      "name": "Sophie",
+      "email": "zhenshuang007@hotmail.com",
+      "wechat": "",
+      "date": "2026-08-24",
+      "available": "2026-08-24",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2843328.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
       ],
       "priceReturn": null
     },
@@ -266,32 +318,6 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2842526.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:6044177827",
-      "new": false,
-      "title": "本拿比2房",
-      "price": 1650,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "6044177827",
-      "tel2": "",
-      "name": "Mr Chen",
-      "email": "Jackyquachen@gmail.com",
-      "wechat": "",
-      "date": "2026-08-18",
-      "available": "2026-08-31",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2825888.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
