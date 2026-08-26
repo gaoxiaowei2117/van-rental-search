@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-25T14:10:54.258187+00:00",
+  "generatedAt": "2026-08-26T14:10:53.937313+00:00",
   "count": 11,
-  "newCount": 4,
+  "newCount": 3,
   "freshDays": 3,
   "droppedDirty": 0,
   "droppedIgnored": 0,
@@ -21,7 +21,7 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 44,
+      "count": 48,
       "errors": null
     }
   },
@@ -38,7 +38,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 29
+          "count": 31
         }
       }
     },
@@ -54,7 +54,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 15
+          "count": 17
         }
       }
     }
@@ -65,28 +65,28 @@
   ],
   "items": [
     {
-      "id": "tel:6047796663",
+      "id": "tel:7783192393",
       "new": true,
-      "title": "南本拿比House平地两房一厅出租",
-      "price": 1800,
+      "title": "新屋平地独立出入二房一厅一厨一卫出租",
+      "price": 1600,
       "floor": "above",
       "floorLabel": "✅地上",
       "area": "",
-      "tel": "6047796663",
+      "tel": "7783192393",
       "tel2": "",
-      "name": "房东",
+      "name": "Alice",
       "email": "",
       "wechat": "",
-      "date": "2026-08-23",
+      "date": "2026-08-25",
       "available": "2026-09-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2696474.html"
+        "https://www.vansky.com/info/adfree/2615331.html"
       ],
       "matchedQueries": [
-        "Burnaby 2br"
+        "Coquitlam 2br"
       ],
       "priceReturn": null
     },
@@ -117,32 +117,6 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7787754618",
-      "new": true,
-      "title": "高贵林Burke Mountain 温馨两房一厅出租林",
-      "price": 1800,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "7787754618",
-      "tel2": "",
-      "name": "黄小姐姐",
-      "email": "",
-      "wechat": "",
-      "date": "2026-08-23",
-      "available": "2026-09-01",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2823157.html"
-      ],
-      "matchedQueries": [
-        "Coquitlam 2br"
-      ],
-      "priceReturn": null
-    },
-    {
       "id": "tel:6045002933",
       "new": true,
       "title": "本拿比独立明亮宽敞大两室出租 近sperling天车站",
@@ -162,6 +136,32 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2843328.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:6047796663",
+      "new": false,
+      "title": "南本拿比House平地两房一厅出租",
+      "price": 1800,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "6047796663",
+      "tel2": "",
+      "name": "房东",
+      "email": "",
+      "wechat": "",
+      "date": "2026-08-23",
+      "available": "2026-09-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2696474.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -217,32 +217,6 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:6045185590",
-      "new": false,
-      "title": "近高贵林中心独立出入2室",
-      "price": 1950,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "6045185590",
-      "tel2": "",
-      "name": "Jing",
-      "email": "uleafemma@gmail.com",
-      "wechat": "",
-      "date": "2026-08-19",
-      "available": "2026-09-02",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2842277.html"
-      ],
-      "matchedQueries": [
-        "Coquitlam 2br"
       ],
       "priceReturn": null
     },
@@ -321,6 +295,32 @@
       ],
       "matchedQueries": [
         "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7787754618",
+      "new": false,
+      "title": "高贵林Burke Mountain 温馨两房一厅出租林",
+      "price": 1800,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "7787754618",
+      "tel2": "",
+      "name": "黄小姐姐",
+      "email": "",
+      "wechat": "",
+      "date": "2026-08-23",
+      "available": "2026-09-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2823157.html"
+      ],
+      "matchedQueries": [
+        "Coquitlam 2br"
       ],
       "priceReturn": null
     },
