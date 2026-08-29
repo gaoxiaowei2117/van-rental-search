@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-28T23:07:38.454666+00:00",
+  "generatedAt": "2026-08-29T17:15:00.291431+00:00",
   "count": 8,
-  "newCount": 4,
+  "newCount": 2,
   "freshDays": 3,
   "droppedDirty": 0,
   "droppedIgnored": 0,
@@ -21,7 +21,7 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 46,
+      "count": 47,
       "errors": null
     }
   },
@@ -38,7 +38,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 31
+          "count": 32
         }
       }
     },
@@ -65,32 +65,6 @@
   ],
   "items": [
     {
-      "id": "tel:6047226965",
-      "new": true,
-      "title": "高贵林两房一厅",
-      "price": 1680,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "6047226965",
-      "tel2": "",
-      "name": "红石",
-      "email": "",
-      "wechat": "",
-      "date": "2026-08-26",
-      "available": "2026-03-30",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2832583.html"
-      ],
-      "matchedQueries": [
-        "Coquitlam 2br"
-      ],
-      "priceReturn": null
-    },
-    {
       "id": "tel:7788814499",
       "new": true,
       "title": "北本拿比 Brentwood Mall 地上2房",
@@ -110,32 +84,6 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2843218.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:6047549588",
-      "new": true,
-      "title": "近Edmonds天车站平地2房1厅",
-      "price": 1800,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "6047549588",
-      "tel2": "",
-      "name": "屋主",
-      "email": "",
-      "wechat": "",
-      "date": "2026-08-26",
-      "available": "2026-07-04",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2824698.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -193,6 +141,58 @@
       ],
       "matchedQueries": [
         "Coquitlam 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:6047226965",
+      "new": false,
+      "title": "高贵林两房一厅",
+      "price": 1680,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "6047226965",
+      "tel2": "",
+      "name": "红石",
+      "email": "",
+      "wechat": "",
+      "date": "2026-08-26",
+      "available": "2026-03-30",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2832583.html"
+      ],
+      "matchedQueries": [
+        "Coquitlam 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:6047549588",
+      "new": false,
+      "title": "近Edmonds天车站平地2房1厅",
+      "price": 1800,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "6047549588",
+      "tel2": "",
+      "name": "屋主",
+      "email": "",
+      "wechat": "",
+      "date": "2026-08-26",
+      "available": "2026-07-04",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2824698.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
       ],
       "priceReturn": null
     },
