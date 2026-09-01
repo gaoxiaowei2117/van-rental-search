@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-31T19:34:36.239773+00:00",
-  "count": 6,
+  "generatedAt": "2026-09-01T17:23:32.489524+00:00",
+  "count": 7,
   "newCount": 3,
   "freshDays": 3,
   "droppedDirty": 0,
@@ -21,7 +21,7 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 45,
+      "count": 46,
       "errors": null
     }
   },
@@ -38,13 +38,13 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 33
+          "count": 34
         }
       }
     },
     {
       "label": "Coquitlam 2br",
-      "count": 2,
+      "count": 3,
       "droppedDirty": 0,
       "sourceStatus": {
         "vanpeople": {
@@ -103,8 +103,8 @@
       "name": "屋主",
       "email": "nini850501@yahoo.com.tw",
       "wechat": "",
-      "date": "2026-08-30",
-      "available": "2026-09-01",
+      "date": "2026-08-31",
+      "available": "2026-09-15",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
@@ -117,28 +117,28 @@
       "priceReturn": null
     },
     {
-      "id": "tel:6043430800",
+      "id": "url:https://www.vansky.com/info/adfree/2812608.html",
       "new": true,
-      "title": "南本拿比House平地两房一厅出租",
-      "price": 1800,
-      "floor": "above",
-      "floorLabel": "✅地上",
+      "title": "两室一厅出租",
+      "price": 1850,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
       "area": "",
-      "tel": "6043430800",
+      "tel": "",
       "tel2": "",
-      "name": "房东",
-      "email": "",
+      "name": "bob",
+      "email": "boppdc@gmail.com",
       "wechat": "",
-      "date": "2026-08-29",
-      "available": "2026-06-15",
+      "date": "2026-09-01",
+      "available": "2026-10-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2827169.html"
+        "https://www.vansky.com/info/adfree/2812608.html"
       ],
       "matchedQueries": [
-        "Burnaby 2br"
+        "Coquitlam 2br"
       ],
       "priceReturn": null
     },
@@ -162,6 +162,32 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2843218.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:6043430800",
+      "new": false,
+      "title": "南本拿比House平地两房一厅出租",
+      "price": 1800,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "6043430800",
+      "tel2": "",
+      "name": "房东",
+      "email": "",
+      "wechat": "",
+      "date": "2026-08-29",
+      "available": "2026-06-15",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2827169.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
