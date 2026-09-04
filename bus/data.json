@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T17:07:10.519766+00:00",
+  "generatedAt": "2026-09-04T16:56:16.329436+00:00",
   "count": 8,
-  "newCount": 5,
+  "newCount": 3,
   "freshDays": 3,
   "droppedDirty": 0,
   "droppedIgnored": 0,
@@ -21,7 +21,7 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 43,
+      "count": 38,
       "errors": null
     }
   },
@@ -38,7 +38,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 36
+          "count": 31
         }
       }
     },
@@ -64,32 +64,6 @@
     "Coquitlam 2br/vanpeople: https://c.vanpeople.com/ajax/pc/list.html: HTTP 403 (Cloudflare challenge)"
   ],
   "items": [
-    {
-      "id": "tel:7788777727",
-      "new": true,
-      "title": "二楼两室一卫出租, 近skytrain, Lougheed, SFU,",
-      "price": 1650,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "7788777727",
-      "tel2": "",
-      "name": "David",
-      "email": "",
-      "wechat": "",
-      "date": "2026-09-01",
-      "available": "2026-08-01",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2673286.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
     {
       "id": "tel:7788814499",
       "new": true,
@@ -117,32 +91,6 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7788819288",
-      "new": true,
-      "title": "二房一厂",
-      "price": 1500,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "7788819288",
-      "tel2": "",
-      "name": "Emily",
-      "email": "",
-      "wechat": "",
-      "date": "2026-09-01",
-      "available": "2026-09-15",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2844916.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
       "id": "url:https://www.vansky.com/info/adfree/2812608.html",
       "new": true,
       "title": "两室一厅出租",
@@ -155,7 +103,7 @@
       "name": "bob",
       "email": "",
       "wechat": "",
-      "date": "2026-09-01",
+      "date": "2026-09-04",
       "available": "2026-10-01",
       "lease": "",
       "src": "vansky",
@@ -221,6 +169,32 @@
       "priceReturn": null
     },
     {
+      "id": "tel:7788777727",
+      "new": false,
+      "title": "二楼两室一卫出租, 近skytrain, Lougheed, SFU,",
+      "price": 1650,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "7788777727",
+      "tel2": "",
+      "name": "David",
+      "email": "",
+      "wechat": "",
+      "date": "2026-09-01",
+      "available": "2026-08-01",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2673286.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
       "id": "tel:6725158118",
       "new": false,
       "title": "近Burquitlam.COMO LAK湖邊 HOUSE,兩房兩廳一衛出租",
@@ -266,6 +240,32 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2827169.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7788819288",
+      "new": false,
+      "title": "二房一厂",
+      "price": 1500,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "7788819288",
+      "tel2": "",
+      "name": "Emily",
+      "email": "",
+      "wechat": "",
+      "date": "2026-09-01",
+      "available": "2026-09-15",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2844916.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
