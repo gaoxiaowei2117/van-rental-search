@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-04T16:56:16.329436+00:00",
+  "generatedAt": "2026-09-05T16:09:44.805829+00:00",
   "count": 8,
-  "newCount": 3,
+  "newCount": 2,
   "freshDays": 3,
   "droppedDirty": 0,
   "droppedIgnored": 0,
@@ -21,7 +21,7 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 38,
+      "count": 36,
       "errors": null
     }
   },
@@ -38,7 +38,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 31
+          "count": 28
         }
       }
     },
@@ -54,7 +54,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 7
+          "count": 8
         }
       }
     }
@@ -65,25 +65,25 @@
   ],
   "items": [
     {
-      "id": "tel:7788814499",
+      "id": "tel:7788493489",
       "new": true,
-      "title": "北本拿比 Brentwood Mall 地上2房",
-      "price": 1750,
+      "title": "温哥华本拿比 BRB@Metrotown 公寓出租租房两室一厅两房$2000/m",
+      "price": 2000,
       "floor": "above",
       "floorLabel": "✅地上",
       "area": "",
-      "tel": "7788814499",
+      "tel": "7788493489",
       "tel2": "",
-      "name": "房东",
+      "name": "William",
       "email": "",
       "wechat": "",
-      "date": "2026-09-02",
+      "date": "2026-09-05",
       "available": "2026-09-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2843218.html"
+        "https://www.vansky.com/info/adfree/2703491.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -113,32 +113,6 @@
       ],
       "matchedQueries": [
         "Coquitlam 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:6047217009",
-      "new": true,
-      "title": "南本拿比近Metro两室出租",
-      "price": 2000,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "6047217009",
-      "tel2": "",
-      "name": "Kris",
-      "email": "",
-      "wechat": "",
-      "date": "2026-09-02",
-      "available": "2026-09-02",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2845264.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
       ],
       "priceReturn": null
     },
@@ -221,25 +195,25 @@
       "priceReturn": null
     },
     {
-      "id": "tel:6043430800",
+      "id": "tel:7788814499",
       "new": false,
-      "title": "南本拿比House平地两房一厅出租",
-      "price": 1800,
+      "title": "北本拿比 Brentwood Mall 地上2房",
+      "price": 1750,
       "floor": "above",
       "floorLabel": "✅地上",
       "area": "",
-      "tel": "6043430800",
+      "tel": "7788814499",
       "tel2": "",
       "name": "房东",
       "email": "",
       "wechat": "",
-      "date": "2026-08-29",
-      "available": "2026-06-15",
+      "date": "2026-09-02",
+      "available": "2026-09-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2827169.html"
+        "https://www.vansky.com/info/adfree/2843218.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -266,6 +240,32 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2844916.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:6047217009",
+      "new": false,
+      "title": "南本拿比近Metro两室出租",
+      "price": 2000,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "6047217009",
+      "tel2": "",
+      "name": "Kris",
+      "email": "",
+      "wechat": "",
+      "date": "2026-09-02",
+      "available": "2026-09-02",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2845264.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
