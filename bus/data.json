@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-11T17:05:52.025878+00:00",
-  "count": 9,
-  "newCount": 4,
+  "generatedAt": "2026-09-12T16:24:57.039725+00:00",
+  "count": 7,
+  "newCount": 3,
   "freshDays": 3,
   "droppedDirty": 0,
   "droppedIgnored": 0,
@@ -21,14 +21,14 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 41,
+      "count": 43,
       "errors": null
     }
   },
   "queries": [
     {
       "label": "Burnaby 2br",
-      "count": 8,
+      "count": 6,
       "droppedDirty": 0,
       "sourceStatus": {
         "vanpeople": {
@@ -38,7 +38,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 34
+          "count": 36
         }
       }
     },
@@ -65,6 +65,32 @@
   ],
   "items": [
     {
+      "id": "tel:7788814499",
+      "new": true,
+      "title": "北本拿比 Brentwood Mall 地上2房",
+      "price": 1750,
+      "floor": "above",
+      "floorLabel": "✅地上",
+      "area": "",
+      "tel": "7788814499",
+      "tel2": "",
+      "name": "房东",
+      "email": "",
+      "wechat": "",
+      "date": "2026-09-11",
+      "available": "2026-09-15",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2843218.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
       "id": "tel:6043174110",
       "new": true,
       "title": "北本拿比近SFU大學明亮二房一廳",
@@ -81,64 +107,11 @@
       "available": "2026-09-10",
       "lease": "",
       "src": "vansky",
-      "reposts": 4,
+      "reposts": 3,
       "links": [
         "https://www.vansky.com/info/adfree/2846680.html",
         "https://www.vansky.com/info/adfree/2846234.html",
-        "https://www.vansky.com/info/adfree/2846037.html",
-        "https://www.vansky.com/info/adfree/2845768.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:6049966518",
-      "new": true,
-      "title": "高贵林/满地宝顶级学区Heritage Mountain 阳光两房一卫",
-      "price": 1750,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "6049966518",
-      "tel2": "",
-      "name": "Weiwei",
-      "email": "",
-      "wechat": "",
-      "date": "2026-09-09",
-      "available": "2026-10-01",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2803833.html"
-      ],
-      "matchedQueries": [
-        "Coquitlam 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7785221333",
-      "new": true,
-      "title": "南metrotown2室一厅招长租",
-      "price": 1800,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "7785221333",
-      "tel2": "",
-      "name": "ed",
-      "email": "",
-      "wechat": "",
-      "date": "2026-09-09",
-      "available": "2026-09-09",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2846511.html"
+        "https://www.vansky.com/info/adfree/2846037.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -198,58 +171,6 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7788392328",
-      "new": false,
-      "title": "南本拿比平地两房一厅出租",
-      "price": 2000,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "7788392328",
-      "tel2": "",
-      "name": "吴小姐",
-      "email": "",
-      "wechat": "",
-      "date": "2026-09-05",
-      "available": "2026-09-01",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2845832.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7788493489",
-      "new": false,
-      "title": "温哥华本拿比 BRB@Metrotown 公寓出租租房两室一厅两房$2000/m",
-      "price": 2000,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "7788493489",
-      "tel2": "",
-      "name": "William",
-      "email": "",
-      "wechat": "",
-      "date": "2026-09-05",
-      "available": "2026-09-01",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2703491.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
       "id": "tel:7788406869",
       "new": false,
       "title": "北本拿比近SF U大学独立出入2房、一厅",
@@ -276,25 +197,51 @@
       "priceReturn": null
     },
     {
-      "id": "tel:6044177827",
+      "id": "tel:6049966518",
       "new": false,
-      "title": "本拿比2房",
-      "price": 1650,
+      "title": "高贵林/满地宝顶级学区Heritage Mountain 阳光两房一卫",
+      "price": 1750,
       "floor": "unknown",
       "floorLabel": "❓未注明",
       "area": "",
-      "tel": "6044177827",
+      "tel": "6049966518",
       "tel2": "",
-      "name": "Mr Chen",
+      "name": "Weiwei",
       "email": "",
       "wechat": "",
-      "date": "2026-09-05",
-      "available": "2026-09-15",
+      "date": "2026-09-09",
+      "available": "2026-10-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2825888.html"
+        "https://www.vansky.com/info/adfree/2803833.html"
+      ],
+      "matchedQueries": [
+        "Coquitlam 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7785221333",
+      "new": false,
+      "title": "南metrotown2室一厅招长租",
+      "price": 1800,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "7785221333",
+      "tel2": "",
+      "name": "ed",
+      "email": "",
+      "wechat": "",
+      "date": "2026-09-09",
+      "available": "2026-09-09",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2846511.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
