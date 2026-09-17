@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-16T17:42:01.623566+00:00",
-  "count": 8,
-  "newCount": 4,
+  "generatedAt": "2026-09-17T17:42:15.807153+00:00",
+  "count": 7,
+  "newCount": 3,
   "freshDays": 3,
   "droppedDirty": 0,
   "droppedIgnored": 0,
@@ -21,14 +21,14 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 49,
+      "count": 46,
       "errors": null
     }
   },
   "queries": [
     {
       "label": "Burnaby 2br",
-      "count": 7,
+      "count": 6,
       "droppedDirty": 0,
       "sourceStatus": {
         "vanpeople": {
@@ -38,7 +38,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 42
+          "count": 39
         }
       }
     },
@@ -107,10 +107,9 @@
       "available": "2026-09-15",
       "lease": "",
       "src": "vansky",
-      "reposts": 2,
+      "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2847436.html",
-        "https://www.vansky.com/info/adfree/2846680.html"
+        "https://www.vansky.com/info/adfree/2847436.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -137,32 +136,6 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2847556.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:6044177827",
-      "new": true,
-      "title": "本拿比2房",
-      "price": 1650,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "6044177827",
-      "tel2": "",
-      "name": "Mr Chen",
-      "email": "",
-      "wechat": "",
-      "date": "2026-09-14",
-      "available": "2026-09-30",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2825888.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -248,25 +221,25 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7787099939",
+      "id": "tel:6044177827",
       "new": false,
-      "title": "二房一厅近Metrotown",
-      "price": 1900,
+      "title": "本拿比2房",
+      "price": 1650,
       "floor": "unknown",
       "floorLabel": "❓未注明",
       "area": "",
-      "tel": "7787099939",
+      "tel": "6044177827",
       "tel2": "",
-      "name": "房东",
+      "name": "Mr Chen",
       "email": "",
       "wechat": "",
-      "date": "2026-09-10",
-      "available": "2026-10-01",
+      "date": "2026-09-14",
+      "available": "2026-09-30",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2846659.html"
+        "https://www.vansky.com/info/adfree/2825888.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
