@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-17T17:42:15.807153+00:00",
+  "generatedAt": "2026-09-18T17:09:44.798540+00:00",
   "count": 7,
-  "newCount": 3,
+  "newCount": 1,
   "freshDays": 3,
   "droppedDirty": 0,
   "droppedIgnored": 0,
@@ -21,7 +21,7 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 46,
+      "count": 48,
       "errors": null
     }
   },
@@ -38,7 +38,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 39
+          "count": 41
         }
       }
     },
@@ -65,77 +65,25 @@
   ],
   "items": [
     {
-      "id": "tel:7783858332",
+      "id": "tel:7788493489",
       "new": true,
-      "title": "北本两房一厅",
-      "price": 1750,
+      "title": "温哥华本拿比 BRB@Metrotown 公寓出租租房两室一厅两房$2000/m",
+      "price": 2000,
       "floor": "above",
       "floorLabel": "✅地上",
       "area": "",
-      "tel": "7783858332",
+      "tel": "7788493489",
       "tel2": "",
-      "name": "陈生",
+      "name": "William",
       "email": "",
       "wechat": "",
-      "date": "2026-09-15",
+      "date": "2026-09-18",
       "available": "2026-09-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2821322.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:6043174110",
-      "new": true,
-      "title": "北本拿比近SFU大學二房一廳",
-      "price": 1400,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "6043174110",
-      "tel2": "",
-      "name": "房東",
-      "email": "",
-      "wechat": "",
-      "date": "2026-09-15",
-      "available": "2026-09-15",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2847436.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7788406869",
-      "new": true,
-      "title": "北本拿比近SfU大學二房一廳",
-      "price": 1450,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "",
-      "tel": "7788406869",
-      "tel2": "",
-      "name": "房东",
-      "email": "",
-      "wechat": "",
-      "date": "2026-09-15",
-      "available": "2026-09-15",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2847556.html"
+        "https://www.vansky.com/info/adfree/2703491.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -169,25 +117,25 @@
       "priceReturn": null
     },
     {
-      "id": "tel:7788814499",
+      "id": "tel:7783858332",
       "new": false,
-      "title": "北本拿比 Brentwood Mall 地上2房",
+      "title": "北本两房一厅",
       "price": 1750,
       "floor": "above",
       "floorLabel": "✅地上",
       "area": "",
-      "tel": "7788814499",
+      "tel": "7783858332",
       "tel2": "",
-      "name": "房东",
+      "name": "陈生",
       "email": "",
       "wechat": "",
-      "date": "2026-09-11",
-      "available": "2026-09-15",
+      "date": "2026-09-15",
+      "available": "2026-09-01",
       "lease": "",
       "src": "vansky",
       "reposts": 1,
       "links": [
-        "https://www.vansky.com/info/adfree/2843218.html"
+        "https://www.vansky.com/info/adfree/2821322.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -214,6 +162,58 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2847138.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:6043174110",
+      "new": false,
+      "title": "北本拿比近SFU大學二房一廳",
+      "price": 1400,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "6043174110",
+      "tel2": "",
+      "name": "房東",
+      "email": "",
+      "wechat": "",
+      "date": "2026-09-15",
+      "available": "2026-09-15",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2847436.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
+      "id": "tel:7788406869",
+      "new": false,
+      "title": "北本拿比近SfU大學二房一廳",
+      "price": 1450,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "7788406869",
+      "tel2": "",
+      "name": "房东",
+      "email": "",
+      "wechat": "",
+      "date": "2026-09-15",
+      "available": "2026-09-15",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2847556.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
