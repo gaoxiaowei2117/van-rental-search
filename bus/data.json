@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-19T16:35:51.398615+00:00",
+  "generatedAt": "2026-09-20T16:54:53.571032+00:00",
   "count": 8,
-  "newCount": 4,
+  "newCount": 5,
   "freshDays": 3,
   "droppedDirty": 0,
   "droppedIgnored": 0,
@@ -21,7 +21,7 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 51,
+      "count": 49,
       "errors": null
     }
   },
@@ -38,7 +38,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 42
+          "count": 40
         }
       }
     },
@@ -170,6 +170,32 @@
       "priceReturn": null
     },
     {
+      "id": "tel:6045002933",
+      "new": true,
+      "title": "本拿比鹿湖大两居套房独立出入",
+      "price": 1800,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "",
+      "tel": "6045002933",
+      "tel2": "",
+      "name": "Sophie",
+      "email": "",
+      "wechat": "",
+      "date": "2026-09-20",
+      "available": "",
+      "lease": "",
+      "src": "vansky",
+      "reposts": 1,
+      "links": [
+        "https://www.vansky.com/info/adfree/2848315.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
       "id": "tel:7783858332",
       "new": false,
       "title": "北本两房一厅",
@@ -189,32 +215,6 @@
       "reposts": 1,
       "links": [
         "https://www.vansky.com/info/adfree/2821322.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7788392328",
-      "new": false,
-      "title": "南本拿比平地两房一厅出租",
-      "price": 2000,
-      "floor": "above",
-      "floorLabel": "✅地上",
-      "area": "",
-      "tel": "7788392328",
-      "tel2": "",
-      "name": "吴小姐",
-      "email": "",
-      "wechat": "",
-      "date": "2026-09-13",
-      "available": "2026-09-01",
-      "lease": "",
-      "src": "vansky",
-      "reposts": 1,
-      "links": [
-        "https://www.vansky.com/info/adfree/2847138.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
