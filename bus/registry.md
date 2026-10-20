@@ -1,41 +1,38 @@
 # 房源记录表 (current listings)
 
-> 更新：2026-10-19T19:25:48.040525+00:00 ｜ 共 31 套（17 套近 freshDays 内新发） ｜ 已忽略 0 套 ｜ 查询：Burnaby 2br, Coquitlam 2br
+> 更新：2026-10-20T18:04:33.976582+00:00 ｜ 共 28 套（19 套近 freshDays 内新发） ｜ 已忽略 0 套 ｜ 查询：Burnaby 2br, Coquitlam 2br
 > 数据源：全部正常
 > 不想看某套：把它的 `id` 交给我，或 `python3 scripts/ignore.py <id|电话|链接>`（永久拉黑）/ `--reconsider <当前价>`（待考虑：价格一变就重新出现）。
 
 | 🆕 | 租金 | 楼层 | 区域 | 房源 | 发布 | 电话 | 来源 | id | 链接 |
 |---|---|---|---|---|---|---|---|---|---|
 | 🆕 | $1600 | ✅地上 | 本拿比 | Burnaby出租两房一厅 ×2 | 2026-10-18 | 778-998-0781 | vanpeople | `tel:7789980781` | [1](https://c.vanpeople.com/zufang/item-3507825.html) [2](https://www.vansky.com/info/adfree/2852806.html) |
-| 🆕 | $1680 | ✅地上 | 本拿比 | 本拿比Burnaby独立屋2卧室近天车站BCIT、SFU$1680/月 即可入住 ×2 | 2026-10-19 | 778-325-8990 | vanpeople | `tel:7783258990` | [1](https://c.vanpeople.com/zufang/item-3506640.html) [2](https://www.vansky.com/info/adfree/2852053.html) |
+| 🆕 | $1700 | ✅地上 | Willingdon Heights | 本拿比Willingdon Heights两房一卫底层单位出租｜$1,700/月 | 2026-10-19 | 604-671-1012 | vanpeople | `tel:6046711012` | [1](https://c.vanpeople.com/zufang/item-3494562.html) |
 | 🆕 | $1700 | ✅地上 | Montecito | 本那比2房1厅1卫 | 2026-10-19 | 778-891-5529 | vanpeople | `tel:7788915529` | [1](https://c.vanpeople.com/zufang/item-3503735.html) |
-| 🆕 | $1700 | ✅地上 | 本拿比 | 近BCIT，2房1卫 house 楼上独立出入，带家具包水暖网 ×2 | 2026-10-18 | 604-355-8868 | vanpeople | `tel:6043558868` | [1](https://c.vanpeople.com/zufang/item-3501865.html) [2](https://c.vanpeople.com/zufang/item-3503440.html) |
+| 🆕 | $1700 | ✅地上 | 本拿比 | 近BCIT，2房1卫 house 楼上独立出入，带家具包水暖网 | 2026-10-18 | 604-355-8868 | vanpeople | `tel:6043558868` | [1](https://c.vanpeople.com/zufang/item-3501865.html) |
 | 🆕 | $1750 | ✅地上 | — | 北本两房一厅 | 2026-10-18 | 7783858332 | vansky | `tel:7783858332` | [1](https://www.vansky.com/info/adfree/2821322.html) |
 | 🆕 | $1780 | ✅地上 | 本拿比 | 近Metrotown 大半地上2房1厅12月1日可住 | 2026-10-18 | 604-616-8138 | vanpeople | `tel:6046168138` | [1](https://c.vanpeople.com/zufang/item-3507796.html) |
-| 🆕 | $1800 | ✅地上 | 高贵林 | port coquitlam 兩房一衛帶家具出租 | 2026-10-16 | 778-892-3667 | vanpeople | `tel:7788923667` | [1](https://c.vanpeople.com/zufang/item-3457422.html) |
+| 🆕 | $1800 | ✅地上 | 高贵林 | port coquitlam 兩房一衛帶家具出租 | 2026-10-20 | 778-892-3667 | vanpeople | `tel:7788923667` | [1](https://c.vanpeople.com/zufang/item-3457422.html) |
+| 🆕 | $1950 | ✅地上 | Metrotown | 本拿比Metrotown BCIT 附近，平地2房2卫 ×2 | 2026-10-19 | 604-716-8021 | vanpeople | `tel:6047168021` | [1](https://c.vanpeople.com/zufang/item-3508132.html) [2](https://www.vansky.com/info/adfree/2852863.html) |
 | 🆕 | $1950 | ✅地上 | 本拿比 | 南本拿比獨立屋1樓2房單位出租 | 2026-10-19 | 778-889-5306 | vanpeople | `tel:7788895306` | [1](https://c.vanpeople.com/zufang/item-3485224.html) |
-| 🆕 | $1950 | ✅地上 | — | 靠近Metrotown 和BCIT , 平地两房两厕 | 2026-10-18 | 6047168021 | vansky | `tel:6047168021` | [1](https://www.vansky.com/info/adfree/2852863.html) |
+| 🆕 | $2000 | ✅地上 | Metrotown | 全新半地面2房1厅1厨房1浴室独立出入阳光充足吸烟勿来 ×2 | 2026-10-20 | 236-888-8663 | vanpeople | `tel:2368888663` | [1](https://c.vanpeople.com/zufang/item-3461665.html) [2](https://c.vanpeople.com/zufang/item-3464921.html) |
 | 🆕 | $2000 | ✅地上 | Metrotown | 充足独立阳光半地面全新2房1厅1浴室1厨房独立门戸吸烟吸毒勿来 | 2026-10-19 | 778-669-0120 | vanpeople | `tel:7786690120` | [1](https://c.vanpeople.com/zufang/item-3469806.html) |
 | 🆕 | $2000 | ✅地上 | 本拿比 | 🏡 Burnaby Edmonds｜一樓獨立出入兩房出租｜$2,000/月全包 | 2026-10-17 | 778-990-2315 | vanpeople | `tel:7789902315` | [1](https://c.vanpeople.com/zufang/item-3507575.html) |
-| 🆕 | $2000 | ✅地上 | 本拿比 | 充足阳光全新半地面2房1廰1浴室厨房出租阳光充足 吸烟勿来 | 2026-10-17 | 236-333-2095 | vanpeople | `tel:2363332095` | [1](https://c.vanpeople.com/zufang/item-3459779.html) |
-| 🆕 | $2000 | ✅地上 | 本拿比 | 充足陽光全新半地面2房一廳交通方便 吸烟勿来独立门户包基本傢俬 | 2026-10-17 | 778-836-6338 | vanpeople | `tel:7788366338` | [1](https://c.vanpeople.com/zufang/item-3361845.html) |
 | 🆕 | $1500 | ❓未注明 | 高贵林 | 高贵林西天车站旁独立门户楼下1室2室套房 | 2026-10-19 | 604-445-6898 | vanpeople | `tel:6044456898` | [1](https://c.vanpeople.com/zufang/item-3507712.html) |
-| 🆕 | $1550 | ❓未注明 | 本拿比 | 北本拿比两室一厅独立出入（宠物友好） ×4 | 2026-10-18 | 236-965-4489 | vanpeople | `tel:2369654489` | [1](https://c.vanpeople.com/zufang/item-3493554.html) [2](https://c.vanpeople.com/zufang/item-3493350.html) [3](https://c.vanpeople.com/zufang/item-3504367.html) [4](https://c.vanpeople.com/zufang/item-3502301.html) |
-| 🆕 | $1650 | ❓未注明 | 本拿比 | Burnaby新屋2房1厅独 ×2 | 2026-10-16 | 604-417-7827 | vanpeople | `tel:6044177827` | [1](https://c.vanpeople.com/zufang/item-3472476.html) [2](https://www.vansky.com/info/adfree/2825888.html) |
+| 🆕 | $1550 | ❓未注明 | 本拿比 | 北本拿比两室一厅独立出入（宠物友好） ×3 | 2026-10-18 | 236-965-4489 | vanpeople | `tel:2369654489` | [1](https://c.vanpeople.com/zufang/item-3493554.html) [2](https://c.vanpeople.com/zufang/item-3493350.html) [3](https://c.vanpeople.com/zufang/item-3504367.html) |
+| 🆕 | $1600 | ❓未注明 | Scott Creek | 高贵林中心 平层2室1厅（带家具） 出租 | 2026-10-19 | 604-282-6209 | vanpeople | `tel:6042826209` | [1](https://c.vanpeople.com/zufang/item-3503136.html) |
+| 🆕 | $1680 | ❓未注明 | 本拿比 | 本拿比Burnaby独立屋2卧室近天车站BCIT、SFU$1680/月 即可入住 | 2026-10-20 | 778-325-8990 | vanpeople | `tel:7783258990` | [1](https://c.vanpeople.com/zufang/item-3506640.html) |
 | 🆕 | $1700 | ❓未注明 | South Slope | 近METROTOWN独立屋两室两厅一卫 | 2026-10-17 | 778-881-0559 | vanpeople | `tel:7788810559` | [1](https://c.vanpeople.com/zufang/item-3505124.html) |
-|  | $1650 | ✅地上 | 本拿比 | 南本拿比House平地两房一厅出租 | 2026-10-13 | 604-779-6663 | vanpeople | `tel:6047796663` | [1](https://c.vanpeople.com/zufang/item-3328793.html) |
-|  | $1700 | ✅地上 | Willingdon Heights | 本拿比Willingdon Heights两房一卫底层单位出租｜$1,700/月 | 2026-10-13 | 604-671-1012 | vanpeople | `tel:6046711012` | [1](https://c.vanpeople.com/zufang/item-3494562.html) |
+| 🆕 | $1800 | ❓未注明 | South Slope | 本拿比两室一卫独立套间出租｜近 Royal Oak 天车站 | 2026-10-20 | 778-388-3388 | vanpeople | `tel:7783883388` | [1](https://c.vanpeople.com/zufang/item-3506729.html) |
+| 🆕 | $1850 | ❓未注明 | 本拿比 | Burnaby Sussex Court 两室一卫公寓出租 | 2026-10-19 | 778-800-1997 | vanpeople | `tel:7788001997` | [1](https://c.vanpeople.com/zufang/item-3498772.html) |
 |  | $1700 | ✅地上 | 高贵林 | 高贵林charles Best学区2房 | 2026-10-15 | 778-829-0758 | vanpeople | `tel:7788290758` | [1](https://c.vanpeople.com/zufang/item-3507029.html) |
 |  | $1700 | ✅地上 | — | 近Burquitlam.Como Lake湖邊 HOUSE,兩房二廳一衛出租 | 2026-10-14 | 6725158118 | vansky | `tel:6725158118` | [1](https://www.vansky.com/info/adfree/2835437.html) |
-|  | $1800 | ✅地上 | 本拿比 | 北本拿比兩房一廳出租 | 2026-10-13 | 604-727-9781 | vanpeople | `tel:6047279781` | [1](https://c.vanpeople.com/zufang/item-3016479.html) |
 |  | $1850 | ✅地上 | 本拿比 | burnaby两室一厅出租 | 2026-10-14 | 236-234-6804 | vanpeople | `tel:2362346804` | [1](https://c.vanpeople.com/zufang/item-3506948.html) |
 |  | $1900 | ✅地上 | Burnaby Heights | 北本拿比海景兩房地面套房出租 | 2026-10-16 | 604-782-5318 | vanpeople | `tel:6047825318` | [1](https://c.vanpeople.com/zufang/item-3505874.html) |
+|  | $2000 | ✅地上 | 本拿比 | 充足阳光全新半地面2房1廰1浴室厨房出租阳光充足 吸烟勿来 | 2026-10-17 | 236-333-2095 | vanpeople | `tel:2363332095` | [1](https://c.vanpeople.com/zufang/item-3459779.html) |
+|  | $2000 | ✅地上 | 本拿比 | 充足陽光全新半地面2房一廳交通方便 吸烟勿来独立门户包基本傢俬 | 2026-10-17 | 778-836-6338 | vanpeople | `tel:7788366338` | [1](https://c.vanpeople.com/zufang/item-3361845.html) |
 |  | $2000 | ✅地上 | 本拿比 | 全新半地面阳光充足交通方便2房1浴室厨房1 厅 出租 独立出入 | 2026-10-14 | 236-333-5602 | vanpeople | `tel:2363335602` | [1](https://c.vanpeople.com/zufang/item-3460594.html) |
-|  | $2000 | ✅地上 | 本拿比 | 阳光充足半地面2房1厅1浴室1㕑房独立門口交通方便吸烟吸毒勿來 | 2026-10-13 | 236-887-9099 | vanpeople | `tel:2368879099` | [1](https://c.vanpeople.com/zufang/item-3466267.html) |
 |  | $1450 | ❓未注明 | Burnaby Heights | 北bby近sfu，bcit，2室2卫一厅 | 2026-10-14 | 778-861-6008 | vanpeople | `tel:7788616008` | [1](https://c.vanpeople.com/zufang/item-2594278.html) |
-|  | $1650 | ❓未注明 | Scott Creek | 高贵林中心 平层2室1厅（带家具） 出租 | 2026-10-15 | 604-282-6209 | vanpeople | `tel:6042826209` | [1](https://c.vanpeople.com/zufang/item-3503136.html) |
-|  | $1800 | ❓未注明 | South Slope | 本拿比两室一卫独立套间出租｜近 Royal Oak 天车站 | 2026-10-13 | 778-388-3388 | vanpeople | `tel:7783883388` | [1](https://c.vanpeople.com/zufang/item-3506729.html) |
-|  | $1850 | ❓未注明 | 本拿比 | Burnaby Sussex Court 两室一卫公寓出租 | 2026-10-15 | 778-800-1997 | vanpeople | `tel:7788001997` | [1](https://c.vanpeople.com/zufang/item-3498772.html) |
-|  | $1900 | ❓未注明 | South Slope | 本那比南 全新 後巷屋 2房 1廁 | 2026-10-13 | 604-328-1662 | vanpeople | `tel:6043281662` | [1](https://c.vanpeople.com/zufang/item-3435917.html) |
+|  | $1650 | ❓未注明 | 本拿比 | Burnaby新屋2房1厅独 ×2 | 2026-10-16 | 604-417-7827 | vanpeople | `tel:6044177827` | [1](https://c.vanpeople.com/zufang/item-3472476.html) [2](https://www.vansky.com/info/adfree/2825888.html) |
 
 *价格为房东标注，以洽谈为准。重复发帖已按电话去重（×N=重复次数）。*
