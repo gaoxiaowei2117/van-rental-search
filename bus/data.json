@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-19T21:41:07.613072+00:00",
+  "generatedAt": "2026-11-20T21:17:31.339212+00:00",
   "count": 30,
-  "newCount": 13,
+  "newCount": 14,
   "freshDays": 3,
   "droppedDirty": 0,
   "droppedIgnored": 1,
@@ -19,7 +19,7 @@
       "status": "ok",
       "successfulRuns": 2,
       "failedRuns": 0,
-      "count": 54,
+      "count": 55,
       "errors": null
     }
   },
@@ -50,7 +50,7 @@
         },
         "vansky": {
           "status": "ok",
-          "count": 15
+          "count": 16
         }
       }
     }
@@ -202,12 +202,14 @@
       "name": "房东",
       "email": "hui295259@gmail.com",
       "wechat": "",
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "available": "",
       "lease": "",
       "src": "vanpeople",
       "reposts": 14,
       "links": [
+        "https://c.vanpeople.com/zufang/item-3515843.html",
+        "https://c.vanpeople.com/zufang/item-3514305.html",
         "https://c.vanpeople.com/zufang/item-3515639.html",
         "https://c.vanpeople.com/zufang/item-3514047.html",
         "https://c.vanpeople.com/zufang/item-3515414.html",
@@ -219,9 +221,7 @@
         "https://c.vanpeople.com/zufang/item-3514733.html",
         "https://c.vanpeople.com/zufang/item-3513133.html",
         "https://c.vanpeople.com/zufang/item-3514519.html",
-        "https://c.vanpeople.com/zufang/item-3512907.html",
-        "https://c.vanpeople.com/zufang/item-3514305.html",
-        "https://c.vanpeople.com/zufang/item-3512676.html"
+        "https://c.vanpeople.com/zufang/item-3512907.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
@@ -334,6 +334,32 @@
       "priceReturn": null
     },
     {
+      "id": "tel:6044177827",
+      "new": true,
+      "title": "Burnaby新屋2房1厅独",
+      "price": 1650,
+      "floor": "unknown",
+      "floorLabel": "❓未注明",
+      "area": "本拿比",
+      "tel": "604-417-7827",
+      "tel2": "",
+      "name": "jacky",
+      "email": "jackyquachen@gmail.com",
+      "wechat": "",
+      "date": "2026-11-20",
+      "available": "",
+      "lease": "",
+      "src": "vanpeople",
+      "reposts": 1,
+      "links": [
+        "https://c.vanpeople.com/zufang/item-3472476.html"
+      ],
+      "matchedQueries": [
+        "Burnaby 2br"
+      ],
+      "priceReturn": null
+    },
+    {
       "id": "tel:7788001997",
       "new": true,
       "title": "Burnaby Sussex Court 两室一卫公寓出租",
@@ -346,7 +372,7 @@
       "name": "Noble",
       "email": "rental@noblehomes.ca",
       "wechat": "",
-      "date": "2026-11-17",
+      "date": "2026-11-20",
       "available": "",
       "lease": "",
       "src": "vanpeople",
@@ -589,32 +615,6 @@
       "reposts": 1,
       "links": [
         "https://c.vanpeople.com/zufang/item-3453466.html"
-      ],
-      "matchedQueries": [
-        "Burnaby 2br"
-      ],
-      "priceReturn": null
-    },
-    {
-      "id": "tel:7788810559",
-      "new": false,
-      "title": "近METROTOWN独立屋两室两厅一卫",
-      "price": 1600,
-      "floor": "unknown",
-      "floorLabel": "❓未注明",
-      "area": "South Slope",
-      "tel": "778-881-0559",
-      "tel2": "",
-      "name": "henry",
-      "email": "13356670575@sina.com",
-      "wechat": "",
-      "date": "2026-11-13",
-      "available": "",
-      "lease": "",
-      "src": "vanpeople",
-      "reposts": 1,
-      "links": [
-        "https://c.vanpeople.com/zufang/item-3505124.html"
       ],
       "matchedQueries": [
         "Burnaby 2br"
